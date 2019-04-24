@@ -7,9 +7,16 @@
 </profesor>
 <alumnos>
     <alumno>
+<<<<<<< .merge_file_a08956
         <nombre>Sonia</nombre>
         <apellidos>Borrell Plaza</apellidos>
         <email>S.borrell.p@gamil.com</email>
         <ciudad>Alicante</ciudad>
+=======
+        <nombre>Alejandro</nombre>
+        <apellidos>Otero Korzeniowski</apellidos>
+        <email>oterokorze@gmail.com</email>
+        <ciudad>San Vicente del Raspeig</ciudad>
+>>>>>>> .merge_file_a05424
     </alumno>
 </alumnos>
