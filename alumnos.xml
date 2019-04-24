@@ -14,6 +14,12 @@
     </alumno>
     <alumno>
         <nombre>Alejandro</nombre>
+        <apellidos>Jiménez Erades</apellidos>
+        <email>alejandrojimenezerades@gmail.com</email>
+        <ciudad>Aspe</ciudad>
+    </alumno>
+    <alumno>
+        <nombre>Alejandro</nombre>
         <apellidos>Bueno Alcázar</apellidos>
         <email>alejandro.bueno.alcazar@gmail.com</email>
         <ciudad>Benidorm</ciudad>
