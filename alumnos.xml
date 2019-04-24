@@ -7,9 +7,9 @@
 </profesor>
 <alumnos>
     <alumno>
-        <nombre></nombre>
-        <apellidos></apellidos>
-        <email></email>
-        <ciudad></ciudad>
+        <nombre>Iván</nombre>
+        <apellidos>Sánchez Rico</apellidos>
+        <email>isrmail87@gmail.com</email>
+        <ciudad>Elda</ciudad>
     </alumno>
 </alumnos>
