@@ -30,4 +30,10 @@
         <email>S.borrell.p@gamil.com</email>
         <ciudad>Alicante</ciudad>
     </alumno>
+    <alumno>
+        <nombre>Osniel</nombre>
+        <apellidos>Sanchez Planes</apellidos>
+        <email>onmymusica@gmail.com</email>
+        <ciudad>Alicante</ciudad>
+    </alumno>
 </alumnos>
