@@ -7,9 +7,9 @@
 </profesor>
 <alumnos>
     <alumno>
-        <nombre></nombre>
-        <apellidos></apellidos>
-        <email></email>
-        <ciudad></ciudad>
+        <nombre>Alfredo</nombre>
+        <apellidos>Rufas Gutierrez</apellidos>
+        <email>alrugu@gmail.com</email>
+        <ciudad>San Vicente</ciudad>
     </alumno>
 </alumnos>
