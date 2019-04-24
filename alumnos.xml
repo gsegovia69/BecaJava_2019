@@ -8,9 +8,9 @@
 
 <alumnos>
     <alumno>
-        <nombre></nombre>
-        <apellidos></apellidos>
-        <email></email>
-        <ciudad></ciudad>
+        <nombre>Osniel</nombre>
+        <apellidos>Sanchez Planes</apellidos>
+        <email>onmymusica@gmail.com</email>
+        <ciudad>Alicante</ciudad>
     </alumno>
 </alumnos>
