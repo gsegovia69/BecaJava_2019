@@ -18,6 +18,12 @@
         <email>alejandrojimenezerades@gmail.com</email>
         <ciudad>Aspe</ciudad>
     </alumno>
+	<alumno>
+        <nombre>Osniel</nombre>
+        <apellidos>Sanchez Planes</apellidos>
+        <email>onmymusica@gmail.com</email>
+        <ciudad>Alicante</ciudad>
+    </alumno>
     <alumno>
         <nombre>Alejandro</nombre>
         <apellidos>Bueno Alcázar</apellidos>
