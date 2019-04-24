@@ -7,9 +7,9 @@
 </profesor>
 <alumnos>
     <alumno>
-        <nombre></nombre>
-        <apellidos></apellidos>
-        <email></email>
-        <ciudad></ciudad>
+        <nombre>Alejandro</nombre>
+        <apellidos>Jiménez Erades</apellidos>
+        <email>alejandrojimenezerades@gmail.com</email>
+        <ciudad>Aspe</ciudad>
     </alumno>
 </alumnos>
