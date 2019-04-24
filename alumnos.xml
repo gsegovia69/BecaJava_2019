@@ -72,4 +72,10 @@
         <email>sannnd.sa@gmail.com</email>
         <ciudad>alicante</ciudad>
     </alumno>
+    <alumno>
+        <nombre>Jaime</nombre>
+        <apellidos>Palazon Garcia</apellidos>
+        <email>jpg9_1@hotmail.com</email>
+        <ciudad>Alicante</ciudad>
+    </alumno>
 </alumnos>
