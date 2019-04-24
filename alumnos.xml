@@ -7,9 +7,16 @@
 </profesor>
 <alumnos>
     <alumno>
+<<<<<<< HEAD
         <nombre>Sonia</nombre>
         <apellidos>Borrell Plaza</apellidos>
         <email>S.borrell.p@gamil.com</email>
         <ciudad>Alicante</ciudad>
+=======
+        <nombre>Roberto Carlos</nombre>
+        <apellidos>Quesada Orts</apellidos>
+        <email>robertocqo@gmail.com</email>
+        <ciudad>San Juan de Alicante</ciudad>
+>>>>>>> Roberto
     </alumno>
 </alumnos>
