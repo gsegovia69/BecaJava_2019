@@ -8,6 +8,7 @@
 <alumnos>
     <alumno>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <nombre>Sonia</nombre>
         <apellidos>Borrell Plaza</apellidos>
         <email>S.borrell.p@gamil.com</email>
@@ -18,5 +19,11 @@
         <email>robertocqo@gmail.com</email>
         <ciudad>San Juan de Alicante</ciudad>
 >>>>>>> Roberto
+=======
+        <nombre>Jaime</nombre>
+        <apellidos>Palazon Garcia</apellidos>
+        <email>jpg9_1@hotmail.com</email>
+        <ciudad>Alicante</ciudad>
+>>>>>>> remotes/origin/jaimepalazon
     </alumno>
 </alumnos>
