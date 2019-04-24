@@ -36,4 +36,10 @@
         <email>onmymusica@gmail.com</email>
         <ciudad>Alicante</ciudad>
     </alumno>
+    <alumno>
+        <nombre>Iván</nombre>
+        <apellidos>Sánchez Rico</apellidos>
+        <email>isrmail87@gmail.com</email>
+        <ciudad>Elda</ciudad>
+    </alumno>
 </alumnos>
