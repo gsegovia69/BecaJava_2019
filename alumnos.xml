@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<profesor>
+    <nombre>Gonzalo</nombre>
+    <apellidos>Segovia Eulogio</apellidos>
+    <email>gsegovie@everis.com</email>
+    <ciudad>Alicante</ciudad>
+</profesor>
+<alumnos>
+    <alumno>
+        <nombre></nombre>
+        <apellidos></apellidos>
+        <email></email>
+        <ciudad></ciudad>
+    </alumno>
+</alumnos>
