@@ -7,9 +7,9 @@
 </profesor>
 <alumnos>
     <alumno>
-        <nombre></nombre>
-        <apellidos></apellidos>
-        <email></email>
-        <ciudad></ciudad>
+        <nombre>Daniel</nombre>
+        <apellidos>Buyolo Martinez</apellidos>
+        <email>dbuyolo76@gmail.com</email>
+        <ciudad>Elche</ciudad>
     </alumno>
 </alumnos>
