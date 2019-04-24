@@ -48,4 +48,10 @@
         <email>dbuyolo76@gmail.com</email>
         <ciudad>Elche</ciudad>
     </alumno>
+    <alumno>
+        <nombre>Alfredo</nombre>
+        <apellidos>Rufas Gutierrez</apellidos>
+        <email>alrugu@gmail.com</email>
+        <ciudad>San Vicente</ciudad>
+    </alumno>
 </alumnos>
