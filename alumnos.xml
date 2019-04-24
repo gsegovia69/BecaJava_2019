@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <profesor>
     <nombre>Gonzalo</nombre>
@@ -13,41 +11,19 @@
         <apellidos>Borrell Plaza</apellidos>
         <email>S.borrell.p@gamil.com</email>
         <ciudad>Alicante</ciudad>
-
+   </alumno>
+    <alumno>
         <nombre>Roberto Carlos</nombre>
         <apellidos>Quesada Orts</apellidos>
         <email>robertocqo@gmail.com</email>
         <ciudad>San Juan de Alicante</ciudad>
-
-        <nombre>Jaime</nombre>
-        <apellidos>Palazon Garcia</apellidos>
-        <email>jpg9_1@hotmail.com</email>
-        <ciudad>Alicante</ciudad>
-
+   </alumno>
+    <alumno>
         <nombre>Osniel</nombre>
         <apellidos>Sanchez Planes</apellidos>
         <email>onmymusica@gmail.com</email>
         <ciudad>Alicante</ciudad>
     </alumno>
-</alumnos>
-<alumnos>
-    <alumno>
-        <nombre>Alejandro</nombre>
-        <apellidos><Bueno AlcÃ¡zar/apellidos>
-        <email>alejandro.bueno.alcazar@gmail.com</email>
-        <ciudad>Benidorm</ciudad>
-    </alumno>
-</alumnos>
->>>>>>> remotes/origin/AlejandroBueno
-=======
-<?xml version="1.0" encoding="ISO-8859-1" ?>
-<profesor>
-    <nombre>Gonzalo</nombre>
-    <apellidos>Segovia Eulogio</apellidos>
-    <email>gsegovie@everis.com</email>
-    <ciudad>Alicante</ciudad>
-</profesor>
-<alumnos>
     <alumno>
         <nombre>Alejandro</nombre>
         <apellidos>Otero Korzeniowski</apellidos>
@@ -71,18 +47,6 @@
         <apellidos>Bueno Alcázar</apellidos>
         <email>alejandro.bueno.alcazar@gmail.com</email>
         <ciudad>Benidorm</ciudad>
-    </alumno>
-    <alumno>
-        <nombre>Sonia</nombre>
-        <apellidos>Borrell Plaza</apellidos>
-        <email>S.borrell.p@gamil.com</email>
-        <ciudad>Alicante</ciudad>
-    </alumno>
-    <alumno>
-        <nombre>Osniel</nombre>
-        <apellidos>Sanchez Planes</apellidos>
-        <email>onmymusica@gmail.com</email>
-        <ciudad>Alicante</ciudad>
     </alumno>
     <alumno>
         <nombre>Iván</nombre>
@@ -127,4 +91,3 @@
         <ciudad>Alicante</ciudad>
     </alumno>
 </alumnos>
->>>>>>> bd3fcf1e54a649492d2a7c71721327beb12de23f
