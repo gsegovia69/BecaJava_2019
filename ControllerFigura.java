@@ -14,6 +14,8 @@ public class ControllerFigura {
     	figuras[1].area();
 		
 
+
+
 	}
 	
 	
