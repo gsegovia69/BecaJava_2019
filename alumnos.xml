@@ -12,4 +12,10 @@
         <email>oterokorze@gmail.com</email>
         <ciudad>San Vicente del Raspeig</ciudad>
     </alumno>
+    <alumno>
+        <nombre>Alejandro</nombre>
+        <apellidos>Bueno Alcázar</apellidos>
+        <email>alejandro.bueno.alcazar@gmail.com</email>
+        <ciudad>Benidorm</ciudad>
+    </alumno>
 </alumnos>
