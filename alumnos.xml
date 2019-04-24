@@ -8,9 +8,9 @@
 
 <alumnos>
     <alumno>
-        <nombre></nombre>
-        <apellidos></apellidos>
-        <email></email>
-        <ciudad></ciudad>
+        <nombre>Alejandro</nombre>
+        <apellidos><Bueno Alcázar/apellidos>
+        <email>alejandro.bueno.alcazar@gmail.com</email>
+        <ciudad>Benidorm</ciudad>
     </alumno>
 </alumnos>
