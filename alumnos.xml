@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <profesor>
     <nombre>Gonzalo</nombre>
@@ -28,3 +29,12 @@
         <ciudad>Alicante</ciudad>
     </alumno>
 </alumnos>
+<alumnos>
+    <alumno>
+        <nombre>Alejandro</nombre>
+        <apellidos><Bueno Alcázar/apellidos>
+        <email>alejandro.bueno.alcazar@gmail.com</email>
+        <ciudad>Benidorm</ciudad>
+    </alumno>
+</alumnos>
+>>>>>>> remotes/origin/AlejandroBueno
