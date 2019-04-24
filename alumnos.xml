@@ -24,4 +24,10 @@
         <email>alejandro.bueno.alcazar@gmail.com</email>
         <ciudad>Benidorm</ciudad>
     </alumno>
+    <alumno>
+        <nombre>Sonia</nombre>
+        <apellidos>Borrell Plaza</apellidos>
+        <email>S.borrell.p@gamil.com</email>
+        <ciudad>Alicante</ciudad>
+    </alumno>
 </alumnos>
