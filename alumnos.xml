@@ -6,7 +6,6 @@
     <ciudad>Alicante</ciudad>
 </profesor>
 <alumnos>
-<<<<<<< HEAD
     <alumno>
         <nombre>Sonia</nombre>
         <apellidos>Borrell Plaza</apellidos>
@@ -25,8 +24,6 @@
         <email>onmymusica@gmail.com</email>
         <ciudad>Alicante</ciudad>
     </alumno>
-=======
->>>>>>> c60d996bc2fb971908032c9a45348ab7933c83d1
     <alumno>
         <nombre>Alejandro</nombre>
         <apellidos>Otero Korzeniowski</apellidos>
@@ -76,12 +73,6 @@
         <ciudad>Busot</ciudad>
     </alumno>
     <alumno>
-        <nombre>Roberto Carlos</nombre>
-        <apellidos>Quesada Orts</apellidos>
-        <email>robertocqo@gmail.com</email>
-        <ciudad>San Juan de Alicante</ciudad>
-    </alumno>
-    <alumno>
         <nombre>sandra</nombre>
         <apellidos>saez carbonell</apellidos>
         <email>sannnd.sa@gmail.com</email>
@@ -94,7 +85,3 @@
         <ciudad>Alicante</ciudad>
     </alumno>
 </alumnos>
-<<<<<<< HEAD
-=======
-
->>>>>>> c60d996bc2fb971908032c9a45348ab7933c83d1
