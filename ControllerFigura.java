@@ -12,7 +12,17 @@ public class ControllerFigura {
     	
     	figuras[0].area();
     	figuras[1].area();
+		
+
+
+
 	}
+	
+	
+	
+	
+	
+	
 	
 	
 	
