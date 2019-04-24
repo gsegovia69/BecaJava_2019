@@ -7,9 +7,9 @@
 </profesor>
 <alumnos>
     <alumno>
-        <nombre></nombre>
-        <apellidos></apellidos>
-        <email></email>
-        <ciudad></ciudad>
+        <nombre>Sonia</nombre>
+        <apellidos>Borrell Plaza</apellidos>
+        <email>S.borrell.p@gamil.com</email>
+        <ciudad>Alicante</ciudad>
     </alumno>
 </alumnos>
