@@ -8,9 +8,9 @@
 
 <alumnos>
     <alumno>
-        <nombre></nombre>
-        <apellidos></apellidos>
-        <email></email>
-        <ciudad></ciudad>
+        <nombre>Jaime</nombre>
+        <apellidos>Palazon Garcia</apellidos>
+        <email>jpg9_1@hotmail.com</email>
+        <ciudad>Alicante</ciudad>
     </alumno>
 </alumnos>
