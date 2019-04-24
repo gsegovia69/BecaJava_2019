@@ -7,9 +7,9 @@
 </profesor>
 <alumnos>
     <alumno>
-        <nombre></nombre>
-        <apellidos></apellidos>
-        <email></email>
-        <ciudad></ciudad>
+        <nombre>Alejandro</nombre>
+        <apellidos>Otero Korzeniowski</apellidos>
+        <email>oterokorze@gmail.com</email>
+        <ciudad>San Vicente del Raspeig</ciudad>
     </alumno>
 </alumnos>
