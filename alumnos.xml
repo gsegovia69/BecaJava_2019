@@ -54,4 +54,10 @@
         <email>alrugu@gmail.com</email>
         <ciudad>San Vicente</ciudad>
     </alumno>
+    <alumno>
+        <nombre>Manuel Alejandro</nombre>
+        <apellidos>Amaya Alcaraz</apellidos>
+        <email>alejandro_amayaa@hotmail.com</email>
+        <ciudad>Busot</ciudad>
+    </alumno>
 </alumnos>
