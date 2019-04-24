@@ -7,9 +7,9 @@
 </profesor>
 <alumnos>
     <alumno>
-        <nombre></nombre>
-        <apellidos></apellidos>
-        <email></email>
-        <ciudad></ciudad>
+        <nombre>Manuel Alejandro</nombre>
+        <apellidos>Amaya Alcaraz</apellidos>
+        <email>alejandro_amayaa@hotmail.com</email>
+        <ciudad>Busot</ciudad>
     </alumno>
 </alumnos>
