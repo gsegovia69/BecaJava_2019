@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.concurrent.atomic.AtomicInteger;
+import java.util.Map;
 
 public class LectorListaMap {
 
@@ -15,40 +15,38 @@ public class LectorListaMap {
 		BufferedReader bf = new BufferedReader(fr);
 		try {
 			ArrayList<String> list = new ArrayList<String>();
-			HashMap<Integer,  String> numeroLista = new HashMap<Integer, String>();
-			AtomicInteger count = new AtomicInteger(1);
+			Map<Integer, String> numeroLista = new HashMap<Integer, String>();
+			int count = 1;
 			String line = bf.readLine();
 			while (line != null) {
-				numeroLista.put(new Integer(count.getAndIncrement()), line);
+				numeroLista.put(count++, line);
 				list.add(line);
-				line=bf.readLine();
+				line = bf.readLine();
 			}
-			 System.out.println("------------------------------------------------");
-			 System.out.println("------------------------------------------------");
-			 System.out.println("LIST");
-			 System.out.println("------------------------------------------------");
-			 System.out.println("------------------------------------------------");
-			
-			 for (int i = 0; i < list.size(); i++) {
-				  System.out.println(list.get(i));
-			    }
-			 System.out.println("------------------------------------------------");
-			 System.out.println("------------------------------------------------");
-			 System.out.println("HASHMAP");
-			 System.out.println("------------------------------------------------");
-			 System.out.println("------------------------------------------------");
-			
-			 System.out.println(numeroLista);
-			} catch ( IOException e ) {
-			System.out.println( e.getMessage() );
-		} finally {
-		try {
-			bf.close();
+			System.out.println("------------------------------------------------");
+			System.out.println("------------------------------------------------");
+			System.out.println("LIST");
+			System.out.println("------------------------------------------------");
+			System.out.println("------------------------------------------------");
+
+			for (int i = 0; i < list.size(); i++) {
+				System.out.println(list.get(i));
+			}
+			System.out.println("------------------------------------------------");
+			System.out.println("------------------------------------------------");
+			System.out.println("HASHMAP");
+			System.out.println("------------------------------------------------");
+			System.out.println("------------------------------------------------");
+
+			System.out.println(numeroLista);
 		} catch (IOException e) {
-			
-			e.printStackTrace();
-		}
+			System.out.println(e.getMessage());
+		} finally {
+			try {
+				bf.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 	}
 }
-
