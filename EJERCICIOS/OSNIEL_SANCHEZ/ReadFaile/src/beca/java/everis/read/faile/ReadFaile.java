@@ -27,6 +27,7 @@ public class ReadFaile {
 		File[] fileList = file.listFiles();
 		File afile = null;
 		String linea;
+		boolean bucle = true;
 		
 		for (File files : fileList) {
 			
@@ -49,12 +50,21 @@ public class ReadFaile {
 			FileReader fr = new FileReader (afile);
 			BufferedReader br = new BufferedReader(fr);
 			
-			while ((linea = br.readLine()) != null) {
+			while (bucle) {
 				
-				System.out.println(linea);
-				System.gc();
+				linea = br.readLine();
+				
+				if (linea != null) {
+					
+					System.out.println(linea);
+					System.gc();
+					
+				}else {
+					
+					bucle = false;
+					
+				}
 
-				
 			}
 			
 			fr.close();
@@ -73,11 +83,6 @@ public class ReadFaile {
 		.filter(fichero -> fichero.isFile())
 		.forEach(fichero -> System.out.println(fichero.getName()));*/	
 			
-			
-			
-			
-	
-		
-	}
+		}
 
 }
