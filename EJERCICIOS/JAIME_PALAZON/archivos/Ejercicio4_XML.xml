@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<superHeroes xmlns:xsi="http://www.w3.org/2001/xmlSchema-instance"
+xsi:noNamespaceSchemaLocation="Ejercicio3_XSD.xsd">
+  <superHeroe nombre= "Juan" apellidos= "García Montero" >
+	<fecha_nacimiento>1985-05-05</fecha_nacimiento>
+	<direccion>Paseo de los Olivos nº5. 3ºD</direccion>
+	<tipo>Vengadores</tipo>
+	<cp>03005</cp>
+	<mail>jgm@email.com</mail>
+	<foto>image.jpg</foto>
+	<curso_nombre>MARVEL</curso_nombre>
+	<curso_ordinal>1</curso_ordinal>
+	<superPoderes>sentido aracnido</superPoderes>
+	<nu_poderes>3</nu_poderes>
+	<observaciones></observaciones>
+  </superHeroe>
+  <superHeroe nombre= "Rodrigo" apellidos= "Diaz de Vivar" >
+	<fecha_nacimiento>1978-06-12</fecha_nacimiento>
+	<direccion>Rambla de Mendez Nuñez nº7.4ºH</direccion>
+	<tipo>Deadpool</tipo>
+	<cp>03006</cp>
+	<mail>rdv@email.com</mail>
+	<foto>image1.jpg</foto>
+	<curso_nombre>DC</curso_nombre>
+	<curso_ordinal>1</curso_ordinal>
+	<superPoderes>volar</superPoderes>
+	<nu_poderes>2</nu_poderes>
+	<observaciones></observaciones>
+  </superHeroe>
+  <superHeroe nombre= "Ernesto" apellidos= "Quevedo Cifuentes" >
+	<fecha_nacimiento>1989-09-22</fecha_nacimiento>
+	<direccion>Calle Perú nº4.5ºI</direccion>
+	<tipo>XMen</tipo>
+	<cp>06321</cp>
+	<mail>eqc@emial.com</mail>
+	<foto>image3.jpg</foto>
+	<curso_nombre>MARVEL</curso_nombre>
+	<curso_ordinal>1</curso_ordinal>
+	<superPoderes>superfuerza</superPoderes>
+	<nu_poderes>2</nu_poderes>
+	<observaciones></observaciones>
+  </superHeroe>
+  <superHeroe nombre= "Juan" apellidos= "Hernando Molina" >
+	<fecha_nacimiento>1990-08-12</fecha_nacimiento>
+	<direccion>Calle Barcelona nº10.6ºT</direccion>
+	<tipo>Guardianes</tipo>
+	<cp>03004</cp>
+	<mail>jhm@email.com</mail>
+	<foto>image4.jpg</foto>
+	<curso_nombre>DC</curso_nombre>
+	<curso_ordinal>1</curso_ordinal>
+	<superPoderes>visionangular</superPoderes>
+	<nu_poderes>2</nu_poderes>
+	<observaciones></observaciones>
+  </superHeroe>
+  <superHeroe nombre= "David" apellidos= "Bustamante Gallego" >
+	<fecha_nacimiento>1998-08-07</fecha_nacimiento>
+	<direccion>Calle Poeta Miguel Hernández nº1. 5ºD</direccion>
+	<tipo>Vengadores</tipo>
+	<cp>03005</cp>
+	<mail>dbg@email.com</mail>
+	<foto>image5.jpg</foto>
+	<curso_nombre>MARVEL</curso_nombre>
+	<curso_ordinal>1</curso_ordinal>
+	<superPoderes>superfuerza</superPoderes>
+	<nu_poderes>3</nu_poderes>
+	<observaciones></observaciones>
+  </superHeroe>	
+</superHeroes>
