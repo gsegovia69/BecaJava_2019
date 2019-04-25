@@ -5,7 +5,7 @@ import java.io.*;
 public class leerfichero {
 
 	public static void main(String[] args) {
-		File fichero = new File("C:\\Users\\Administrador\\Desktop\\BecaJava\\BecaJava_2019\\alumnos.xml");
+		File fichero = new File("C:\\Users\\Administrador\\Desktop\\BecaJava\\BecaJava_2019\\EJERCICIOS\\alumnos.xml");
 		
 		try {
 			FileReader lector;
@@ -18,8 +18,8 @@ public class leerfichero {
 					String cadena;
 					
 					try {
-						while(lector2.readLine() != null){
-							cadena = lector2.readLine();
+						while((cadena = lector2.readLine()) != null){
+							//cadena = lector2.readLine();
 							if(cadena != null) {
 								System.out.println(cadena);
 							}
