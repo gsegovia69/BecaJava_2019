@@ -26,17 +26,19 @@ public class ReadFaile {
 			String nameRuta = inmput.next();
 			
 			File file = new File(nameRuta);
+			File afile;
+
 			
 			if (file.listFiles() != null) {
 
-				if (findFile(file.listFiles()) != null) {
+				if ((afile = findFile(file.listFiles())) != null) {
 					
-					printContent(file);
-					System.out.println(addFlieList(file.listFiles()).size());
-					System.out.println(addFlieList(file.listFiles()).get(80));
+					printContent(afile);
+					System.out.println(addFlieList(afile).size());
+					System.out.println((addFlieList(afile).get(80)));
 
-					System.out.println(addFlieMap(file.listFiles()).size());
-					System.out.println(addFlieMap(file.listFiles()).get(81));
+					System.out.println(addFlieMap(afile).size());
+					System.out.println((addFlieMap(afile).get(80)));
 
 					
 					break;
@@ -83,7 +85,7 @@ public class ReadFaile {
 		
 	}
     
-public static Map<Integer,String> addFlieMap(File[] fileList)throws FileNotFoundException,IOException{
+public static Map<Integer,String> addFlieMap(File file)throws FileNotFoundException,IOException{
 		
 		String linea;
 		boolean bucle = true;
@@ -92,44 +94,33 @@ public static Map<Integer,String> addFlieMap(File[] fileList)throws FileNotFound
 		Map<Integer, String> mapLine = new HashMap<Integer,String>();
 		int count = 0;
 		
-		if (findFile(fileList) != null) {
+		fr = new FileReader (file);
+		br = new BufferedReader(fr);
+		
+		while (bucle) {
 			
-			fr = new FileReader (findFile(fileList));
-			br = new BufferedReader(fr);
+			linea = br.readLine();
 			
-			while (bucle) {
+			if (linea != null) {
 				
-				linea = br.readLine();
-				
-				if (linea != null) {
-					
-					count ++;
-					mapLine.put(count, linea);
-					
-				}else {
-					
-					bucle = false;
-					
-				}
+				mapLine.put(count, linea);
+				count ++;
 
-			}
-			
-			fr.close();
 				
-			
-		}else {
-			
-			System.out.println("El directorio no existe:");
-			mapLine = null;
-			
-		
-		
+			}else {
+				
+				bucle = false;
+				
+			}
+
 		}
+		
+		fr.close();
 		
 		return mapLine;
 	}
 	
-	public static List addFlieList(File[] fileList)throws FileNotFoundException,IOException{
+	public static List addFlieList(File file)throws FileNotFoundException,IOException{
 		
 		String linea;
 		boolean bucle = true;
@@ -137,88 +128,60 @@ public static Map<Integer,String> addFlieMap(File[] fileList)throws FileNotFound
 		FileReader fr;
 		List<String> listLine = new ArrayList<String>();
 		
-		if (findFile(fileList) != null) {
+		fr = new FileReader (file);
+		br = new BufferedReader(fr);
+		
+		while (bucle) {
 			
-			fr = new FileReader (findFile(fileList));
-			br = new BufferedReader(fr);
+			linea = br.readLine();
 			
-			while (bucle) {
+			if (linea != null) {
 				
-				linea = br.readLine();
+				listLine.add(linea);
 				
-				if (linea != null) {
-					
-					listLine.add(linea);
-					
-				}else {
-					
-					bucle = false;
-					
-				}
-
+			}else {
+				
+				bucle = false;
+				
 			}
-			
-			fr.close();
-				
-			
-		}else {
-			
-			System.out.println("El directorio no existe:");
-			listLine = null;
-			
-		
-		
+
 		}
+		
+		fr.close();
 		
 		return listLine;
 	}
 	
 	public static void printContent(File file)throws FileNotFoundException,IOException{
 		
-		File[] fileList = file.listFiles();
-		File afile = null;
 		String linea;
 		boolean bucle = true;
 		BufferedReader br;
-		FileReader fr;
-		
-		//Scanner input = new Scanner(System.in);
-		
-		
-		
+		FileReader fr;		
 		System.out.println("---------------------Ready-----------------------");
 
 		
-		if (findFile(fileList) != null) {
+		fr = new FileReader (file);
+		br = new BufferedReader(fr);
+		
+		while (bucle) {
 			
-			fr = new FileReader (findFile(fileList));
-			br = new BufferedReader(fr);
+			linea = br.readLine();
 			
-			while (bucle) {
+			if (linea != null) {
 				
-				linea = br.readLine();
+				System.out.println(linea);
+				System.gc();
 				
-				if (linea != null) {
-					
-					System.out.println(linea);
-					System.gc();
-					
-				}else {
-					
-					bucle = false;
-					
-				}
-
+			}else {
+				
+				bucle = false;
+				
 			}
-			
-			fr.close();
-				
-			
-		}else {
-			
-			System.out.println("El directorio no existe:");
-			
+
 		}
+		
+		fr.close();
 		
 		System.out.println("----------------------------------");
 
