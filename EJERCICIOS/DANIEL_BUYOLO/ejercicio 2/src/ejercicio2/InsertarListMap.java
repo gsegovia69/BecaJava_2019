@@ -50,7 +50,7 @@ public class InsertarListMap {
 
 		
     public static void main(String[] args) throws IOException {
-    	if (args != null) {
+    	if (args != null  && args.length>0) {
     		muestraContenido(args [0]);
     		insertaLista(args[0]);
     		insertaMapa(args[0]);
