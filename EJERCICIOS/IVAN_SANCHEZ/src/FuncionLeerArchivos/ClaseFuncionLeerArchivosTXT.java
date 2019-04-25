@@ -17,7 +17,7 @@ public class ClaseFuncionLeerArchivosTXT {
 	}
 	
 	public static void main(String[] args)throws IOException {
-		muestraContenido("C:\\Users\\Administrador\\Desktop\\Beca_ISR\\BecaJava_2019\\EJERCICIOS\\alumnos.xml");
+		muestraContenido(args[0]);
 
 	}
 	
