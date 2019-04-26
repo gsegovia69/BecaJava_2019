@@ -1,14 +1,10 @@
 package Ejercicio1;
 
 import java.io.BufferedReader;
-import java.io.DataInputStream;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 public class LectorListaMap {
 
@@ -19,7 +15,6 @@ public class LectorListaMap {
 		String linea = "";
 		Alumnos alu = null;
 		 try {			
-			int count = 1;
 			boolean comprobacion = false;
 			while ((linea = bf.readLine()) != null) {
 				if(linea.trim().contains(ConstantUtils.INICIO_ITERACION_ALUMNOS)) {
@@ -51,7 +46,7 @@ public class LectorListaMap {
 
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
-		}
+		
 		
 		
 		
@@ -85,7 +80,7 @@ public class LectorListaMap {
 
 			//System.out.println(numeroLista);
 		} catch (IOException e) {
-			System.out.println(e.getMessage());
+	**/		System.out.println(e.getMessage());
 		} finally {
 			try {
 				bf.close();
@@ -93,5 +88,5 @@ public class LectorListaMap {
 				e.printStackTrace();
 			}
 		}
-	**/}
+	}
 }
