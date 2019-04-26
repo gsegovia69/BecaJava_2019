@@ -74,7 +74,7 @@ public class Profesor {
 
 	public String toString() {
 		limpia ();
-		return  "Nombre: " + this.nombre + " " + this.apellidos + "	" + "Email: " + this.correo + "	" + "Ciudad: " + this.ciudad;
+		return  "Nombre: " + this.nombre + " " + this.apellidos + "		" + "Email: " + this.correo + "		" + "Ciudad: " + this.ciudad;
 	}
 	
 	private void limpia() {
