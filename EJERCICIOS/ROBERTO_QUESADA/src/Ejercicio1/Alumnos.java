@@ -52,7 +52,7 @@ public class Alumnos {
 		componApellido(apellido);
 		componCiudad(ciudad);
 		componEmail(email);
-		return nombre + " " + apellido + " //////Ciudad: " + ciudad + " //////Email: " + email; 
+		return nombre + " " + apellido + " //////////// Ciudad: " + ciudad + " //////////// Email: " + email; 
 	}
 	
 	private void componNombre(String nombre) {
