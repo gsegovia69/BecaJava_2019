@@ -16,7 +16,9 @@ public class readfile1 {
 			while ((texto = temp.readLine()) != null) {
 				System.out.println(texto);
 				lista.add(texto);
+			
 			}
+			
 			temp.close();
 		} catch (Exception e) {
 		}
