@@ -1,5 +1,9 @@
 package beca.java.everis;
-
+/**
+ * Clase Alumno
+ * @author Alejandro Jiménez
+ *@version 26.04.2019
+ */
 public class Alumno {
 	
 	private String nombre;
