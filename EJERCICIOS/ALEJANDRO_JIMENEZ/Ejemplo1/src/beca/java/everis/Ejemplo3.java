@@ -21,12 +21,13 @@ public static void main(String[] args) {
 		}
 		catch(Exception e){
 			System.out.println("Error al extraer los datos");
-		}
-		
-	
-	
+		}	
 }
-	
+	/**
+	 * Crea una lista de alumnos
+	 * @param ruta : ruta del fichero xml
+	 * @return : lista de alumnos procesada
+	 */
 	public static ArrayList <Alumno> extractAlumnos(String ruta) {
 		File xml = new File(ruta);
 		ArrayList<Alumno> lista = new ArrayList<Alumno>();
@@ -37,22 +38,22 @@ public static void main(String[] args) {
 					try {
 						FileReader archivo = new FileReader(ruta);
 						b = new BufferedReader(archivo);
-								boolean control=false;
+							boolean control=false;
 						       while((linea = b.readLine())!=null) {
-						    	   if(linea.indexOf("<alumno>")!=-1) {
+						    	   if(linea.contains("<alumno>")) {
 						    		  alu =new Alumno();
 						    		  control=true;
 						    	   }
-						    	   if(control && linea.indexOf("<nombre>")!=-1) {
+						    	   if(control && linea.contains("<nombre>")) {
 						    		   alu.setNombre(extractData(linea));
 						    		   control=true;
 						    		   
 						    	   }
-						    	   if(control && linea.indexOf("<apellidos>")!=-1) {
+						    	   if(control && linea.contains("<apellidos>")) {
 						    		   alu.setApellidos(extractData(linea));
 						    		   control=true;
 						    	   }
-						    	   if(control && linea.indexOf("</alumno>")!=-1) {
+						    	   if(control && linea.contains("</alumno>")) {
 						    		   lista.add(alu);
 						    		   control=false;
 						    	   }
@@ -72,7 +73,11 @@ public static void main(String[] args) {
 					}
 		return lista;
 	}
-		
+		/**
+		 * Extrae los datos dentro de la etiqueta html
+		 * @param linea : Linea del fichero html
+		 * @return retorna los datos 
+		 */
 	public static String extractData(String linea) {
 	return linea.substring(linea.indexOf(">")+1, linea.indexOf("</"));
 	}
