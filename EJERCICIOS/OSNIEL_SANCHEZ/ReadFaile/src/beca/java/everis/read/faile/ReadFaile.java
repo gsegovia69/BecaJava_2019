@@ -43,8 +43,14 @@ public class ReadFaile {
 					
 					System.out.println("---------------------------List Estudent--------------------");
 					
-			
-					addFlieListAlumno(afile).stream().forEach(e -> System.out.println(String.format("%s %s", e.getaNombre(),e.getaApellidos())));
+					addFlieListAlumno(afile).stream().forEach((e)-> {
+						System.out.println(String.format("%s %s", e.getaNombre(),e.getaApellidos()));
+						System.out.println(e.getaEmail());
+						System.out.println(e.getaCiudad());
+						System.out.println("--------------------------------------------");
+
+						});
+					
 
 
 					
@@ -161,7 +167,7 @@ public static List<Alumno> addFlieListAlumno(File file)throws FileNotFoundExcept
 						
 						if(nlinea.contains("<nombre>")) {
 							
-							alumno.setaNombre(nlinea.substring(nlinea.indexOf("<nombre>") + 8,nlinea.indexOf("</nombre>")));
+							alumno.setaNombre(nlinea.substring(nlinea.indexOf(ConstantUtils.INICIO_ITERACION_NOMBRE) + 8,nlinea.indexOf(ConstantUtils.FIN_ITERACION_NOMBRE)));
 
 												
 						}else if(nlinea.contains("<apellidos>")) {
@@ -187,11 +193,8 @@ public static List<Alumno> addFlieListAlumno(File file)throws FileNotFoundExcept
 					
 					
 					listLineAlumno.add(alumno);
+					
 
-					
-					
-										
-					
 					
 				}
 				
