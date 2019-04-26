@@ -8,13 +8,10 @@ import java.util.ArrayList;
 
 public class Ejemplo3 {
 
-static final String RUTA = "C:\\BecaJava\\BecaJava_2019/EJERCICIOS/alumnos.xml";
-	
 public static void main(String[] args) {
-		 
-	
+
 		try {
-		 ArrayList<Alumno> alumnos = extractAlumnos(RUTA);	
+		 ArrayList<Alumno> alumnos = extractAlumnos(ConstantUtils.RUTA);	
 			for(int i=0;i<alumnos.size();i++) {
 				System.out.println(alumnos.get(i).toString());
 			}		
@@ -32,36 +29,52 @@ public static void main(String[] args) {
 		File xml = new File(ruta);
 		ArrayList<Alumno> lista = new ArrayList<Alumno>();
 		BufferedReader b=null;
-		String linea;
-		Alumno alu = null;
+
 		if(xml.isFile()) 
 					try {
+						String linea;
+						Alumno alu = null;
 						FileReader archivo = new FileReader(ruta);
 						b = new BufferedReader(archivo);
-							boolean control=false;
+							boolean alumno=false;
 						       while((linea = b.readLine())!=null) {
-						    	   if(linea.contains("<alumno>")) {
+						    	   
+						       try {
+						    	   if(linea.contains(ConstantUtils.INICIO_ALUMNO)) {
 						    		  alu =new Alumno();
-						    		  control=true;
+						    		  alumno=true;
 						    	   }
-						    	   if(control && linea.contains("<nombre>")) {
+						    	   if(alumno && linea.contains(ConstantUtils.NOMBRE)) {
 						    		   alu.setNombre(extractData(linea));
-						    		   control=true;
+						    		   alumno=true;
 						    		   
 						    	   }
-						    	   if(control && linea.contains("<apellidos>")) {
+						    	   if(alumno && linea.contains(ConstantUtils.APELLIDOS)) {
 						    		   alu.setApellidos(extractData(linea));
-						    		   control=true;
+						    		   alumno=true;
 						    	   }
-						    	   if(control && linea.contains("</alumno>")) {
+						    	   if(alumno && linea.contains(ConstantUtils.EMAIL)) {
+						    		   alu.setEmail(extractData(linea));
+						    		   alumno=true;
+						    	   }
+						    	   if(alumno && linea.contains(ConstantUtils.CIUDAD)) {
+						    		   alu.setCiudad(extractData(linea));
+						    		   alumno=true;
+						    	   }
+						    	   if(alumno && linea.contains(ConstantUtils.FIN_ALUMNO)) {
 						    		   lista.add(alu);
-						    		   control=false;
+						    		   alumno=false;
 						    	   }
-						    }						       
+						       }catch(Exception e) {
+						    	   System.out.println("Error: " + e.getMessage());
+						       }
+						       
+						       }
+						    						       
 						    b.close();
 					}
 					catch(Exception e) {
-						System.out.println("Error leyendo el archivo: "+ e.getMessage());
+						System.out.println("Error extrayendo datos: "+ e.getMessage());
 					}
 					finally {
 						try {

@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class Ejemplo2 {
 
-static final String RUTA = "C:\\BecaJava\\BecaJava_2019/EJERCICIOS/alumnos.xml";
+
 	
 public static void main(String[] args) {
 		 
@@ -17,12 +17,12 @@ public static void main(String[] args) {
 		try {
 			
 			System.out.println("\n--------------------Lista-----------------------------");
-			ArrayList<String> lista = lista(RUTA);
+			ArrayList<String> lista = lista(ConstantUtils.RUTA);
 			for(int i=0;i<lista.size();i++) {
 				System.out.println(lista.get(i));
 			}
 			System.out.println("\n--------------------Mapa-----------------------------");
-			Map<Integer,String>mapa = mapa(RUTA);
+			Map<Integer,String>mapa = mapa(ConstantUtils.RUTA);
 			for (int i=0;i<mapa.size();i++) {
 				System.out.println(mapa.get(i));
 	

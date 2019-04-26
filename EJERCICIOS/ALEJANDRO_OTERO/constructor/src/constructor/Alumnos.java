@@ -1,12 +1,11 @@
-package beca.java.everis;
-/**
- * Clase Alumno
- * @author Alejandro Jiménez
- *@version 26.04.2019
- */
-public class Alumno {
+package constructor;
+
+public class Alumnos {
 	
-	private String nombre;
+		
+
+	
+private String nombre;
 	
 	private String apellidos;
 	
@@ -14,18 +13,18 @@ public class Alumno {
 	
 	private String ciudad;
 	
-	public Alumno() {
+	public Alumnos() {
 		
 	}
 	
-	public Alumno(String nombre,String apellidos,String email,String ciudad) {
+	public Alumnos(String nombre,String apellidos,String email,String ciudad) {
 		this.nombre=nombre;
 		this.apellidos=apellidos;
 		this.email=email;
 		this.ciudad=ciudad;
 	}
 	
-	public Alumno (String nombre, String apellidos) {
+	public Alumnos (String nombre, String apellidos) {
 		this.nombre=nombre;
 		this.apellidos=apellidos;
 	}
@@ -70,3 +69,4 @@ public class Alumno {
 
 	
 }
+
