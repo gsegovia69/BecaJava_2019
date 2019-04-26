@@ -13,6 +13,9 @@ import java.util.Scanner;
 import java.util.stream.Stream;
 
 public class ReadFaile {
+	
+	static int countStudent = 0;
+
 
 	public static void main(String[] args) throws FileNotFoundException,IOException{
 		
@@ -42,12 +45,13 @@ public class ReadFaile {
 					System.out.println((addFlieMap(afile).get(4)));
 					
 					System.out.println("---------------------------List Estudent--------------------");
-					
 					addFlieListAlumno(afile).stream().forEach((e)-> {
+						countStudent++;
+						System.out.println("-------------------" + countStudent + "-------------------------");
+
 						System.out.println(String.format("%s %s", e.getaNombre(),e.getaApellidos()));
 						System.out.println(e.getaEmail());
 						System.out.println(e.getaCiudad());
-						System.out.println("--------------------------------------------");
 
 						});
 					
