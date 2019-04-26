@@ -69,5 +69,9 @@ public class Profesor {
 		return true;
 
 	}
+	
+	public String toString () {
+		return (nombre + apellidos + eMail + ciudad );
+	}
 
 }
