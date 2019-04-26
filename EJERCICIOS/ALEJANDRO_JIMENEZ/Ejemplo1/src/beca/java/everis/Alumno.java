@@ -63,7 +63,9 @@ public class Alumno {
 	}
 	
 	public String toString() {
-		return "Nombre: " + this.nombre + "\n" + "Apellidos: " + this.apellidos + "\n------------------";
+		return "Nombre: " + this.nombre + "\nApellidos: " + this.apellidos+ 
+				"\neMail: " + this.email  +"\nCiudad: " + this.ciudad+
+				"\n------------------";
 	}
 
 	
