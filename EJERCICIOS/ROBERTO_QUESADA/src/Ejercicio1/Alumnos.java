@@ -58,18 +58,22 @@ public class Alumnos {
 	private void componNombre(String nombre) {
 		this.nombre = nombre.trim().replaceAll(ConstantUtils.INICIO_ITERACION_NOMBRE, "");
 		this.nombre = this.nombre.trim().replaceAll(ConstantUtils.FIN_ITERACION_NOMBRE, "");
+		this.nombre = this.nombre.toUpperCase();
 	}
 	private void componApellido(String apellido) {
 		this.apellido = apellido.trim().replaceAll(ConstantUtils.INICIO_ITERACION_APELLIDO, "");
 		this.apellido = this.apellido.trim().replaceAll(ConstantUtils.FIN_ITERACION_APELLIDO, "");
+		this.apellido = this.apellido.toUpperCase();
 	}
 	private void componCiudad(String ciudad) {
 		this.ciudad = ciudad.trim().replaceAll(ConstantUtils.INICIO_ITERACION_CIUDAD, "");
 		this.ciudad = this.ciudad.trim().replaceAll(ConstantUtils.FIN_ITERACION_CIUDAD, "");
+		this.ciudad = this.ciudad.toUpperCase();
 	}
 	private void componEmail(String email) {
 		this.email = email.trim().replaceAll(ConstantUtils.INICIO_ITERACION_EMAIL, "");
 		this.email = this.email.trim().replaceAll(ConstantUtils.FIN_ITERACION_EMAIL, "");
+		this.email = this.email.toUpperCase();
 	}
 	
 	
