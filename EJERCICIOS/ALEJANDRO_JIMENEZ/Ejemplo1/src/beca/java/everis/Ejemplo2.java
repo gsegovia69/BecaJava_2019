@@ -9,38 +9,29 @@ import java.util.Map;
 
 public class Ejemplo2 {
 
+static final String RUTA = "C:\\BecaJava\\BecaJava_2019/EJERCICIOS/alumnos.xml";
+	
 public static void main(String[] args) {
-		
-	if (args != null) {
+		 
+	
 		try {
-		ArrayList<String> lista = lista(args[0]);
-		/*for(int i=0;i<lista.size();i++) {
-			System.out.println(lista.get(i));
-		}*/
-		Map<Integer,String>mapa = mapa(args[0]);
-		/*for (int i=0;i<mapa.size();i++) {
-			System.out.println(mapa.get(i));
-		}*/
+			
+			System.out.println("\n--------------------Lista-----------------------------");
+			ArrayList<String> lista = lista(RUTA);
+			for(int i=0;i<lista.size();i++) {
+				System.out.println(lista.get(i));
+			}
+			System.out.println("\n--------------------Mapa-----------------------------");
+			Map<Integer,String>mapa = mapa(RUTA);
+			for (int i=0;i<mapa.size();i++) {
+				System.out.println(mapa.get(i));
+	
+			}
 		}
 		catch(Exception e){
 			System.out.println("Error al extraer los datos");
-		}
-		
-	}
-	else
-		System.out.println("Error en los argumentos");
-	
-	
-	
+		}	
 }
-	
-	
-
-
-
-
-
-
 
 /**
  * Extrae la lista del fichero llamado alumnos.xml de la ruta especificada
@@ -48,18 +39,13 @@ public static void main(String[] args) {
  * @return : ArrayList con las lineas del fichero
  */
 public static ArrayList <String> lista(String ruta){
-	File directorio = new File(ruta);
+	File xml = new File(ruta);
 	ArrayList<String> lista = new ArrayList<String>();
-	
-	if(directorio.isDirectory()) {
-		File[] archivos = directorio.listFiles();
-		BufferedReader b=null;
-		
-		for (File fichero : archivos) {
-			if(fichero.getName().equals("alumnos.xml")) {
-				String linea;
+	BufferedReader b=null;
+	String linea;
+	if(xml.isFile()) 
 				try {
-					FileReader archivo = new FileReader(ruta +"/"+ fichero.getName());
+					FileReader archivo = new FileReader(ruta);
 					b = new BufferedReader(archivo);
 					       while((linea = b.readLine())!=null) {
 					    	   lista.add(linea);
@@ -75,12 +61,8 @@ public static ArrayList <String> lista(String ruta){
 					} catch (IOException e) {
 						System.out.println("No se puede cerrar el archivo: " + e.getMessage());
 					}
+					
 				}
-			}	   
-			
-
-		}
-	}
 	return lista;
 }
 
@@ -92,20 +74,17 @@ public static ArrayList <String> lista(String ruta){
  * @return : mapa con las lineas del fichero con su correspondiente clave numérica  0,n
  */
 public static Map <Integer, String> mapa(String ruta){
-	File directorio = new File(ruta);
-	Map <Integer, String> mapa = new HashMap<Integer,String>();
-	if(directorio.isDirectory()) {
-		File[] archivos = directorio.listFiles();
-		BufferedReader b=null;
-		Integer cont=0;
-		for (File fichero : archivos) {
-			if(fichero.getName().equals("alumnos.xml")) {
-				String linea;
+	File xml = new File(ruta);
+	Map <Integer,String> mapa = new HashMap<Integer,String>();
+	BufferedReader b=null;
+	String linea;
+	Integer cont=0;
+	if(xml.isFile()) 
 				try {
-					FileReader archivo = new FileReader(ruta +"/"+ fichero.getName());
+					FileReader archivo = new FileReader(ruta);
 					b = new BufferedReader(archivo);
 					       while((linea = b.readLine())!=null) {
-					    	   mapa.put(cont,linea);
+					    	   mapa.put(cont, linea);
 					    	   cont++;
 					       }
 						       b.close();
@@ -119,12 +98,8 @@ public static Map <Integer, String> mapa(String ruta){
 					} catch (IOException e) {
 						System.out.println("No se puede cerrar el archivo: " + e.getMessage());
 					}
+					
 				}
-			}	   
-			
-
-		}
-	}
 	return mapa;
 }
 
