@@ -52,7 +52,7 @@ public class Alumnos {
 		componApellido(apellido);
 		componCiudad(ciudad);
 		componEmail(email);
-		return "Nombre: " + nombre + " " + apellido + " //////Ciudad: " + ciudad + " //////Email: " + email; 
+		return nombre + " " + apellido + " //////Ciudad: " + ciudad + " //////Email: " + email; 
 	}
 	
 	private void componNombre(String nombre) {
@@ -74,6 +74,10 @@ public class Alumnos {
 		this.email = email.trim().replaceAll(ConstantUtils.INICIO_ITERACION_EMAIL, "");
 		this.email = this.email.trim().replaceAll(ConstantUtils.FIN_ITERACION_EMAIL, "");
 		this.email = this.email.toUpperCase();
+	}
+	public Object compareToIgnoreCase(Alumnos s2) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

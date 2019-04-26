@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class LectorListaMap {
 
@@ -38,10 +39,16 @@ public class LectorListaMap {
 					comprobacion = false;
 				}
 			}
+			String nombres;
+			ArrayList<String> list = new ArrayList<String>();
 			for (int i = 0; i < alumnos.size(); i++) {
-				System.out.println(alumnos.get(i).allString());
+				nombres = alumnos.get(i).allString();
+				list.add(nombres);
 			}
-
+		Collections.sort(list);
+		for (int i = 0; i < list.size(); i++) {
+			System.out.println(list.get(i));
+		}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 
