@@ -10,8 +10,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.stream.Stream;
 
 public class ReadFaile {
+	
+	static int countStudent = 0;
+
 
 	public static void main(String[] args) throws FileNotFoundException,IOException{
 		
@@ -34,11 +38,24 @@ public class ReadFaile {
 				if ((afile = findFile(file.listFiles())) != null) {
 					
 					printContent(afile);
+					System.out.println(addFlieListAlumno(afile).size());
 					System.out.println(addFlieList(afile).size());
-					System.out.println((addFlieList(afile).get(80)));
-
+					System.out.println((addFlieList(afile).get(4)));
 					System.out.println(addFlieMap(afile).size());
-					System.out.println((addFlieMap(afile).get(80)));
+					System.out.println((addFlieMap(afile).get(4)));
+					
+					System.out.println("---------------------------List Estudent--------------------");
+					addFlieListAlumno(afile).stream().forEach((e)-> {
+						countStudent++;
+						System.out.println("-------------------" + countStudent + "-------------------------");
+
+						System.out.println(String.format("%s %s", e.getaNombre(),e.getaApellidos()));
+						System.out.println(e.getaEmail());
+						System.out.println(e.getaCiudad());
+
+						});
+					
+
 
 					
 					break;
@@ -64,6 +81,10 @@ public class ReadFaile {
 
 	}
 	
+	public static boolean isA() {
+	    return true;
+	  }
+	
     public static File findFile(File[] fileList) {
     	
     	File file = null;
@@ -85,7 +106,7 @@ public class ReadFaile {
 		
 	}
     
-public static Map<Integer,String> addFlieMap(File file)throws FileNotFoundException,IOException{
+    public static Map<Integer,String> addFlieMap(File file)throws FileNotFoundException,IOException{
 		
 		String linea;
 		boolean bucle = true;
@@ -105,7 +126,6 @@ public static Map<Integer,String> addFlieMap(File file)throws FileNotFoundExcept
 				
 				mapLine.put(count, linea);
 				count ++;
-
 				
 			}else {
 				
@@ -119,8 +139,84 @@ public static Map<Integer,String> addFlieMap(File file)throws FileNotFoundExcept
 		
 		return mapLine;
 	}
+    
+    
+    
+public static List<Alumno> addFlieListAlumno(File file)throws FileNotFoundException,IOException{
+
+		String linea;
+		String nlinea;
+		boolean bucle = true;
+		BufferedReader br;
+		FileReader fr;
+		List<Alumno> listLineAlumno = new ArrayList<Alumno>();
+		
+		fr = new FileReader (file);
+		br = new BufferedReader(fr);
+		
+		while (bucle) {
+			
+			linea = br.readLine(); 
+			
+			if (linea != null) {
+				
+				if(linea.contains("<alumno>")) {
+					
+					
+					Alumno alumno = new Alumno();
+
+					
+					while (! (nlinea = br.readLine()).contains("</alumno>")) {
+						
+						
+						if(nlinea.contains("<nombre>")) {
+							
+							alumno.setaNombre(nlinea.substring(nlinea.indexOf(ConstantUtils.INICIO_ITERACION_NOMBRE) + 8,nlinea.indexOf(ConstantUtils.FIN_ITERACION_NOMBRE)));
+
+												
+						}else if(nlinea.contains("<apellidos>")) {
+							
+							alumno.setaApellidos(nlinea.substring(nlinea.indexOf("<apellidos>") + 11,nlinea.indexOf("</apellidos>")));
+
+												
+						}else if(nlinea.contains("<email>")) {
+							
+							alumno.setaEmail(nlinea.substring(nlinea.indexOf("<email>") + 7,nlinea.indexOf("</email>")));
+
+												
+						}else if(nlinea.contains("<ciudad>")) {
+							
+							alumno.setaCiudad(nlinea.substring(nlinea.indexOf("<ciudad>") + 8,nlinea.indexOf("</ciudad>")));
+
+												
+						}
+						
+
+						
+					}
+					
+					
+					listLineAlumno.add(alumno);
+					
+
+					
+				}
+				
+				
+			}else {
+				
+				bucle = false;
+				
+			}
+
+		}
+		
+		fr.close();
+		
+		return listLineAlumno;
+	}
 	
-	public static List addFlieList(File file)throws FileNotFoundException,IOException{
+	public static List<String> addFlieList(File file)throws FileNotFoundException,IOException{
 		
 		String linea;
 		boolean bucle = true;

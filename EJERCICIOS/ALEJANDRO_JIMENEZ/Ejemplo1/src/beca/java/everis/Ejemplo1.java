@@ -45,7 +45,7 @@ public class Ejemplo1 {
 				System.out.println("Revisa el argumento");
 	}
 	else
-		System.out.println("Error en los argumentos");
+		System.out.println("Error en los argumentos ");
 				
 				/*   Formas recorrer listas
 				System.out.println("-----------------------------------------");
