@@ -10,8 +10,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.stream.Stream;
 
 public class ReadFaile {
+	
+	static int countStudent = 0;
+
 
 	public static void main(String[] args) throws FileNotFoundException,IOException{
 		
@@ -26,17 +30,32 @@ public class ReadFaile {
 			String nameRuta = inmput.next();
 			
 			File file = new File(nameRuta);
+			File afile;
+
 			
 			if (file.listFiles() != null) {
 
-				if (findFile(file.listFiles()) != null) {
+				if ((afile = findFile(file.listFiles())) != null) {
 					
-					printContent(file);
-					System.out.println(addFlieList(file.listFiles()).size());
-					System.out.println(addFlieList(file.listFiles()).get(80));
+					printContent(afile);
+					System.out.println(addFlieListAlumno(afile).size());
+					System.out.println(addFlieList(afile).size());
+					System.out.println((addFlieList(afile).get(4)));
+					System.out.println(addFlieMap(afile).size());
+					System.out.println((addFlieMap(afile).get(4)));
+					
+					System.out.println("---------------------------List Estudent--------------------");
+					addFlieListAlumno(afile).stream().forEach((e)-> {
+						countStudent++;
+						System.out.println("-------------------" + countStudent + "-------------------------");
 
-					System.out.println(addFlieMap(file.listFiles()).size());
-					System.out.println(addFlieMap(file.listFiles()).get(81));
+						System.out.println(String.format("%s %s", e.getaNombre(),e.getaApellidos()));
+						System.out.println(e.getaEmail());
+						System.out.println(e.getaCiudad());
+
+						});
+					
+
 
 					
 					break;
@@ -62,6 +81,10 @@ public class ReadFaile {
 
 	}
 	
+	public static boolean isA() {
+	    return true;
+	  }
+	
     public static File findFile(File[] fileList) {
     	
     	File file = null;
@@ -83,7 +106,7 @@ public class ReadFaile {
 		
 	}
     
-public static Map<Integer,String> addFlieMap(File[] fileList)throws FileNotFoundException,IOException{
+    public static Map<Integer,String> addFlieMap(File file)throws FileNotFoundException,IOException{
 		
 		String linea;
 		boolean bucle = true;
@@ -92,44 +115,108 @@ public static Map<Integer,String> addFlieMap(File[] fileList)throws FileNotFound
 		Map<Integer, String> mapLine = new HashMap<Integer,String>();
 		int count = 0;
 		
-		if (findFile(fileList) != null) {
+		fr = new FileReader (file);
+		br = new BufferedReader(fr);
+		
+		while (bucle) {
 			
-			fr = new FileReader (findFile(fileList));
-			br = new BufferedReader(fr);
+			linea = br.readLine();
 			
-			while (bucle) {
+			if (linea != null) {
 				
-				linea = br.readLine();
+				mapLine.put(count, linea);
+				count ++;
 				
-				if (linea != null) {
-					
-					count ++;
-					mapLine.put(count, linea);
-					
-				}else {
-					
-					bucle = false;
-					
-				}
-
+			}else {
+				
+				bucle = false;
+				
 			}
-			
-			fr.close();
-				
-			
-		}else {
-			
-			System.out.println("El directorio no existe:");
-			mapLine = null;
-			
-		
-		
+
 		}
+		
+		fr.close();
 		
 		return mapLine;
 	}
+    
+    
+    
+public static List<Alumno> addFlieListAlumno(File file)throws FileNotFoundException,IOException{
+
+		String linea;
+		String nlinea;
+		boolean bucle = true;
+		BufferedReader br;
+		FileReader fr;
+		List<Alumno> listLineAlumno = new ArrayList<Alumno>();
+		
+		fr = new FileReader (file);
+		br = new BufferedReader(fr);
+		
+		while (bucle) {
+			
+			linea = br.readLine(); 
+			
+			if (linea != null) {
+				
+				if(linea.contains("<alumno>")) {
+					
+					
+					Alumno alumno = new Alumno();
+
+					
+					while (! (nlinea = br.readLine()).contains("</alumno>")) {
+						
+						
+						if(nlinea.contains("<nombre>")) {
+							
+							alumno.setaNombre(nlinea.substring(nlinea.indexOf(ConstantUtils.INICIO_ITERACION_NOMBRE) + 8,nlinea.indexOf(ConstantUtils.FIN_ITERACION_NOMBRE)));
+
+												
+						}else if(nlinea.contains("<apellidos>")) {
+							
+							alumno.setaApellidos(nlinea.substring(nlinea.indexOf("<apellidos>") + 11,nlinea.indexOf("</apellidos>")));
+
+												
+						}else if(nlinea.contains("<email>")) {
+							
+							alumno.setaEmail(nlinea.substring(nlinea.indexOf("<email>") + 7,nlinea.indexOf("</email>")));
+
+												
+						}else if(nlinea.contains("<ciudad>")) {
+							
+							alumno.setaCiudad(nlinea.substring(nlinea.indexOf("<ciudad>") + 8,nlinea.indexOf("</ciudad>")));
+
+												
+						}
+						
+
+						
+					}
+					
+					
+					listLineAlumno.add(alumno);
+					
+
+					
+				}
+				
+				
+			}else {
+				
+				bucle = false;
+				
+			}
+
+		}
+		
+		fr.close();
+		
+		return listLineAlumno;
+	}
 	
-	public static List addFlieList(File[] fileList)throws FileNotFoundException,IOException{
+	public static List<String> addFlieList(File file)throws FileNotFoundException,IOException{
 		
 		String linea;
 		boolean bucle = true;
@@ -137,88 +224,60 @@ public static Map<Integer,String> addFlieMap(File[] fileList)throws FileNotFound
 		FileReader fr;
 		List<String> listLine = new ArrayList<String>();
 		
-		if (findFile(fileList) != null) {
+		fr = new FileReader (file);
+		br = new BufferedReader(fr);
+		
+		while (bucle) {
 			
-			fr = new FileReader (findFile(fileList));
-			br = new BufferedReader(fr);
+			linea = br.readLine();
 			
-			while (bucle) {
+			if (linea != null) {
 				
-				linea = br.readLine();
+				listLine.add(linea);
 				
-				if (linea != null) {
-					
-					listLine.add(linea);
-					
-				}else {
-					
-					bucle = false;
-					
-				}
-
+			}else {
+				
+				bucle = false;
+				
 			}
-			
-			fr.close();
-				
-			
-		}else {
-			
-			System.out.println("El directorio no existe:");
-			listLine = null;
-			
-		
-		
+
 		}
+		
+		fr.close();
 		
 		return listLine;
 	}
 	
 	public static void printContent(File file)throws FileNotFoundException,IOException{
 		
-		File[] fileList = file.listFiles();
-		File afile = null;
 		String linea;
 		boolean bucle = true;
 		BufferedReader br;
-		FileReader fr;
-		
-		//Scanner input = new Scanner(System.in);
-		
-		
-		
+		FileReader fr;		
 		System.out.println("---------------------Ready-----------------------");
 
 		
-		if (findFile(fileList) != null) {
+		fr = new FileReader (file);
+		br = new BufferedReader(fr);
+		
+		while (bucle) {
 			
-			fr = new FileReader (findFile(fileList));
-			br = new BufferedReader(fr);
+			linea = br.readLine();
 			
-			while (bucle) {
+			if (linea != null) {
 				
-				linea = br.readLine();
+				System.out.println(linea);
+				System.gc();
 				
-				if (linea != null) {
-					
-					System.out.println(linea);
-					System.gc();
-					
-				}else {
-					
-					bucle = false;
-					
-				}
-
+			}else {
+				
+				bucle = false;
+				
 			}
-			
-			fr.close();
-				
-			
-		}else {
-			
-			System.out.println("El directorio no existe:");
-			
+
 		}
+		
+		fr.close();
 		
 		System.out.println("----------------------------------");
 
