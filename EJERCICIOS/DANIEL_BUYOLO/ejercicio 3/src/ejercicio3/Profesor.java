@@ -1,32 +1,32 @@
 package ejercicio3;
 
-public class Alumno {
+public class Profesor {
 
 	private String nombre = "";
 	private String apellidos = "";
 	private String correo = "";
 	private String ciudad = "";
 	
-	public Alumno () {
+	public Profesor () {
 		
 	}
 	
-	public Alumno (String nombre){
+	public Profesor (String nombre){
 		this.nombre = nombre;
 	}
 
-	public Alumno (String nombre, String apellidos){
+	public Profesor (String nombre, String apellidos){
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 	}
 
-	public Alumno (String nombre, String apellidos, String correo){
+	public Profesor (String nombre, String apellidos, String correo){
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 		this.correo = correo;
 	}
 	
-	public Alumno (String nombre, String apellidos, String correo, String ciudad){
+	public Profesor (String nombre, String apellidos, String correo, String ciudad){
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 		this.correo = correo;
@@ -73,8 +73,7 @@ public class Alumno {
 	}
 
 	public String toString() {
-		limpia();
-		
+		limpia ();
 		return  "Nombre: " + this.nombre + " " + this.apellidos + "	" + "Email: " + this.correo + "	" + "Ciudad: " + this.ciudad;
 	}
 	
