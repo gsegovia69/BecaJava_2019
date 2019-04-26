@@ -34,7 +34,7 @@ public class Beca2 {
 			  System.out.println(it.next());
 			}
 			System.out.println("------------------------Mapa------------------------");
-			mapa.forEach((nu,tex) -> System.out.println("i=" + nu + " " + tex));
+			mapa.forEach((nu,tex) -> System.out.println("i=" + (nu +1) + "		" + tex));	
 			temp.close();
 		}
 
