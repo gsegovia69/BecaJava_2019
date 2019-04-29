@@ -51,7 +51,6 @@ public class ReadFaile{
 					System.out.println("8-Rellenar una lista con los profesores y otra lista con los alumnos.Pintar los resultados");
                     System.out.println("9-Salir");
 
-
 					System.out.println("Elija una opcion:");
 					int opcion = inmput.nextInt();
 					if(opcion != 0) {
