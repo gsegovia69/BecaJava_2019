@@ -1,18 +1,12 @@
 package beca.java.everis;
 
-
-
-public class Alumno{ 
-	
-
-
-
+public class Profesor {
 	private String nombre;
 	private String apellido;
 	private String email;
 	private String ciudad;
 	
-	public Alumno() {
+	public Profesor() {
 		
 	}
 	
@@ -43,7 +37,7 @@ public class Alumno{
 	
 	@Override
 	public String toString() {
-		return "Alumno [nombre = " + nombre + ", apellido = " + apellido + 
+		return "Profesor [nombre = " + nombre + ", apellido = " + apellido + 
 			//	", email = " + email + ", ciudad = " + ciudad +
 				
 				"]";

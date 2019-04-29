@@ -2,7 +2,7 @@ package beca.java.everis;
 
 public class Constantes{
 	public static final String INICIO_ITERACION_PROFESOR = "<profesor>";
-	public static final String FIN_ITERACION_profesor = "</profesor>";
+	public static final String FIN_ITERACION_PROFESOR = "</profesor>";
 	
 	public static final String INICIO_ITERACION_ALUMNO = "<alumno>";
 	public static final String FIN_ITERACION_ALUMNO = "</alumno>";
