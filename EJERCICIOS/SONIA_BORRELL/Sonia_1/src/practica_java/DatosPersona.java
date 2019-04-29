@@ -1,20 +1,20 @@
-package practica_java;
+package SONIA_BORRELL.Sonia_1.src.practica_java;
 
-public class Practica2 {
+public class DatosPersona {
 	
 	private String nombre;
 	private String apellidos;
 	private String email;
 	private String ciudad;
 	
-	public Practica2 () {
+	public DatosPersona () {
 		
 	}
 	
-	public Practica2 (String nombre, String apellidos, String email, String ciudad) {
+	public DatosPersona (String nombre, String apellidos, String email, String ciudad) {
 	}
 
-	public Practica2 (String nombre, String apellidos) {
+	public DatosPersona (String nombre, String apellidos) {
 	}
 	
 	public String getNombre() {
