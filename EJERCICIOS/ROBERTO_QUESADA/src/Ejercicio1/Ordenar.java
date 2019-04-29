@@ -1,4 +1,4 @@
-package Ejercicio4;
+package Ejercicio1;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -10,7 +10,7 @@ import java.util.List;
 
 
 
-public class OrdenarRecorrerFiltrar {
+public class Ordenar {
 
 	public static List<Profesor> listaProf (String fileName) throws FileNotFoundException, IOException {
 		List<Profesor> listaProfesor = new ArrayList<Profesor>();
@@ -168,7 +168,7 @@ public class OrdenarRecorrerFiltrar {
 		List<Alumno> listaAlumno = new ArrayList<Alumno>();
 		List<Profesor> listaProfesor = new ArrayList<Profesor>();
 		
-		listaAlumno = listaAlumno (Constantes.PATH_FICHERO);
+		listaAlumno = extracted();
 		listaProfesor = listaProf(Constantes.PATH_FICHERO);
 		
 		/*
@@ -263,5 +263,9 @@ public class OrdenarRecorrerFiltrar {
 		System.out.println("Lista Alumnos:");
 		System.out.println("---------------------------------------");
 		listaAlumno.forEach(System.out::println);
+	}
+
+	private static List<Alumno> extracted() throws FileNotFoundException, IOException {
+		return listaAlumno (Constantes.PATH_FICHERO);
 	}
 }

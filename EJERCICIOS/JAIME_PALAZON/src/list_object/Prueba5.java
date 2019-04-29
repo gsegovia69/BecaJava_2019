@@ -9,7 +9,10 @@ public class Prueba5 {
 	public Prueba5() {
 
 	}
-
+	
+	public Prueba5(String nombre) {
+		this.nombre = nombre;
+	}
 	public Prueba5(String nombre, String apellidos) {
 		this.nombre = nombre;
 		this.apellidos = apellidos;
@@ -52,5 +55,16 @@ public class Prueba5 {
 		return nombre + " " + apellidos + "//////// " + email + "////// " + ciudad;
 		
 	}
+public String toString () {
+		
+		return nombre + " " + apellidos + "//////// " + email + "////// " + ciudad;
+		
+	}
+	public String remolacha () {
+		return nombre;
+	}
+	public  int compareTo(Prueba5 list) {
+        int result = list.getApellidos().compareTo(list.getApellidos());
+        return result; }
 
 }
