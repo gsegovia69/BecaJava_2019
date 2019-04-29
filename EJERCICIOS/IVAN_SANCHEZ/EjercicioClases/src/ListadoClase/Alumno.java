@@ -10,10 +10,10 @@ public class Alumno {
 	// Constructores-------------------------
 
 	public Alumno() {
-		this.nombre = "";
-		this.apellidos = "";
-		this.eMail = "";
-		this.ciudad = "";
+		this.nombre="";
+		this.apellidos="";
+		this.eMail="";
+		this.ciudad="";
 	}
 
 	public Alumno(String nombre, String apellidos, String eMail, String ciudad) {
@@ -68,28 +68,6 @@ public class Alumno {
 		}
 		return true;
 
-	}
-
-	public String toString() {
-		String formatocadena = "";
-
-	
-
-		return formatocadena;
-	}
-
-	// resta campos inncesario------------
-
-	public void limpiarCadena() {
-		System.out.printf("%-50s%-50s%-50s%-50s\n",
-				this.nombre.replace(ListaConstantes.ETIQUETA_APERTURA_NOMBRE, "Nombre: ")
-						.replace(ListaConstantes.ETIQUETA_CIERRE_NOMBRE.trim(), ",	 "),
-				this.apellidos.replace(ListaConstantes.ETIQUETA_APERTURA_APELLIDO, "Apellidos: ")
-						.replace(ListaConstantes.ETIQUETA_CIERRE_APELLIDO.trim(), ",	 	"),
-				this.eMail.replace(ListaConstantes.ETIQUETA_APERTURA_EMAIL, "eMail: ")
-						.replace(ListaConstantes.ETIQUETA_CIERRE_EMAIL.trim(), ", 			"),
-				this.ciudad.replace(ListaConstantes.ETIQUETA_APERTURA_CIUDAD, "Ciudad: ")
-						.replace(ListaConstantes.ETIQUETA_CIERRE_CIUDAD.trim(), ". "));
 	}
 
 }
