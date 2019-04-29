@@ -290,6 +290,8 @@ public class ReadFaile{
 		fr = new FileReader (file);
 		br = new BufferedReader(fr);
 		
+		
+		
 		while (bucle) {
 			linea = br.readLine(); 
 			if (linea != null) {
