@@ -6,15 +6,18 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+
+
 public class Ejemplo3 {
 
 public static void main(String[] args) {
 
 		try {
-		 ArrayList<Alumno> alumnos = extractAlumnos(ConstantUtils.RUTA);	
-			for(int i=0;i<alumnos.size();i++) {
-				System.out.println(alumnos.get(i).toString());
-			}		
+		 ArrayList<Alumno> alumnos = extractAlumnos(ConstantUtils.RUTA);		
+		 			for(int i=0;i<alumnos.size();i++) {
+		 				System.out.println(alumnos.get(i).toString());
+		 			}
+
 		}
 		catch(Exception e){
 			System.out.println("Error al extraer los datos");
@@ -66,7 +69,7 @@ public static void main(String[] args) {
 						    		   alumno=false;
 						    	   }
 						       }catch(Exception e) {
-						    	   System.out.println("Error: " + e.getMessage());
+						    	   System.out.println("Error: " + e.getMessage()); 
 						       }
 						       
 						       }
@@ -86,6 +89,7 @@ public static void main(String[] args) {
 					}
 		return lista;
 	}
+	
 		/**
 		 * Extrae los datos dentro de la etiqueta html
 		 * @param linea : Linea del fichero html
@@ -94,5 +98,4 @@ public static void main(String[] args) {
 	public static String extractData(String linea) {
 	return linea.substring(linea.indexOf(">")+1, linea.indexOf("</"));
 	}
-
 }
