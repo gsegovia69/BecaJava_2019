@@ -76,7 +76,6 @@ public class ReadFaile{
 	 						break;
 	                     case 3:
 							 countStudent= 0;
-
 	                    	 ordenaListApellidos(alumnos);
 	                    	 alumnos.stream().forEach((e)-> {
 	     						countStudent++;
