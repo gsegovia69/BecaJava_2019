@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.stream.Collectors;
 
 /**
  * Ejercicios.
@@ -22,24 +23,26 @@ public static void main(String[] args) {
 		 ArrayList<Profesor> profesores = extractProfesor(ConstantUtils.RUTA);
 
 		 if(!alumnos.isEmpty()) {
+			System.out.println("--------------------------------------");
+			 System.out.println("-------------------Ordenado por apellido-------------------");
+			 System.out.println("--------------------------------------");
 			ordenarApellidos(alumnos);
-				System.out.println("--------------------------------------");
-			 	System.out.println("-------------------Ordenado por apellido-------------------");
-			 	System.out.println("--------------------------------------");
-			 	alumnos.stream().forEach((alu)-> {
+			 	/*alumnos.stream().forEach((alu)-> {
 			 		System.out.println(alu.toString());
-			 		});
+			 		});*/
 			 		
-		 	ordenarCiudad(alumnos);
-		 		System.out.println("--------------------------------------");
-		 		System.out.println("-------------------Ordenado por ciudad-------------------");
-			 	System.out.println("--------------------------------------");
+
+		 	System.out.println("--------------------------------------");
+		 	System.out.println("-------------------Ordenado por ciudad-------------------");
+			 System.out.println("--------------------------------------");
 		 			
-		 		for(int i=0;i<alumnos.size();i++) {
+		 		/*for(int i=0;i<alumnos.size();i++) {
 		 			System.out.println(alumnos.get(i).toString());
-		 		}
-		 			
-		 	printAlejandro(alumnos);
+		 		}*/
+			
+			ordenarCiudad(alumnos);
+			 	
+		 	printAlejandros(alumnos);
 		 		
 		 	printAyS(alumnos);
 		 		
@@ -206,13 +209,18 @@ public static void main(String[] args) {
 	 */
 	public static void ordenarApellidos(ArrayList<Alumno> alumnos) {
  		
-		Collections.sort(alumnos, new Comparator<Alumno>(){
+		/*Collections.sort(alumnos, new Comparator<Alumno>(){
 		@Override
 		public int compare(Alumno o1, Alumno o2) {
 			return o1.getApellidos().toLowerCase().compareTo(o2.getApellidos().toLowerCase());
 		
 		}
- 		});
+ 		});*/
+		
+		alumnos.stream().
+		sorted(Comparator.comparing(Alumno::getApellidos, String.CASE_INSENSITIVE_ORDER)).
+		collect(Collectors.toList()).
+		forEach(System.out::println);
 	}
 	
 	/**
@@ -220,12 +228,17 @@ public static void main(String[] args) {
 	 * @param alumnos : lista de alumnos
 	 */
 	public static void ordenarCiudad(ArrayList<Alumno> alumnos) {
-		 Collections.sort(alumnos, new Comparator<Alumno>(){
+		 /*Collections.sort(alumnos, new Comparator<Alumno>(){
 				@Override
 				public int compare(Alumno o1, Alumno o2) {
 					return o1.getCiudad().toLowerCase().compareTo(o2.getCiudad().toLowerCase());
 				}
-			});
+			});*/
+
+		alumnos.stream().
+		sorted(Comparator.comparing(Alumno::getCiudad, String.CASE_INSENSITIVE_ORDER)).
+		collect(Collectors.toList()).
+		forEach(System.out::println);
 		
 	}
 	
@@ -233,7 +246,7 @@ public static void main(String[] args) {
 	 * metodo que imprime únicamente a los Alejandros de la clase
 	 * @param alumnos : lista de alumnos
 	 */
-	public static void printAlejandro(ArrayList<Alumno> alumnos) {
+	public static void printAlejandros(ArrayList<Alumno> alumnos) {
 	 	System.out.println("--------------------------------------");
  		System.out.println("-------------------Solo Alejandros-------------------");
 	 	System.out.println("--------------------------------------");
@@ -242,11 +255,16 @@ public static void main(String[] args) {
 					System.out.println(alu.toString());
 				}
 			}*/
-			for(Alumno alu : alumnos) {
+			/*for(Alumno alu : alumnos) {
 				if(alu.getNombre().toLowerCase().contains("alejandro")) {
 					System.out.println(alu.toString());
 				}
-			}
+			}*/
+			alumnos.stream().
+			filter(a -> a.getNombre().toLowerCase().contains("alejandro")).
+			sorted(Comparator.comparing(Alumno::getApellidos , String.CASE_INSENSITIVE_ORDER)).
+			collect(Collectors.toList()).
+			forEach(System.out::println);
 	}
 	
 	/**
@@ -257,11 +275,16 @@ public static void main(String[] args) {
 	 	System.out.println("--------------------------------------");
  		System.out.println("-------------------Nombres que empiezan por 'A' o 'S'-------------------");
 	 	System.out.println("--------------------------------------");
-		for(Alumno alu : alumnos) {
+		/*for(Alumno alu : alumnos) {
 			if(alu.getNombre().toLowerCase().indexOf('a')==0 || alu.getNombre().toLowerCase().indexOf('s')==0) {
 				System.out.println(alu.toString());
 			}
-		}
+		}*/
+	 	alumnos.stream().
+	 	filter(a-> a.getNombre().toLowerCase().startsWith("a") || a.getNombre().toLowerCase().startsWith("s")).
+	 	sorted(Comparator.comparing(Alumno::getNombre , String.CASE_INSENSITIVE_ORDER)).
+	 	collect(Collectors.toList()).
+	 	forEach(System.out::println);
 	}
 	
 	/**
@@ -272,11 +295,15 @@ public static void main(String[] args) {
 	 	System.out.println("--------------------------------------");
 		System.out.println("-------------------Nombres que contienen 'A'-------------------");
 	 	System.out.println("--------------------------------------");
-		for(Alumno alu : alumnos) {
+		/*for(Alumno alu : alumnos) {
 			if(alu.getNombre().toLowerCase().contains("a")) {
 				System.out.println(alu.toString());
 			}
-		}
+		}*/
+	 	alumnos.stream().filter(a -> a.getNombre().toLowerCase().contains("a")).
+	 	sorted(Comparator.comparing(Alumno::getApellidos , String.CASE_INSENSITIVE_ORDER)).
+	 	collect(Collectors.toList()).
+	 	forEach(System.out::println);
 	}
 	/**
 	 * Imprime la lista de profesores y alumnos de la clase por pantalla
@@ -291,9 +318,10 @@ public static void main(String[] args) {
 			else 
 				System.out.println("----Profesor-----");
 			
-			for(Profesor prof : profesor) {
-				System.out.println(prof.toString());
-			}
+			profesor.stream().
+			sorted(Comparator.comparing(Profesor::getApellidos , String.CASE_INSENSITIVE_ORDER)).
+			collect(Collectors.toList()).
+			forEach(System.out::println); 
 		}
 		else
 			System.out.println("Lista Profesor Vacia");
@@ -304,9 +332,10 @@ public static void main(String[] args) {
 			else 
 				System.out.println("----Alumno-----");
 
-			for(Alumno alu : alumnos) {
-				System.out.println(alu.toString());
-			}
+			alumnos.stream().
+			sorted(Comparator.comparing(Alumno::getApellidos , String.CASE_INSENSITIVE_ORDER)).
+			collect(Collectors.toList()).
+			forEach(System.out::println); 
 		}
 	}
 }
