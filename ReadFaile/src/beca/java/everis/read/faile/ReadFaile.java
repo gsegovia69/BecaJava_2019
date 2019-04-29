@@ -54,102 +54,107 @@ public class ReadFaile{
 
 					System.out.println("Elija una opcion:");
 					int opcion = inmput.nextInt();
-					
-					switch (opcion) {
-					case 1:
-						ordenaListApellidos(alumnos);
-						countStudent= 0;
-						alumnos.stream().forEach((e)-> {
-							countStudent++;
-							System.out.println("-------------------" + countStudent + "-------------------------");
-							System.out.println(e.getaApellidos());
-							});
- 						break;
-                     case 2:
-						ordenaListCiudad(alumnos);
-						countStudent= 0;
-						alumnos.stream().forEach((e)-> {
-							countStudent++;
-							System.out.println("-------------------" + countStudent + "-------------------------");
-							System.out.println(e.getaCiudad());
-							});
- 						break;
-                     case 3:
-                    	 ordenaListApellidos(alumnos);
-                    	 alumnos.stream().forEach((e)-> {
-     						countStudent++;
-     						System.out.println("-------------------" + countStudent + "-------------------------");
-     						System.out.println(String.format("%s %s", e.getaNombre(),e.getaApellidos()));
-     						System.out.println(e.getaEmail());
-     						System.out.println(e.getaCiudad());
-     						});
- 						break;
-                     case 4:
-                    	 ordenaListApellidos(alumnos);
-                    	 for (Alumno alumno : alumnos) {
-                    		 countStudent++;
-      						System.out.println("-------------------" + countStudent + "-------------------------");
-      						System.out.println(String.format("%s %s", alumno.getaNombre(),alumno.getaApellidos()));
-      						System.out.println(alumno.getaEmail());
-      						System.out.println(alumno.getaCiudad());
-                    	 }
- 						break;
-                      case 5:
-                    	 ordenaListApellidos(alumnos);
-                    	 alumnos
-                         .stream()
-                         .filter(Alumno::isAlejandro)
-                         .map(Alumno::getaAlumnos)
-                         .forEach(System.out::println);
- 						break;
-                      case 6:
-                     	 ordenaListApellidos(alumnos);
-                     	 alumnos
-                          .stream()
-                          .filter(Alumno::getNameAandS)
-                          .map(Alumno::getaAlumnos)
-                          .forEach(System.out::println);
-  						break;
-  						
-                      case 7:
-                      	 ordenaListApellidos(alumnos);
-                      	 alumnos
-                           .stream()
-                           .filter(Alumno::getNameContainsA)
-                           .map(Alumno::getaAlumnos)
-                           .forEach(System.out::println);
-   						break;
-   						
-                      case 8:
-                    	  countStudent = 0;
-    				      System.out.println("-------------------Lista de profesores-------------------------");
-    				      
-    				      addFlieListProfesor(afile).stream().forEach((e)-> {
-        						countStudent++;
-        						System.out.println("-------------------" + countStudent + "-------------------------");
-        						System.out.println(String.format("%s %s", e.getaNombre(),e.getaApellidos()));
-        						System.out.println(e.getaEmail());
-        						System.out.println(e.getaCiudad());
+					if(opcion != 0) {
+						
+						switch (opcion) {
+						case 1:
+							ordenaListApellidos(alumnos);
+							countStudent= 0;
+							alumnos.stream().forEach((e)-> {
+								countStudent++;
+								System.out.println("-------------------" + countStudent + "-------------------------");
+								System.out.println(e.getaApellidos());
+								});
+						
+	 						break;
+	                     case 2:
+							ordenaListCiudad(alumnos);
+							countStudent= 0;
+							alumnos.stream().forEach((e)-> {
+								countStudent++;
+								System.out.println("-------------------" + countStudent + "-------------------------");
+								System.out.println(e.getaCiudad());
+								});
+	 						break;
+	                     case 3:
+	                    	 ordenaListApellidos(alumnos);
+	                    	 alumnos.stream().forEach((e)-> {
+	     						countStudent++;
+	     						System.out.println("-------------------" + countStudent + "-------------------------");
+	     						System.out.println(String.format("%s %s", e.getaNombre(),e.getaApellidos()));
+	     						System.out.println(e.getaEmail());
+	     						System.out.println(e.getaCiudad());
+	     						});
+	 						break;
+	                     case 4:
+	                    	 ordenaListApellidos(alumnos);
+	                    	 for (Alumno alumno : alumnos) {
+	                    		 countStudent++;
+	      						System.out.println("-------------------" + countStudent + "-------------------------");
+	      						System.out.println(String.format("%s %s", alumno.getaNombre(),alumno.getaApellidos()));
+	      						System.out.println(alumno.getaEmail());
+	      						System.out.println(alumno.getaCiudad());
+	                    	 }
+	 						break;
+	                      case 5:
+	                    	 ordenaListApellidos(alumnos);
+	                    	 alumnos
+	                         .stream()
+	                         .filter(Alumno::isAlejandro)
+	                         .map(Alumno::getaAlumnos)
+	                         .forEach(System.out::println);
+	 						break;
+	                      case 6:
+	                     	 ordenaListApellidos(alumnos);
+	                     	 alumnos
+	                          .stream()
+	                          .filter(Alumno::getNameAandS)
+	                          .map(Alumno::getaAlumnos)
+	                          .forEach(System.out::println);
+	  						break;
+	  						
+	                      case 7:
+	                      	 ordenaListApellidos(alumnos);
+	                      	 alumnos
+	                           .stream()
+	                           .filter(Alumno::getNameContainsA)
+	                           .map(Alumno::getaAlumnos)
+	                           .forEach(System.out::println);
+	   						break;
+	   						
+	                      case 8:
+	                    	  countStudent = 0;
+	    				      System.out.println("-------------------Lista de profesores-------------------------");
+	    				      
+	    				      addFlieListProfesor(afile).stream().forEach((e)-> {
+	        						countStudent++;
+	        						System.out.println("-------------------" + countStudent + "-------------------------");
+	        						System.out.println(String.format("%s %s", e.getaNombre(),e.getaApellidos()));
+	        						System.out.println(e.getaEmail());
+	        						System.out.println(e.getaCiudad());
 
-        						});
-                    	  countStudent = 0;
-    				      System.out.println("-------------------Lista de alumnos-------------------------");
+	        						});
+	                    	  countStudent = 0;
+	    				      System.out.println("-------------------Lista de alumnos-------------------------");
 
-                    	  addFlieListAlumno(afile).stream().forEach((e)-> {
-      						countStudent++;
-      						System.out.println("-------------------" + countStudent + "-------------------------");
-      						System.out.println(String.format("%s %s", e.getaNombre(),e.getaApellidos()));
-      						System.out.println(e.getaEmail());
-      						System.out.println(e.getaCiudad());
+	                    	  addFlieListAlumno(afile).stream().forEach((e)-> {
+	      						countStudent++;
+	      						System.out.println("-------------------" + countStudent + "-------------------------");
+	      						System.out.println(String.format("%s %s", e.getaNombre(),e.getaApellidos()));
+	      						System.out.println(e.getaEmail());
+	      						System.out.println(e.getaCiudad());
 
-      						});
-    						break;
-                      case 9:
-  						System.exit(1);
- 						break;
-					default:
-						break;
+	      						});
+	    						break;
+	                      case 9:
+	  						System.exit(1);
+	 						break;
+						default:
+							break;
+						}
+						
 					}
+					
 					
 					//printContent(afile);
 					//System.out.println(addFlieListAlumno(afile).size());
@@ -176,7 +181,7 @@ public class ReadFaile{
 						System.out.println(e.getaCiudad());
 						});*/
 					
-					break;
+					//break;
 				}else {
 					System.out.println("ruta no valida o no existe");
 				}
