@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
@@ -137,9 +136,9 @@ public class prueba {
 	       
 	       //recorres la lista y me sacas (todo)
 	        
-	        /*for(int i= 0; i<lista.size(); i++) {   
-	        System.out.println(lista.get(i).allString());
-	        }*/
+	        for(int i= 0; i<listaAlumno.size(); i++) {   
+	        System.out.println(listaAlumno.get(i).allString());
+	        }
 			
 	        br.close();
 		
