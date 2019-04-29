@@ -8,28 +8,32 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-
+/**
+ * Ejercicios.
+ * @author Alejandro Jimenez
+ * @version 29.04.19
+ */
 public class Ejercicios {
 
 public static void main(String[] args) {
 
 		try {
-		/* ArrayList<Alumno> alumnos = extractAlumnos(ConstantUtils.RUTA);	
-		 ArrayList<Profesor> profesores = extractProfesor(ConstantUtils.RUTA);*/
-		 ArrayList<Alumno> alumnos = new ArrayList<Alumno>();
-		 ArrayList<Profesor> profesores = new ArrayList<Profesor>();
-		 
+		 ArrayList<Alumno> alumnos = extractAlumnos(ConstantUtils.RUTA);	
+		 ArrayList<Profesor> profesores = extractProfesor(ConstantUtils.RUTA);
+
 		 if(!alumnos.isEmpty()) {
-			 ordenarApellido(alumnos);
-		 		
-		 	System.out.println("-------------------Ordenado por apellido-------------------");
-		 	alumnos.stream().forEach((alu)-> {
-		 		System.out.println(alu.toString());
-		 		});
-		 		
+			ordenarApellidos(alumnos);
+				System.out.println("--------------------------------------");
+			 	System.out.println("-------------------Ordenado por apellido-------------------");
+			 	System.out.println("--------------------------------------");
+			 	alumnos.stream().forEach((alu)-> {
+			 		System.out.println(alu.toString());
+			 		});
+			 		
 		 	ordenarCiudad(alumnos);
+		 		System.out.println("--------------------------------------");
 		 		System.out.println("-------------------Ordenado por ciudad-------------------");
-		 		System.out.println("------------------");
+			 	System.out.println("--------------------------------------");
 		 			
 		 		for(int i=0;i<alumnos.size();i++) {
 		 			System.out.println(alumnos.get(i).toString());
@@ -148,7 +152,6 @@ public static void main(String[] args) {
 						    	   if(profesor && linea.contains(ConstantUtils.NOMBRE)) {
 						    		   prof.setNombre(extractData(linea));
 						    		   profesor=true;
-						    		   
 						    	   }
 						    	   if(profesor && linea.contains(ConstantUtils.APELLIDOS)) {
 						    		   prof.setApellidos(extractData(linea));
@@ -187,12 +190,7 @@ public static void main(String[] args) {
 					}
 		return lista;
 	}
-	
-	
-	
-	
-	
-	
+
 		/**
 		 * Extrae los datos dentro de la etiqueta html
 		 * @param linea : Linea del fichero html
@@ -206,7 +204,7 @@ public static void main(String[] args) {
 	 * Metodo que ordena la lista pasada por parametro alfabeticamente (apellido)
 	 * @param alumnos : lista de alumnos
 	 */
-	public static void ordenarApellido(ArrayList<Alumno> alumnos) {
+	public static void ordenarApellidos(ArrayList<Alumno> alumnos) {
  		
 		Collections.sort(alumnos, new Comparator<Alumno>(){
 		@Override
@@ -236,31 +234,44 @@ public static void main(String[] args) {
 	 * @param alumnos : lista de alumnos
 	 */
 	public static void printAlejandro(ArrayList<Alumno> alumnos) {
- 		System.out.println("-----------Solo Alejandros-------------");
-			for(Alumno alu : alumnos) {
+	 	System.out.println("--------------------------------------");
+ 		System.out.println("-------------------Solo Alejandros-------------------");
+	 	System.out.println("--------------------------------------");
+			/*for(Alumno alu : alumnos) {
 				if(alu.getNombre().toLowerCase().equals("alejandro")) {
+					System.out.println(alu.toString());
+				}
+			}*/
+			for(Alumno alu : alumnos) {
+				if(alu.getNombre().toLowerCase().contains("alejandro")) {
 					System.out.println(alu.toString());
 				}
 			}
 	}
+	
 	/**
 	 * Metodo que imprime únicamente los alumnos cuyo nombre empieza por 'A' o por 'S'
 	 * @param alumnos : lista de alumnos
 	 */
 	public static void printAyS(ArrayList<Alumno> alumnos) {
-		System.out.println("-----------Nombres que empiezan por 'A' o 'S'-------------");
+	 	System.out.println("--------------------------------------");
+ 		System.out.println("-------------------Nombres que empiezan por 'A' o 'S'-------------------");
+	 	System.out.println("--------------------------------------");
 		for(Alumno alu : alumnos) {
 			if(alu.getNombre().toLowerCase().indexOf('a')==0 || alu.getNombre().toLowerCase().indexOf('s')==0) {
 				System.out.println(alu.toString());
 			}
 		}
 	}
+	
 	/**
 	 * Método que imprime únicamente a los alumnos cuyo nombre contiene una o más 'a'
 	 * @param alumnos : Lista de alumnos
 	 */
 	public static void contieneA(ArrayList<Alumno> alumnos) {
-		System.out.println("-----------Nombres que contienen 'a'-------------");
+	 	System.out.println("--------------------------------------");
+		System.out.println("-------------------Nombres que contienen 'A'-------------------");
+	 	System.out.println("--------------------------------------");
 		for(Alumno alu : alumnos) {
 			if(alu.getNombre().toLowerCase().contains("a")) {
 				System.out.println(alu.toString());
@@ -268,13 +279,13 @@ public static void main(String[] args) {
 		}
 	}
 	/**
-	 * Imprime la lista de profesores y alumnos de la clase
+	 * Imprime la lista de profesores y alumnos de la clase por pantalla
 	 * @param alumnos : Lista de alumnos
 	 * @param profesor : Lista de profesores
 	 */
+	
 	public static void printListaCompleta (ArrayList<Alumno> alumnos, ArrayList<Profesor> profesor) {
 		if (!profesor.isEmpty()) {
-			
 			if(profesor.size()>1)
 				System.out.println("----Profesores-----");
 			else 
@@ -297,6 +308,5 @@ public static void main(String[] args) {
 				System.out.println(alu.toString());
 			}
 		}
-		
 	}
 }
