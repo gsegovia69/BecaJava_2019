@@ -1,0 +1,31 @@
+package Beca2;
+
+import java.io.FileReader;
+import java.io.BufferedReader;
+
+public class Beca2 {
+	
+	public static void main(String arg[])
+	{
+		String texto;
+
+		try
+		{
+	
+			FileReader leer=new FileReader("C:/Users/Administrador/Downloads/BecaJava_2019");
+			BufferedReader temp=new BufferedReader(leer);
+
+			while((texto=temp.readLine())!=null)
+			{
+				System.out.println(texto);
+			}
+			temp.close();
+		}
+
+		catch(Exception e)
+		{
+			System.out.println("Error al leer el archivo");
+		}
+	}
+
+}
