@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-class Alumno{
+/*class Alumno{
 	
 	private String nombre, apellidos, email, ciudad;
 	
@@ -47,7 +47,7 @@ class Alumno{
 	public void getDatosAlumno() {
 		System.out.println("\n" + this.getNombre() + " " + this.getApellidos() + "\n" + this.getEmail() + "\n" + this.getCiudad() + "\n");
 	}
-}
+}*/
 
 public class Leerfichero3 {
 
