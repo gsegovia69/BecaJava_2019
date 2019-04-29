@@ -1,7 +1,0 @@
-1556188864019	Delete element
-1556188869391	Delete element
-1556201209786	Extract local variable 'fichero2'
-1556201217439	Convert local variable 'addAll' to field
-1556201224804	Extract local variable 'fichero3'
-1556201231508	Encapsulate field 'addAll'
-1556201314503	Extract method 'extracted'
