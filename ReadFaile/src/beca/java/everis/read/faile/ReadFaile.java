@@ -65,7 +65,7 @@ public class ReadFaile{
 								System.out.println("-------------------" + countStudent + "-------------------------");
 								System.out.println(e.getaApellidos());
 								});
-						
+							System.out.flush();
 	 						break;
 	                     case 2:
 							ordenaListCiudad(alumnos);
@@ -148,11 +148,12 @@ public class ReadFaile{
 
 	      						});
 	    						break;
-	                      case 9:
-	  						System.exit(1);
-	 						break;
-						default:
-							break;
+	                       case 9:
+	                    	  bucle = false;
+	  						  System.exit(1);
+	 						  break;
+						  default:
+						      break;
 						}
 						
 					}
@@ -289,9 +290,7 @@ public class ReadFaile{
 		List<Profesor> listLineProfesor = new ArrayList<Profesor>();
 		fr = new FileReader (file);
 		br = new BufferedReader(fr);
-		
-		
-		
+	
 		while (bucle) {
 			linea = br.readLine(); 
 			if (linea != null) {
