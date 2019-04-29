@@ -150,7 +150,6 @@ public class ReadFaile{
 						  default:
 						      break;
 						}
-						
 					}
 					
 				}else {
@@ -160,10 +159,7 @@ public class ReadFaile{
 			}else {
 				
 				System.out.println("ruta no valida o no existe");
-
-				
 			}
-			
 		}
 	
 	}
