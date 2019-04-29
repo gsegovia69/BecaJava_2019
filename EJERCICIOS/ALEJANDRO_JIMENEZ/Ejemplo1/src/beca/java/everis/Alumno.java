@@ -1,5 +1,9 @@
 package beca.java.everis;
-
+/**
+ * Clase Alumno
+ * @author Alejandro Jiménez
+ *@version 26.04.2019
+ */
 public class Alumno {
 	
 	private String nombre;
@@ -59,7 +63,9 @@ public class Alumno {
 	}
 	
 	public String toString() {
-		return "Nombre: " + this.nombre + "\n" + "Apellidos: " + this.apellidos + "\n------------------";
+		return "Nombre: " + this.nombre + "\nApellidos: " + this.apellidos+ 
+				"\neMail: " + this.email  +"\nCiudad: " + this.ciudad+
+				"\n------------------";
 	}
 
 	

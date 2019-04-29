@@ -1,0 +1,29 @@
+# Compiled class file
+*.class
+**/target/*
+**/bin/*
+
+#Idea
+.idea/
+*.iml
+*.iml_*
+**/generated-sources
+
+#Eclipse
+.project
+.classpath
+.settings/
+target/
+classes/
+.factorypath
+**/.classpath
+**/.settings/
+**/target/
+**/.factorypath
+demo3
+**/~/emsa/jcr/**
+**/~/emsa/mongo/**
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+/.metadata/
