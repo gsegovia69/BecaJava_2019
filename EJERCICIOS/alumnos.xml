@@ -1,81 +1,83 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
-<profesor>
-    <nombre>Gonzalo</nombre>
-    <apellidos>Segovia Eulogio</apellidos>
-    <email>gsegovie@everis.com</email>
-    <ciudad>Alicante</ciudad>
-</profesor>
-<alumnos>
-    <alumno>
-        <nombre>Sonia</nombre>
-        <apellidos>Borrell Plaza</apellidos>
-        <email>S.borrell.p@gamil.com</email>
-        <ciudad>Alicante</ciudad>
-   </alumno>
-    <alumno>
-        <nombre>Roberto Carlos</nombre>
-        <apellidos>Quesada Orts</apellidos>
-        <email>robertocqo@gmail.com</email>
-        <ciudad>San Juan de Alicante</ciudad>
-   </alumno>
-    <alumno>
-        <nombre>Osniel</nombre>
-        <apellidos>Sanchez Planes</apellidos>
-        <email>onmymusica@gmail.com</email>
-        <ciudad>Alicante</ciudad>
-    </alumno>
-    <alumno>
-        <nombre>Alejandro</nombre>
-        <apellidos>Otero Korzeniowski</apellidos>
-        <email>oterokorze@gmail.com</email>
-        <ciudad>San Vicente del Raspeig</ciudad>
-    </alumno>
-    <alumno>
-        <nombre>Alejandro</nombre>
-        <apellidos>Jiménez Erades</apellidos>
-        <email>alejandrojimenezerades@gmail.com</email>
-        <ciudad>Aspe</ciudad>
-    </alumno>
-    <alumno>
-        <nombre>Alejandro</nombre>
-        <apellidos>Bueno Alcázar</apellidos>
-        <email>alejandro.bueno.alcazar@gmail.com</email>
-        <ciudad>Benidorm</ciudad>
-    </alumno>
-    <alumno>
-        <nombre>Iván</nombre>
-        <apellidos>Sánchez Rico</apellidos>
-        <email>isrmail87@gmail.com</email>
-        <ciudad>Elda</ciudad>
-    </alumno>
-    <alumno>
-        <nombre>Daniel</nombre>
-        <apellidos>Buyolo Martinez</apellidos>
-        <email>dbuyolo76@gmail.com</email>
-        <ciudad>Elche</ciudad>
-    </alumno>
-    <alumno>
-        <nombre>Alfredo</nombre>
-        <apellidos>Rufas Gutierrez</apellidos>
-        <email>alrugu@gmail.com</email>
-        <ciudad>San Vicente</ciudad>
-    </alumno>
-    <alumno>
-        <nombre>Manuel Alejandro</nombre>
-        <apellidos>Amaya Alcaraz</apellidos>
-        <email>alejandro_amayaa@hotmail.com</email>
-        <ciudad>Busot</ciudad>
-    </alumno>
-    <alumno>
-        <nombre>sandra</nombre>
-        <apellidos>saez carbonell</apellidos>
-        <email>sannnd.sa@gmail.com</email>
-        <ciudad>alicante</ciudad>
-    </alumno>
-    <alumno>
-        <nombre>Jaime</nombre>
-        <apellidos>Palazon Garcia</apellidos>
-        <email>jpg9_1@hotmail.com</email>
-        <ciudad>Alicante</ciudad>
-    </alumno>
-</alumnos>
+<clase>
+	<profesor>
+		<nombre>Gonzalo</nombre>
+		<apellidos>Segovia Eulogio</apellidos>
+		<email>gsegovie@everis.com</email>
+		<ciudad>Alicante</ciudad>
+	</profesor>
+	<alumnos>
+		<alumno>
+			<nombre>Sonia</nombre>
+			<apellidos>Borrell Plaza</apellidos>
+			<email>S.borrell.p@gamil.com</email>
+			<ciudad>Alicante</ciudad>
+	   </alumno>
+		<alumno>
+			<nombre>Roberto Carlos</nombre>
+			<apellidos>Quesada Orts</apellidos>
+			<email>robertocqo@gmail.com</email>
+			<ciudad>San Juan de Alicante</ciudad>
+	   </alumno>
+		<alumno>
+			<nombre>Osniel</nombre>
+			<apellidos>Sanchez Planes</apellidos>
+			<email>onmymusica@gmail.com</email>
+			<ciudad>Alicante</ciudad>
+		</alumno>
+		<alumno>
+			<nombre>Alejandro</nombre>
+			<apellidos>Otero Korzeniowski</apellidos>
+			<email>oterokorze@gmail.com</email>
+			<ciudad>San Vicente del Raspeig</ciudad>
+		</alumno>
+		<alumno>
+			<nombre>Alejandro</nombre>
+			<apellidos>Jiménez Erades</apellidos>
+			<email>alejandrojimenezerades@gmail.com</email>
+			<ciudad>Aspe</ciudad>
+		</alumno>
+		<alumno>
+			<nombre>Alejandro</nombre>
+			<apellidos>Bueno Alcázar</apellidos>
+			<email>alejandro.bueno.alcazar@gmail.com</email>
+			<ciudad>Benidorm</ciudad>
+		</alumno>
+		<alumno>
+			<nombre>Iván</nombre>
+			<apellidos>Sánchez Rico</apellidos>
+			<email>isrmail87@gmail.com</email>
+			<ciudad>Elda</ciudad>
+		</alumno>
+		<alumno>
+			<nombre>Daniel</nombre>
+			<apellidos>Buyolo Martinez</apellidos>
+			<email>dbuyolo76@gmail.com</email>
+			<ciudad>Elche</ciudad>
+		</alumno>
+		<alumno>
+			<nombre>Alfredo</nombre>
+			<apellidos>Rufas Gutierrez</apellidos>
+			<email>alrugu@gmail.com</email>
+			<ciudad>San Vicente</ciudad>
+		</alumno>
+		<alumno>
+			<nombre>Manuel Alejandro</nombre>
+			<apellidos>Amaya Alcaraz</apellidos>
+			<email>alejandro_amayaa@hotmail.com</email>
+			<ciudad>Busot</ciudad>
+		</alumno>
+		<alumno>
+			<nombre>sandra</nombre>
+			<apellidos>saez carbonell</apellidos>
+			<email>sannnd.sa@gmail.com</email>
+			<ciudad>alicante</ciudad>
+		</alumno>
+		<alumno>
+			<nombre>Jaime</nombre>
+			<apellidos>Palazon Garcia</apellidos>
+			<email>jpg9_1@hotmail.com</email>
+			<ciudad>Alicante</ciudad>
+		</alumno>
+	</alumnos>
+</clase>
