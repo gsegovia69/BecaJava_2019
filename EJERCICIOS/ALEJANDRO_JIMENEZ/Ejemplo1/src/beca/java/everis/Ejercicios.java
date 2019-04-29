@@ -9,34 +9,44 @@ import java.util.Collections;
 import java.util.Comparator;
 
 
-public class Ejemplo3 {
+public class Ejercicios {
 
 public static void main(String[] args) {
 
 		try {
-		 ArrayList<Alumno> alumnos = extractAlumnos(ConstantUtils.RUTA);	
-		 ArrayList<Profesor> profesores = extractProfesor(ConstantUtils.RUTA);
-		 		ordenarApellido(alumnos);
+		/* ArrayList<Alumno> alumnos = extractAlumnos(ConstantUtils.RUTA);	
+		 ArrayList<Profesor> profesores = extractProfesor(ConstantUtils.RUTA);*/
+		 ArrayList<Alumno> alumnos = new ArrayList<Alumno>();
+		 ArrayList<Profesor> profesores = new ArrayList<Profesor>();
+		 
+		 if(!alumnos.isEmpty()) {
+			 ordenarApellido(alumnos);
 		 		
-		 		System.out.println("-------------------Ordenado por apellido-------------------");
-		 		alumnos.stream().forEach((alu)-> {
-		 			System.out.println(alu.toString());
-		 			});
+		 	System.out.println("-------------------Ordenado por apellido-------------------");
+		 	alumnos.stream().forEach((alu)-> {
+		 		System.out.println(alu.toString());
+		 		});
 		 		
-		 		ordenarCiudad(alumnos);
-		 			System.out.println("-------------------Ordenado por ciudad-------------------");
-		 			System.out.println("------------------");
+		 	ordenarCiudad(alumnos);
+		 		System.out.println("-------------------Ordenado por ciudad-------------------");
+		 		System.out.println("------------------");
 		 			
-		 			for(int i=0;i<alumnos.size();i++) {
-		 				System.out.println(alumnos.get(i).toString());
-		 			}
+		 		for(int i=0;i<alumnos.size();i++) {
+		 			System.out.println(alumnos.get(i).toString());
+		 		}
 		 			
-		 		printAlejandro(alumnos);
+		 	printAlejandro(alumnos);
 		 		
-		 		printAyS(alumnos);
+		 	printAyS(alumnos);
 		 		
-		 		contieneA(alumnos);
-		 		
+		 	contieneA(alumnos);
+		 }
+		 else {
+			 System.out.println("Lista Alumnos Vacia");
+		 }
+		 
+		 
+		 
 		 		printListaCompleta(alumnos,profesores);
 		 		
 		}
@@ -274,8 +284,10 @@ public static void main(String[] args) {
 				System.out.println(prof.toString());
 			}
 		}
+		else
+			System.out.println("Lista Profesor Vacia");
+		
 		if (!alumnos.isEmpty()) {
-			
 			if(alumnos.size()>1)
 				System.out.println("----Alumnos-----");
 			else 
