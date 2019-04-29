@@ -12,7 +12,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.stream.Stream;
 
 public class ReadFaile{
 	
@@ -27,6 +26,7 @@ public class ReadFaile{
 		
 		while (bucle) {
 			
+			@SuppressWarnings("resource")
 			Scanner inmput = new Scanner(System.in);
 			System.out.println("Entre la ruta del archivo :");
 			String nameRuta = inmput.next();
