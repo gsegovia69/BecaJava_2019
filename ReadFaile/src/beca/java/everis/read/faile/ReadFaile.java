@@ -65,7 +65,6 @@ public class ReadFaile{
 								System.out.println("-------------------" + countStudent + "-------------------------");
 								System.out.println(e.getaApellidos());
 								});
-							System.out.flush();
 	 						break;
 	                     case 2:
 							ordenaListCiudad(alumnos);
