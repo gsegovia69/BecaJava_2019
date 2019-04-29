@@ -263,5 +263,6 @@ public class OrdenarRecorrerFiltrar {
 		System.out.println("Lista Alumnos:");
 		System.out.println("---------------------------------------");
 		listaAlumno.forEach(System.out::println);
+		
 	}
 }
