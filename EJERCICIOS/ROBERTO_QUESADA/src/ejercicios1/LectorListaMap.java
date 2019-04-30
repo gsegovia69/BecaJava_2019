@@ -41,14 +41,15 @@ public class LectorListaMap {
 			}
 			String nombres;
 			ArrayList<String> list = new ArrayList<String>();
-			for (int i = 0; i < alumnos.size(); i++) { // Recorro la lista y coloco todas las Strings en la variable nombres
-				nombres = alumnos.get(i).allString(); 
+			for (int i = 0; i < alumnos.size(); i++) { // Recorro la lista y coloco todas las Strings en la variable
+														// nombres
+				nombres = alumnos.get(i).allString();
 				list.add(nombres); // añado la variable nombre en el Array de Strings list
 			}
-		Collections.sort(list); // ordeno alfabeticamente la lista co
-		for (int i = 0; i < list.size(); i++) {
-			System.out.println("Nombre: " + list.get(i));
-		}
+			Collections.sort(list); // ordeno alfabeticamente la lista co
+			for (int i = 0; i < list.size(); i++) {
+				System.out.println("Nombre: " + list.get(i));
+			}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 
