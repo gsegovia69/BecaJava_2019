@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
+<Clase>
 <profesor>
     <nombre>Gonzalo</nombre>
     <apellidos>Segovia Eulogio</apellidos>
@@ -32,19 +33,19 @@
     </alumno>
     <alumno>
         <nombre>Alejandro</nombre>
-        <apellidos>Jiménez Erades</apellidos>
+        <apellidos>Jimï¿½nez Erades</apellidos>
         <email>alejandrojimenezerades@gmail.com</email>
         <ciudad>Aspe</ciudad>
     </alumno>
     <alumno>
         <nombre>Alejandro</nombre>
-        <apellidos>Bueno Alcázar</apellidos>
+        <apellidos>Bueno Alcï¿½zar</apellidos>
         <email>alejandro.bueno.alcazar@gmail.com</email>
         <ciudad>Benidorm</ciudad>
     </alumno>
     <alumno>
-        <nombre>Iván</nombre>
-        <apellidos>Sánchez Rico</apellidos>
+        <nombre>Ivï¿½n</nombre>
+        <apellidos>Sï¿½nchez Rico</apellidos>
         <email>isrmail87@gmail.com</email>
         <ciudad>Elda</ciudad>
     </alumno>
@@ -79,3 +80,4 @@
         <ciudad>Alicante</ciudad>
     </alumno>
 </alumnos>
+</Clase>
