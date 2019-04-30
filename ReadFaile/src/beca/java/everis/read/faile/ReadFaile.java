@@ -51,7 +51,6 @@ public class ReadFaile{
 					System.out.println("8-Rellenar una lista con los profesores y otra lista con los alumnos.Pintar los resultados");
                     System.out.println("9-Salir");
 
-
 					System.out.println("Elija una opcion:");
 					int opcion = inmput.nextInt();
 					if(opcion != 0) {
@@ -65,7 +64,6 @@ public class ReadFaile{
 								System.out.println("-------------------" + countStudent + "-------------------------");
 								System.out.println(e.getaApellidos());
 								});
-							System.out.flush();
 	 						break;
 	                     case 2:
 							ordenaListCiudad(alumnos);
@@ -138,14 +136,12 @@ public class ReadFaile{
 	        						});
 	                    	  countStudent = 0;
 	    				      System.out.println("-------------------Lista de alumnos-------------------------");
-
 	                    	  addFlieListAlumno(afile).stream().forEach((e)-> {
 	      						countStudent++;
 	      						System.out.println("-------------------" + countStudent + "-------------------------");
 	      						System.out.println(String.format("%s %s", e.getaNombre(),e.getaApellidos()));
 	      						System.out.println(e.getaEmail());
 	      						System.out.println(e.getaCiudad());
-
 	      						});
 	    						break;
 	                       case 9:
@@ -172,7 +168,7 @@ public class ReadFaile{
 		}
 	
 	}
-		
+	//TODO ordenaListApellidos
 	public static void ordenaListApellidos(List<Alumno> listAlumnos) {
 		Collections.sort(listAlumnos, new Comparator<Alumno>() {
 			@Override
@@ -199,7 +195,7 @@ public class ReadFaile{
 		}
     	return file;
 	}
-    
+    //TODO addFlieMap
     public static Map<Integer,String> addFlieMap(File file)throws FileNotFoundException,IOException{
 		String linea;
 		boolean bucle = true;
@@ -222,7 +218,7 @@ public class ReadFaile{
 		fr.close();
 		return mapLine;
 	}
-
+    //TODO addFlieList
 	public static List<String> addFlieList(File file)throws FileNotFoundException,IOException{
 		String linea;
 		boolean bucle = true;
@@ -243,7 +239,7 @@ public class ReadFaile{
 		fr.close();
 		return listLine;
 	}
-	
+    //TODO addFlieListAlumno
 	public static List<Alumno> addFlieListAlumno(File file)throws FileNotFoundException,IOException{
 
 		String linea;
@@ -280,7 +276,7 @@ public class ReadFaile{
 		fr.close();
 		return listLineAlumno;
 	}
-	
+    //TODO addFlieListProfesor
 	public static List<Profesor> addFlieListProfesor(File file)throws FileNotFoundException,IOException{
 		String linea;
 		String nlinea;
@@ -316,6 +312,7 @@ public class ReadFaile{
 		fr.close();
 		return listLineProfesor;
 	}
+    //TODO addFlieListProfesor
 	public static void printContent(File file)throws FileNotFoundException,IOException{
 		
 		String linea;
