@@ -1,4 +1,4 @@
-package Ejercicio1;
+package ejercicios1;
 
 public class ConstantUtils {
 	public static final String INICIO_ITERACION_ALUMNOS = "<alumno>";
