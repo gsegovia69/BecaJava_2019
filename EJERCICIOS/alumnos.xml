@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
-<Clase>
+<clase>
 <profesor>
     <nombre>Gonzalo</nombre>
     <apellidos>Segovia Eulogio</apellidos>
@@ -80,4 +80,4 @@
         <ciudad>Alicante</ciudad>
     </alumno>
 </alumnos>
-</Clase>
+</clase>
