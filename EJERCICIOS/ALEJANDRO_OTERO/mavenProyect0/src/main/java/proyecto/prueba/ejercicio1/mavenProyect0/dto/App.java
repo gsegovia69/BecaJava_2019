@@ -1,4 +1,4 @@
-package proyecto.prueba.ejercicio1.mavenProyect0;
+package proyecto.prueba.ejercicio1.mavenProyect0.dto;
 
 /**
  * Hello world!
@@ -42,14 +42,20 @@ public class App<Clase>
 
 {
 
-    public static void main( String[] args )
+
     	public static void main (Strin[] args){
     	try
     		Clase clase = obtenerClase();
     			System.out.println(clase.getProfesor());
     			System.out.printls("-----------------"));
-    		Catch (Exception e)
-    }
+    			clase.getListaAlumnos().stream().sorted(Comparator.comparing(Alumdno::getApellidos)).foreach(System.out.println);
+    			
+    			
+    		App (Exception e){
+    			System.out.println("Error:"+e.toString());
+    			
+    		}
+    		}
     {
 
        try {

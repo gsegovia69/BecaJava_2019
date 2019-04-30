@@ -1,13 +1,16 @@
 package proyecto.prueba.ejercicio1.mavenProyect0.dto;
+import java.awt.List;
+import com.thoughtworks.xstream.annotations.XStreamAlias;
 import lombok.Getter;
 import lombok.Setter;
-import java.awt.List;
+import lombok.ToString;
 
-import com.thoughtworks.xstream.annotations.XStreamAlias;
-
+@ToString
 @Setter
 @Getter
-@XStreamAlias("Clase")
+
+@XStreamAlias("clase")
+
 public class Clase {
 		
 		private Profesor profesor;

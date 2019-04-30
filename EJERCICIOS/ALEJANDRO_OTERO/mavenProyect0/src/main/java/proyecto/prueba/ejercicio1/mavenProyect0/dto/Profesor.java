@@ -1,16 +1,20 @@
 package proyecto.prueba.ejercicio1.mavenProyect0.dto;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
+
+@ToString
 @Getter
 @Setter
-public class Profesor {
-	
+@XStreamAlias("profesor")
 
-	
-			
-		private String nombre;
-		private String apellidos;
-		private String email;
-		private String ciudad;
+public class Profesor {
+
+	private String nombre;
+	private String apellidos;
+	private String email;
+	private String ciudad;
 }
