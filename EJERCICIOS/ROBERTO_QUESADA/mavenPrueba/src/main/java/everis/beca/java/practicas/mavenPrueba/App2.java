@@ -12,11 +12,24 @@ public class App2 {
 
 		try {
 			ClaseEveris clase = LeerFichero.leer();
-			Fecha fecha = new Fecha();
+			Fecha now = new Fecha();
+			String fecha = now.getFecha();
 			Listado lista = new Listado();
+			System.out.println("--------------------------------------------------------------");
+			System.out.println("--------------------------------------------------------------");
+			System.out.println("--------------------------------------------------------------");
 			System.out.println("METODO 1");
+			System.out.println("--------------------------------------------------------------");
+			System.out.println("--------------------------------------------------------------");
+			System.out.println("--------------------------------------------------------------");
 			lista.metodo1(clase, fecha);
+			System.out.println("--------------------------------------------------------------");
+			System.out.println("--------------------------------------------------------------");
+			System.out.println("--------------------------------------------------------------");
 			System.out.println("METODO 2");
+			System.out.println("--------------------------------------------------------------");
+			System.out.println("--------------------------------------------------------------");
+			System.out.println("--------------------------------------------------------------");
 			lista.metodo2(clase, fecha);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
