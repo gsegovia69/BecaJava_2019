@@ -22,7 +22,7 @@ public class Develop{
 		.sorted(Comparator.comparing(Alumno::getApellidos))
 		.collect(Collectors.toList());
 		for (Alumno alumno : alumnos) {
-			System.out.println(new SimpleDateFormat("MM/dd/yyyy HH:mm:ss", Locale.getDefault()).format(new Date()) + "->" + alumno.getaAlumnos());
+			System.out.println(alumno.getaAlumnos());
 		}
 	  }
 	public void ordenaListApellidos() {

@@ -17,11 +17,12 @@ public class App {
 			Develop develop = new Develop(developClass.getAlumnos());
 			DevelopCiudad developciudad = new DevelopCiudad(developClass.getAlumnos());
             System.out.println("---Ordena por nombre----");
-			develop.ordenaListNombre();
+			//develop.ordenaListNombre();
             System.out.println(String.format("---Ordena por apellidos----"));
 			develop.ordenaListApellidos(developClass);
             System.out.println("---Ciudad empieza por a----");
-            developciudad.ordenaCiuad();
+            System.out.println(String.format("%s %20s %40s %40s","Hora", "Nombre", "Email", "Ciudad"));
+            developciudad.ordenaCiuad(developClass);
 		} catch (Exception e) {
             System.out.println(e.getMessage());
 		}

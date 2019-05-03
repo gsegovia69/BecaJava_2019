@@ -23,12 +23,12 @@ public class Alumno{
 	}
 	public String getaAlumnos() {
 		String date = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss", Locale.getDefault()).format(new Date());
-		return String.format("%s %s %s %s %s %s %s", nombre ,apellidos, "......",email,".....",ciudad,date);
+		return String.format("%s %20s %40s %30s",date + "->", nombre +" " + apellidos,email,ciudad,date);
     }
 	public String getaAlumnosFormatoFecha() {
 		
 		String date = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss", Locale.getDefault()).format(new Date());
-        return String.format("%s %s %s %s %s %s %s", nombre ,apellidos, "......",email,".....",ciudad,date).replace('/', '-');
+        return String.format("%s %20s %40s %30s",date + "->", nombre + " " + apellidos,email,ciudad).replace('/', '-');
     }
 	public boolean getCiudadContainsA() {
 		return this.ciudad.substring(0, 1).equalsIgnoreCase("A") ;
