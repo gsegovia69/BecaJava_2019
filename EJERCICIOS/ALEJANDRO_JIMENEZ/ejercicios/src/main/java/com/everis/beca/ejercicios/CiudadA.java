@@ -34,7 +34,7 @@ public class CiudadA {
 	public String getFecha() {
 		String fechaHora= null;
 		Date date = new Date();
-		DateFormat fecha = new SimpleDateFormat("dd-MM-yyyy");
+		DateFormat fecha = new SimpleDateFormat("MM-dd-yyyy");
 		DateFormat hora = new SimpleDateFormat("HH:mm:ss");
 		
 		fechaHora = fecha.format(date) + " " + hora.format(date);
