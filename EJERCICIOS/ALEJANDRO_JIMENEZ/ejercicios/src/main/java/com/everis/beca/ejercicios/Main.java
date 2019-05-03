@@ -21,13 +21,24 @@ public class Main
 	
     public static void main( String[] args )
     {
+       	Clase clase = obtenerClase(RUTA);
+    	try {
     	System.out.println("\n------Mostrar lista ordenada por apellido y nombre-----\n");
-    	Clase clase = obtenerClase(RUTA);
+ 
     	ApellidoNombre apellidoNombre= new ApellidoNombre(clase.getListaAlumnos());
-    	apellidoNombre.mostrar();
+		apellidoNombre.mostrar();
+    	}catch (Exception e) {
+    		System.out.println("Ha ocurrido un error mostrando la lista ordenada: "+ e.getMessage());
+    	}
+	
+    	try {
     	System.out.println("\n------Mostrar lista ordenada cuya ciudad empiece por a-----\n");
     	CiudadA ciudadA= new CiudadA(clase.getListaAlumnos());
     	ciudadA.mostrar();
+    	}
+   	 	catch (Exception e) {
+   	 	System.out.println("Ha ocurrido un error mostrando la lista ordenada y filtrada por ciudad: "+ e.getMessage());
+   	 	}
 
     }
     

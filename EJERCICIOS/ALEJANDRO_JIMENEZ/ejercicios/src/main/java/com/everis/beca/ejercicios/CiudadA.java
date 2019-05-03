@@ -16,15 +16,18 @@ public class CiudadA {
 		this.alumnos = alumnos;
 	}
 	
-	public void ordenarApellido(){
-
-		Collections.sort(alumnos, new Comparator<Alumno>(){
-		@Override
-		public int compare(Alumno o1, Alumno o2) {
-			return o1.getApellidos().toLowerCase().compareTo(o2.getApellidos().toLowerCase());
-		
-		}
- 		});
+	public void ordenarApellido() throws Exception{
+		if (!alumnos.isEmpty()) {
+			Collections.sort(alumnos, new Comparator<Alumno>(){
+			@Override
+			public int compare(Alumno o1, Alumno o2) {
+				return o1.getApellidos().toLowerCase().compareTo(o2.getApellidos().toLowerCase());
+			
+			}
+	 		});
+			}
+			else 
+				throw new Exception("La lista de alumnos esta vacia");
 	}
 	public String getFecha() {
 		String fechaHora= null;
@@ -43,7 +46,7 @@ public class CiudadA {
 		return getFecha() + " " + alu.getApellidos() + ", " + alu.getNombre();
 	}
 	
-	public void mostrar() {
+	public void mostrar() throws Exception {
 		ordenarApellido();
 		for (Alumno alu : alumnos) {
 			
