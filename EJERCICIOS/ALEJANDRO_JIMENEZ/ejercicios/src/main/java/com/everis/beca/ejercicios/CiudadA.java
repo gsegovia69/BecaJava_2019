@@ -7,6 +7,8 @@ import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 
+import javax.crypto.IllegalBlockSizeException;
+
 import org.apache.commons.lang3.StringUtils;
 
 import com.everis.beca.ejercicios.dto.Alumno;
@@ -19,17 +21,20 @@ public class CiudadA {
 	}
 	
 	public void ordenarApellido() throws Exception{
+
 		if (!alumnos.isEmpty()) {
-			Collections.sort(alumnos, new Comparator<Alumno>(){
-			@Override
-			public int compare(Alumno o1, Alumno o2) {
+		Collections.sort(alumnos, new Comparator<Alumno>(){
+		@Override
+		public int compare(Alumno o1, Alumno o2) {
+			if(o1.getApellidos().toLowerCase().compareTo(o2.getApellidos().toLowerCase())!=0) 
 				return o1.getApellidos().toLowerCase().compareTo(o2.getApellidos().toLowerCase());
-			
-			}
-	 		});
-			}
-			else 
-				throw new Exception("La lista de alumnos esta vacia");
+			else
+				return o1.getNombre().toLowerCase().compareTo(o2.getNombre().toLowerCase());
+		}
+ 		});
+		}
+		else 
+			throw new IllegalBlockSizeException("La lista de alumnos esta vacia");
 	}
 	public String getFecha() {
 		String fechaHora= null;
