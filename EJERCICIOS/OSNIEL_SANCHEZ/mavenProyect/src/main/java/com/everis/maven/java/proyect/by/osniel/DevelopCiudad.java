@@ -1,17 +1,11 @@
 package com.everis.maven.java.proyect.by.osniel;
-
 import java.util.List;
-
 import com.everis.maven.java.proyect.by.osniel.dto.Alumno;
-import com.everis.maven.java.proyect.by.osniel.dto.Clase;
-
 import lombok.AllArgsConstructor;
 @AllArgsConstructor
 
-public class DevelopCiudad extends Clase{
+public class DevelopCiudad{
 	List<Alumno> alumno;
-	
-
 	public void ordenaCiuad() {
 		this.alumno
         .stream()
@@ -19,5 +13,4 @@ public class DevelopCiudad extends Clase{
         .map(Alumno::getaAlumnosFormatoFecha)
         .forEach(System.out::println);
 	};
-
 }
