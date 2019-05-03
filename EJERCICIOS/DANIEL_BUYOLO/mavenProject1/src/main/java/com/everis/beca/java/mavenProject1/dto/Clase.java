@@ -1,6 +1,5 @@
 package com.everis.beca.java.mavenProject1.dto;
 
-import java.util.Date;
 import java.util.List;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;

@@ -6,9 +6,7 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.Collection;
 
-import com.everis.beca.java.mavenProject1.dto.Alumno;
 import com.everis.beca.java.mavenProject1.dto.Clase;
-import com.everis.beca.java.mavenProject1.dto.MostrarFecha;
 import com.everis.beca.java.mavenProject1.dto.OrdenarAlumnosCiudadFecha;
 import com.everis.beca.java.mavenProject1.dto.OrdenarAlumnosNombreFecha;
 import com.thoughtworks.xstream.XStream;
@@ -95,7 +93,6 @@ public class Mostrar {
 		OrdenarAlumnosNombreFecha ordenaAluNom = new OrdenarAlumnosNombreFecha();
 		OrdenarAlumnosCiudadFecha ordenaAluCiu = new OrdenarAlumnosCiudadFecha();
 		
-		MostrarFecha fecha = new MostrarFecha();
     	
     	clase = obtenerClase();
     	

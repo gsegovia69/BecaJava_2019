@@ -16,9 +16,11 @@ public class OrdenarAlumnosCiudadFecha {
 		System.out.println("Ejercicio 3");
 		System.out.println("---------------------------------------");
 		
-		List <Alumno> lista =clase.getListaAlumno().stream().sorted(Comparator.comparing(Alumno::getApellidos))
-							 .sorted(Comparator.comparing(Alumno::getNombre)).filter(a -> a.getCiudades().toUpperCase().startsWith("A"))
-							 .collect(Collectors.toList());
+		List <Alumno> lista =clase.getListaAlumno().stream()
+								  .sorted(Comparator.comparing(Alumno::getNombre))
+								  .sorted(Comparator.comparing(Alumno::getApellidos))
+								  .filter(a -> a.getCiudades().toUpperCase().startsWith("A"))
+								  .collect(Collectors.toList());
 	
 		for( int i = 0; i < lista.size(); i++) {
 			fecha.mostrarFecha(dateFormat);
