@@ -3,7 +3,6 @@ import java.util.List;
 import com.everis.maven.java.proyect.by.osniel.dto.Alumno;
 import lombok.AllArgsConstructor;
 @AllArgsConstructor
-
 public class DevelopCiudad{
 	List<Alumno> alumno;
 	public void ordenaCiuad() {

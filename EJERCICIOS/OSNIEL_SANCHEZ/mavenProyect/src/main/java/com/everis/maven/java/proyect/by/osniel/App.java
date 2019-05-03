@@ -18,8 +18,8 @@ public class App {
 			DevelopCiudad developciudad = new DevelopCiudad(developClass.getAlumnos());
             System.out.println("---Ordena por nombre----");
 			develop.ordenaListNombre();
-            System.out.println("---Ordena por apellidos----");
-			develop.ordenaListApellidos();
+            System.out.println(String.format("---Ordena por apellidos----"));
+			develop.ordenaListApellidos(developClass);
             System.out.println("---Ciudad empieza por a----");
             developciudad.ordenaCiuad();
 		} catch (Exception e) {
