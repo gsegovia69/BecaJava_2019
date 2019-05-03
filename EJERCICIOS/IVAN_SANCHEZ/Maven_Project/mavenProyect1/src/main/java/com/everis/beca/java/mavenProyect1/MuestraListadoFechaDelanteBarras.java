@@ -22,13 +22,12 @@ public class MuestraListadoFechaDelanteBarras {
 			
 
 			List<Alumno> lista = clase.getListaAlumnos().stream()
-					.sorted(Comparator.comparing(Alumno::getApellidos))
-					.sorted(Comparator.comparing(Alumno::getNombre)).collect(Collectors.toList());
+					.sorted(Comparator.comparing(Alumno::getNombre))
+					.sorted(Comparator.comparing(Alumno::getApellidos)).collect(Collectors.toList());
 			
-			for(int i= 0; i < lista.size(); i++) {				
-				fecha.fechaBarra(formatoFecha);
-				Alumno alu = lista.get(i);
-				System.out.println(" "+ alu);
+			for(Alumno lis: lista) {				
+				fecha.fechaBarra(formatoFecha);				
+				System.out.println(" "+ lis);
 				
 			}
 

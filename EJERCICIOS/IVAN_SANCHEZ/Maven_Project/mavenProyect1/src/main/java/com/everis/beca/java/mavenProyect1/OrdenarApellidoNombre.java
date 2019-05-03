@@ -1,12 +1,11 @@
 package com.everis.beca.java.mavenProyect1;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.Collection;
-import java.util.Comparator;
 
-import com.everis.beca.java.mavenProyect1.dto.Alumno;
 import com.everis.beca.java.mavenProyect1.dto.Clase;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.StaxDriver;
@@ -16,31 +15,25 @@ import com.thoughtworks.xstream.security.NoTypePermission;
 import com.thoughtworks.xstream.security.NullPermission;
 import com.thoughtworks.xstream.security.PrimitiveTypePermission;
 
-
 public class OrdenarApellidoNombre {
 
 	public static void main(String[] args) {
-		
-		Clase clase = new Clase();
-		
-		clase = lectorListaLibreria();
-		
-     MuestraListadoFechaDelanteBarras ordena = new MuestraListadoFechaDelanteBarras();
-     MostrarListadoFechaGuiones ordenaGuiones = new MostrarListadoFechaGuiones();
-     
-     
-     
-     ordena.funcionMostrarListaAlumnos(clase);
-	
-     
-     System.out.println("---------------------Con Guiones-----------------------");
-     
-     ordenaGuiones.funcionMostrarListaAlumnos(clase);
-		
-	}
-	
 
-	
+		Clase clase = new Clase();
+
+		clase = lectorListaLibreria();
+
+		MuestraListadoFechaDelanteBarras ordena = new MuestraListadoFechaDelanteBarras();
+		MostrarListadoFechaGuiones ordenaGuiones = new MostrarListadoFechaGuiones();
+
+		ordena.funcionMostrarListaAlumnos(clase);
+
+		System.out.println("---------------------Con Guiones-----------------------");
+
+		ordenaGuiones.funcionMostrarListaAlumnos(clase);
+
+	}
+
 	private static Clase lectorListaLibreria() {
 		Clase clase = new Clase();
 		try {
@@ -105,7 +98,5 @@ public class OrdenarApellidoNombre {
 
 		return clase;
 	}
-	
 
 }
-
