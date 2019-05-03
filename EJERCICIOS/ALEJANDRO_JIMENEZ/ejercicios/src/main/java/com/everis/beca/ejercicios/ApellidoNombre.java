@@ -9,6 +9,8 @@ import java.util.List;
 
 import javax.crypto.IllegalBlockSizeException;
 
+import org.apache.commons.lang3.StringUtils;
+
 import com.everis.beca.ejercicios.dto.*;
 
 import lombok.Getter;
@@ -53,7 +55,7 @@ public class ApellidoNombre {
 	
 	public String toString(Alumno alu) {
 		
-		return getFecha() + " " + alu.getApellidos() + ", " + alu.getNombre();
+		return getFecha() + " " + StringUtils.capitalize(alu.getApellidos()) + ", " + StringUtils.capitalize(alu.getNombre());
 	}
 	
 	public void mostrar() throws Exception {

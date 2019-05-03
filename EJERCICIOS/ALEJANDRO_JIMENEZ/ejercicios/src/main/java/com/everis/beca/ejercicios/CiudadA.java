@@ -7,6 +7,8 @@ import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
+
 import com.everis.beca.ejercicios.dto.Alumno;
 
 public class CiudadA {
@@ -43,7 +45,7 @@ public class CiudadA {
 	
 	public String toString(Alumno alu) {
 		
-		return getFecha() + " " + alu.getApellidos() + ", " + alu.getNombre();
+		return getFecha() + " " + StringUtils.capitalize(alu.getApellidos()) + ", " + StringUtils.capitalize(alu.getNombre());
 	}
 	
 	public void mostrar() throws Exception {

@@ -24,7 +24,7 @@ public class Main
        	Clase clase = obtenerClase(RUTA);
     	try {
     	System.out.println("\n------Mostrar lista ordenada por apellido y nombre-----\n");
- 
+
     	ApellidoNombre apellidoNombre= new ApellidoNombre(clase.getListaAlumnos());
 		apellidoNombre.mostrar();
     	}catch (Exception e) {
