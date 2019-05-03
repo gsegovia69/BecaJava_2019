@@ -1236,3 +1236,62 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag nam
 2019-04-30 16:29:02,449 [Worker-24: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrador\Downloads\BecaJava_2019\EJERCICIOS\ALEJANDRO_OTERO\mavenProyect0\src\main\resources
 2019-04-30 16:29:02,452 [Worker-24: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-04-30 16:29:02,452 [Worker-24: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrador\Downloads\BecaJava_2019\EJERCICIOS\ALEJANDRO_OTERO\mavenProyect0\src\test\resources
+2019-04-30 16:58:47,014 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-04-30 16:58:47,526 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: proyecto.prueba.ejercicio1:mavenProyect0:0.0.1-SNAPSHOT @ C:\Users\Administrador\Downloads\BecaJava_2019\EJERCICIOS\ALEJANDRO_OTERO\mavenProyect0\pom.xml.
+2019-04-30 16:58:47,982 [Worker-24: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /mavenProyect0/src/main/java
+2019-04-30 16:58:47,983 [Worker-24: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /mavenProyect0/src/test/java
+2019-04-30 16:58:48,102 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2019-04-30 16:59:51,983 [Worker-35: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.pom
+2019-04-30 16:59:52,078 [Worker-35: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.pom
+2019-04-30 16:59:52,133 [Worker-35: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/48/commons-parent-48.pom
+2019-04-30 16:59:52,231 [Worker-35: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/48/commons-parent-48.pom
+2019-04-30 16:59:52,295 [Worker-35: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/apache/21/apache-21.pom
+2019-04-30 16:59:52,346 [Worker-35: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/apache/21/apache-21.pom
+2019-04-30 16:59:52,402 [Worker-35: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.3/commons-collections4-4.3.pom
+2019-04-30 16:59:52,464 [Worker-35: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.3/commons-collections4-4.3.pom
+2019-04-30 16:59:52,518 [Worker-35: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/47/commons-parent-47.pom
+2019-04-30 16:59:52,615 [Worker-35: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/47/commons-parent-47.pom
+2019-04-30 16:59:52,673 [Worker-35: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/apache/19/apache-19.pom
+2019-04-30 16:59:52,769 [Worker-35: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/apache/19/apache-19.pom
+2019-04-30 16:59:52,847 [Worker-35: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar
+2019-04-30 16:59:53,126 [Worker-35: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar
+2019-04-30 16:59:53,174 [Worker-35: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.3/commons-collections4-4.3.jar
+2019-04-30 16:59:53,297 [Worker-35: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.3/commons-collections4-4.3.jar
+2019-04-30 16:59:55,202 [Worker-33: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-04-30 16:59:55,669 [Worker-33: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: proyecto.prueba.ejercicio1:mavenProyect0:0.0.1-SNAPSHOT @ C:\Users\Administrador\Downloads\BecaJava_2019\EJERCICIOS\ALEJANDRO_OTERO\mavenProyect0\pom.xml.
+2019-04-30 16:59:56,055 [Worker-33: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /mavenProyect0/src/main/java
+2019-04-30 16:59:56,056 [Worker-33: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /mavenProyect0/src/test/java
+2019-04-30 16:59:56,173 [Worker-33: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2019-04-30 16:59:57,052 [Worker-34: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9-sources.jar
+2019-04-30 16:59:57,411 [Worker-34: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9-sources.jar
+2019-04-30 16:59:57,503 [Worker-34: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.commons:commons-lang3:3.9
+2019-04-30 16:59:57,549 [Worker-34: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.3/commons-collections4-4.3-sources.jar
+2019-04-30 16:59:57,652 [Worker-34: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.3/commons-collections4-4.3-sources.jar
+2019-04-30 16:59:57,724 [Worker-34: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.commons:commons-collections4:4.3
+2019-04-30 16:59:57,757 [Worker-34: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.commons:commons-lang3:3.9
+2019-04-30 16:59:57,762 [Worker-34: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.commons:commons-collections4:4.3
+2019-04-30 17:40:16,122 [Worker-24: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: maven-prueba2:maven-prueba:0.0.1-SNAPSHOT @ C:\Users\Administrador\Desktop\maven-prueba\pom.xml.
+2019-04-30 17:40:16,419 [Worker-24: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /maven-prueba/src/main/java
+2019-04-30 17:40:16,419 [Worker-24: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /maven-prueba/src/test/java
+2019-04-30 17:40:16,575 [Worker-24: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-04-30 17:40:17,212 [Worker-24: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: maven-prueba2:maven-prueba:0.0.1-SNAPSHOT @ C:\Users\Administrador\Desktop\maven-prueba\pom.xml.
+2019-04-30 17:40:17,509 [Worker-24: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /maven-prueba/src/main/java
+2019-04-30 17:40:17,509 [Worker-24: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /maven-prueba/src/test/java
+2019-04-30 17:40:17,603 [Worker-24: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2019-05-03 08:04:26,915 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2019-05-03 09:14:59,292 [Worker-14: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-05-03 09:14:59,307 [Worker-14: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrador\Downloads\BecaJava_2019\EJERCICIOS\ALEJANDRO_OTERO\mavenProyect0\src\main\resources
+2019-05-03 09:14:59,307 [Worker-14: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-05-03 09:14:59,307 [Worker-14: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrador\Downloads\BecaJava_2019\EJERCICIOS\ALEJANDRO_OTERO\mavenProyect0\src\test\resources
+2019-05-03 09:15:55,438 [Worker-21: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-05-03 09:15:55,438 [Worker-21: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrador\Downloads\BecaJava_2019\EJERCICIOS\ALEJANDRO_OTERO\mavenProyect0\src\main\resources
+2019-05-03 09:15:55,438 [Worker-21: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-05-03 09:15:55,438 [Worker-21: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrador\Downloads\BecaJava_2019\EJERCICIOS\ALEJANDRO_OTERO\mavenProyect0\src\test\resources
+2019-05-03 09:16:49,020 [Worker-5: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-05-03 09:16:49,020 [Worker-5: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrador\Downloads\BecaJava_2019\EJERCICIOS\ALEJANDRO_OTERO\mavenProyect0\src\main\resources
+2019-05-03 09:16:49,020 [Worker-5: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-05-03 09:16:49,020 [Worker-5: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrador\Downloads\BecaJava_2019\EJERCICIOS\ALEJANDRO_OTERO\mavenProyect0\src\test\resources
+2019-05-03 09:17:31,309 [Worker-14: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-05-03 09:17:31,309 [Worker-14: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrador\Downloads\BecaJava_2019\EJERCICIOS\ALEJANDRO_OTERO\mavenProyect0\src\main\resources
+2019-05-03 09:17:31,309 [Worker-14: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-05-03 09:17:31,309 [Worker-14: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrador\Downloads\BecaJava_2019\EJERCICIOS\ALEJANDRO_OTERO\mavenProyect0\src\test\resources
