@@ -12,7 +12,7 @@ import java.util.List;
 
 public class OrdenarRecorrerFiltrar {
 
-	public static List listaProf (String fileName) throws FileNotFoundException, IOException {
+	public static List<Profesor> listaProf (String fileName) throws FileNotFoundException, IOException {
 		List<Profesor> listaProfesor = new ArrayList<Profesor>();
 		
 		final String nomFich = fileName;
@@ -56,7 +56,7 @@ public class OrdenarRecorrerFiltrar {
 		
 	}
 	
-	public static List listaAlumno (String fileName) throws FileNotFoundException, IOException {
+	public static List<Alumno> listaAlumno (String fileName) throws FileNotFoundException, IOException {
 		List<Alumno> listaAlumno = new ArrayList<Alumno>();
 		
 		final String nomFich = fileName;

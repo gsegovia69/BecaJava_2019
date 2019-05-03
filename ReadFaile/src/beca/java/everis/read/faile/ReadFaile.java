@@ -64,6 +64,13 @@ public class ReadFaile{
 								System.out.println("-------------------" + countStudent + "-------------------------");
 								System.out.println(e.getaApellidos());
 								});
+<<<<<<< HEAD
+<<<<<<< HEAD
+						
+=======
+>>>>>>> 44d6f62bf0ab83ffa6e3c07b66a7c3c800f36b6c
+=======
+>>>>>>> 6b50dc513f63eb5fbdb7e3ed27e3e5de7c05329c
 	 						break;
 	                     case 2:
 							ordenaListCiudad(alumnos);
