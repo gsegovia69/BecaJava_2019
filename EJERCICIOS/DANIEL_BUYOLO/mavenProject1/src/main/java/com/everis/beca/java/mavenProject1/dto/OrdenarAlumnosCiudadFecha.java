@@ -16,6 +16,13 @@ public class OrdenarAlumnosCiudadFecha {
 		System.out.println("Ejercicio 3");
 		System.out.println("---------------------------------------");
 		
+		// otra manera:
+		/* clase.getListaAlumno().stream().filter(a -> a.getCiudades().toLowerCase()
+				.startsWith("a")).forEach(a -> { 
+					System.out.println(fecha.mostrarFecha(dateFormat) + " --> " + a.toString());
+					});		
+		*/
+		
 		List <Alumno> lista =clase.getListaAlumno().stream()
 								  .sorted(Comparator.comparing(Alumno::getNombre))
 								  .sorted(Comparator.comparing(Alumno::getApellidos))
