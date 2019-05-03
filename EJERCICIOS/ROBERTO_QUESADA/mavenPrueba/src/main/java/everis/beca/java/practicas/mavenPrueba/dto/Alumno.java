@@ -12,12 +12,10 @@ import lombok.ToString;
 
 public class Alumno {
 	private String nombre;
-	
 	private String apellidos;
-	
 	private String email;
-	
 	private String ciudad;
+
 	
 	public String allString() {
 		return nombre + " " + apellidos + " //////////// Ciudad: " + ciudad + " //////////// Email: " + email; 

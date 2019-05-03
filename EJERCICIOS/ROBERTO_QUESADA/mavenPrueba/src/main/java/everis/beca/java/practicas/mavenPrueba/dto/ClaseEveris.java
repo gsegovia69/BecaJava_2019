@@ -18,4 +18,6 @@ public class ClaseEveris {
 	private Profesor profesor;
 	@XStreamAlias("alumnos")
 	private List<Alumno> ListaAlumnos;
+	
 }
+
