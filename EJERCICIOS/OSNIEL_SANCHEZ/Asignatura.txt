@@ -2,7 +2,7 @@ CREATE TABLE asignatura(
   id INT PRIMARY KEY AUTO_INCREMENT,
   nombre varchar,
   orden varchar,
-  id_clase varchar FOREIGN KEY
+  id_clase varchar FOREIGN KEY REFERENCES clase(id)
   );
 
 
