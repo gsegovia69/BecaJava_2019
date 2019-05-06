@@ -1,10 +1,10 @@
-CREATE TABLE 'Asignatura' (
+CREATE TABLE IF NOT EXISTS'Asignatura' (
     id INT not null auto-increment;
-    nombre varchar;
-    orden INT;
-    clase varchar;
-    PRIMARY KEY (id);
-    FOREIGN KEY id_clase references clase;
+    nombre varchar,
+    orden INT,
+    clase varchar,
+    PRIMARY KEY (id),
+    FOREIGN KEY id_clase references 'clase' (id),
     );
 insert asignatura values ('java', 1, 1);
 insert asignatura values ('sql', 2, 1);
