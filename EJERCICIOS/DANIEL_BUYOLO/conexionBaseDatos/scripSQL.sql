@@ -1,5 +1,5 @@
 CREATE TABLE ASIGNATURA(
-   id_asignatura   INT  IDENTITY(1,1) NOT NULL,
+   id_asignatura   INT NOT NULL AUTO_INCERMENT,
    nombre VARCHAR (40),
    orden  INT,
    id_clase  INT,
