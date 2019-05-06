@@ -7,16 +7,16 @@ CREATE TABLE asignatura(
   );
 
 INSERT INTO asignatura (nombre,orden,id_clase) 
-   VALUES ('java','50','1');
+   VALUES ('JAVA','50','1');
 INSERT INTO asignatura (nombre,orden,id_clase) 
-   VALUES ('java','50','1');
+   VALUES ('SQL','50','1');
 INSERT INTO asignatura (nombre,orden,id_clase) 
-   VALUES ('java','50','1');
+   VALUES ('SPRING','50','1');
 INSERT INTO asignatura (nombre,orden,id_clase) 
-   VALUES ('java','50','1');
+   VALUES ('SPRING JPA','50','1');
 INSERT INTO asignatura (nombre,orden,id_clase) 
-   VALUES ('java','50','1');
+   VALUES ('SPRING CORE','50','1');
 INSERT INTO asignatura (nombre,orden,id_clase) 
-   VALUES ('java','50','1');
+   VALUES ('SPRING BOOT','50','1');
 INSERT INTO asignatura (nombre,orden,id_clase) 
-   VALUES ('java','50','1');
+   VALUES ('SPRING REST','50','1');
