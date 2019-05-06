@@ -7,3 +7,15 @@ CREATE TABLE asignatura(
 
 INSERT INTO asignatura (nombre,orden,id_clase) 
    VALUES ('java','50','1');
+INSERT INTO asignatura (nombre,orden,id_clase) 
+   VALUES ('java','50','1');
+INSERT INTO asignatura (nombre,orden,id_clase) 
+   VALUES ('java','50','1');
+INSERT INTO asignatura (nombre,orden,id_clase) 
+   VALUES ('java','50','1');
+INSERT INTO asignatura (nombre,orden,id_clase) 
+   VALUES ('java','50','1');
+INSERT INTO asignatura (nombre,orden,id_clase) 
+   VALUES ('java','50','1');
+INSERT INTO asignatura (nombre,orden,id_clase) 
+   VALUES ('java','50','1');
