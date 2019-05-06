@@ -9,7 +9,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-
 import com.everis.maven.java.proyect.by.osniel.conection.ConnectionBD;
 import com.everis.maven.java.proyect.by.osniel.dto.Alumno;
 import com.everis.maven.java.proyect.by.osniel.dto.Clase;
@@ -23,25 +22,59 @@ public class App {
 	public static void main( String[] args ){
 		try {
 			Alumno alumno = null;
+			int opcion = 0;
+			ResultSet resultSet = null;
+			String queryExecute = null;
 			List<Alumno> alumnos = new ArrayList<Alumno>();
-			//String query = "INSERT INTO alumno (nombre,apellidos,email,ciudad) VALUES ('Osniel','Sanchez Planes','osanchezplanes@yahoo.es','Alicante')";
-			String queryExecute = "select alumno.nombre,alumno.apellidos,alumno.email,alumno.ciudad,alumno.id_clase from alumno ";
 			ConnectionBD connectionBD = new ConnectionBD();
 			Connection connection = connectionBD.getConnection();
-			Statement st = connection.createStatement();
-			//ResultSet rs = st.executeQuery(query);
-			//st.executeUpdate(query);
-			ResultSet resultSet = st.executeQuery(queryExecute);
-			while(resultSet.next()) {
-				alumno = new Alumno(resultSet.getString("nombre"),resultSet.getString("apellidos")
-						, resultSet.getString("email"), resultSet.getString("ciudad"),resultSet.getString("id_clase"));
-				alumnos.add(alumno);
+			Statement st = connection.createStatement();			
+			while (opcion <= 3) {
+				if(opcion == 0) {
+					System.out.println(String.valueOf(opcion));
+					queryExecute = "select alumno.nombre,alumno.apellidos,alumno.email,alumno.ciudad,alumno.id_clase from alumno order by nombre";
+				}else if(opcion == 1) {
+					System.out.println(String.valueOf(opcion));
+					queryExecute = "select alumno.nombre,alumno.apellidos,alumno.email,alumno.ciudad,alumno.id_clase from alumno where alumno.nombre LIKE '%S%'";
+				}else if(opcion == 2) {
+					System.out.println(String.valueOf(opcion));
+					queryExecute = "select alumno.nombre,clase.nombre from alumno,clase where alumno.apellidos like '%A%' and alumno.id_clase = clase.id";
+					resultSet = st.executeQuery(queryExecute);
+					while(resultSet.next()) {
+						String nombreAlumno = resultSet.getString("nombre");
+						String nombreClase = resultSet.getString("clase.nombre");
+						System.out.println(nombreAlumno + "......" + nombreClase);
+					}
+				}else if(opcion == 3) {
+					System.out.println(String.valueOf(opcion));
+					queryExecute = "select alumno.nombre,clase.nombre,asignatura.nombre from alumno,clase,asignatura where alumno.id_clase = clase.id AND asignatura.id_clase = clase.id";
+					resultSet = st.executeQuery(queryExecute);
+					while(resultSet.next()) {
+						String nombreAlumno = resultSet.getString("nombre");
+						String nombreClase = resultSet.getString("clase.nombre");
+						String nombreAsignatura = resultSet.getString("asignatura.nombre");
+						System.out.println(nombreAlumno + "......" + nombreClase +"......" + nombreAsignatura);
+					}
+				}
+				if(opcion != 2 && opcion != 3 ) {
+					resultSet = st.executeQuery(queryExecute);
+					while(resultSet.next()) {
+						alumno = new Alumno(resultSet.getString("nombre"),resultSet.getString("apellidos")
+								, resultSet.getString("email"), resultSet.getString("ciudad"),resultSet.getString("id_clase"));
+						alumnos.add(alumno);
+					}
+					Develop develop = new Develop(alumnos);
+					if(opcion == 0) {
+						develop.printAlumno();
+					}else {
+						develop.printEmailandCiudad();	
+					}
+				}
+				alumnos.clear();
+				opcion++;
 			}
 			st.close();
-			Develop develop = new Develop(alumnos);
-			develop.ordenaListApellidos();
             System.out.println("---yes----");
-
 			/*Clase  developClass= readFileXML();
 			Develop develop = new Develop(developClass.getAlumnos());
 			DevelopCiudad developciudad = new DevelopCiudad(developClass.getAlumnos());

@@ -13,6 +13,7 @@ import lombok.Setter;
 public class Clase {
 	
 	String id;
+	String nombre;
 	Profesor profesor;
 	@XStreamAlias("alumnos")
 	List<Alumno> alumnos = new ArrayList<Alumno>();

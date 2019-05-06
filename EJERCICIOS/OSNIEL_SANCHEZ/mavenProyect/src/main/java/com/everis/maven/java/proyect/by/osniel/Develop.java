@@ -20,6 +20,20 @@ public class Develop{
         .map(Alumno::getaAlumnos)
         .forEach(System.out::println);
 	  }
+	
+	public void printAlumno() {
+		this.alumno
+        .stream()
+        .map(Alumno::printaAlumnos)
+        .forEach(System.out::println);
+	  }
+	
+	public void printEmailandCiudad() {
+		this.alumno
+        .stream()
+        .map(Alumno::getaEmailandCiudad)
+        .forEach(System.out::println);
+	  }
 	public void ordenaListNombre() {
 		Collections.sort(this.alumno, new Comparator<Alumno>() {
 			@Override

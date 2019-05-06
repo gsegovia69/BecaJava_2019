@@ -23,9 +23,16 @@ public class Alumno{
 	public boolean getNameAandS() {
 		return this.nombre.substring(0, 1).equalsIgnoreCase("A") || this.nombre.substring(0, 1).equalsIgnoreCase("S");
 	}
+	public String printaAlumnos() {
+		String date = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss", Locale.getDefault()).format(new Date());
+		return String.format("%s ......%s...... email:%s" + "......ciudad:%s %s",date + "->", nombre +" "+ apellidos,email,ciudad,id_clase);
+    }
 	public String getaAlumnos() {
 		String date = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss", Locale.getDefault()).format(new Date());
-		return String.format("%s ......%s...... email:%s" + "......ciudad:%s",date + "->", nombre +" "+ apellidos,email,ciudad);
+		return String.format("%s ......%s...... email:%s" + "......ciudad:%s %s",date + "->", nombre +" "+ apellidos,email,ciudad,id_clase);
+    }
+	public String getaEmailandCiudad(){
+		return String.format("email:%s" + "......ciudad:%s",email,ciudad);
     }
 	public String getaAlumnosFormatoFecha() {
 		int separator = email.toString().length()-5;
