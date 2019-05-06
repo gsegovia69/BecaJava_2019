@@ -13,7 +13,7 @@ public class App
     public static void main( String[] args )
     {
     	try {
-		ConexionesBD connectionDatabase = new ConexionesBD();
+		ConnectionDataBase connectionDatabase = new ConnectionDataBase();
 		Connection conn = connectionDatabase.getConnection();
 		Statement st = conn.createStatement();
 		//String queryInsert= "insert into alumno(nombre,apellidos,email,ciudad,id_clase) values ('Alejandro','Jimenez Erades','alejandrojimenezerades@gmail.com','Aspe',1)";
@@ -36,7 +36,7 @@ public class App
 		while( rs.next()){
 			String id =rs.getString(1);
 			String nombre=rs.getString(2);
-			System.out.println(id + " " + nombre);
+			System.out.println(id + " " + nombre + " " + rs.getString(3));
 		}
 		
 		
@@ -45,7 +45,7 @@ public class App
 		rs.close();
 		conn.close();
 	}catch (Exception e) {
-		System.out.println("Error con el insert "+e.toString());
+		System.out.println("Error con la consulta "+e.toString());
 	}
     }
     
