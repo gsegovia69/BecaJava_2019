@@ -1,0 +1,6 @@
+CREATE TABLE asignatura(
+  id INT PRIMARY KEY,
+  nombre varchar,
+  orden varchar,
+  id_clase varchar FOREIGN KEY
+  );
