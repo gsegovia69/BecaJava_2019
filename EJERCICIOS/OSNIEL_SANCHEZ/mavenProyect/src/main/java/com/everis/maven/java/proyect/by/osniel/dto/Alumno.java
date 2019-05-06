@@ -1,5 +1,6 @@
 package com.everis.maven.java.proyect.by.osniel.dto;
 import java.util.Date;
+import java.nio.channels.SelectableChannel;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
@@ -22,13 +23,14 @@ public class Alumno{
 		return this.nombre.substring(0, 1).equalsIgnoreCase("A") || this.nombre.substring(0, 1).equalsIgnoreCase("S");
 	}
 	public String getaAlumnos() {
+		int separator = (email.toString().length())-5;
 		String date = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss", Locale.getDefault()).format(new Date());
-		return String.format("%s %20s %40s %30s",date + "->", nombre +" " + apellidos,email,ciudad,date);
+		return String.format("%s %" + nombre.toString().length() + "s %30s" + "%" + String.valueOf(separator).toString() + "s",date + "->", nombre +" " + apellidos,email,ciudad);
     }
 	public String getaAlumnosFormatoFecha() {
-		
+		int separator = email.toString().length()-5;
 		String date = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss", Locale.getDefault()).format(new Date());
-        return String.format("%s %20s %40s %30s",date + "->", nombre + " " + apellidos,email,ciudad).replace('/', '-');
+        return String.format("%s %" + nombre.toString().length() + "s %30s" + "%" + String.valueOf(separator) + "s",date + "->",nombre + " " + apellidos,email,ciudad).replace('/', '-');
     }
 	public boolean getCiudadContainsA() {
 		return this.ciudad.substring(0, 1).equalsIgnoreCase("A") ;

@@ -1,11 +1,7 @@
 package com.everis.maven.java.proyect.by.osniel;
-import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
-
 import com.everis.maven.java.proyect.by.osniel.dto.Alumno;
 import com.everis.maven.java.proyect.by.osniel.dto.Clase;
-
 import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class DevelopCiudad{
