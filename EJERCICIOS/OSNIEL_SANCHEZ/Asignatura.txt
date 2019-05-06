@@ -5,6 +5,7 @@ CREATE TABLE asignatura(
   id_clase varchar FOREIGN KEY
   );
 
+
 INSERT INTO asignatura (nombre,orden,id_clase) 
    VALUES ('JAVA','50','1');
 INSERT INTO asignatura (nombre,orden,id_clase) 
