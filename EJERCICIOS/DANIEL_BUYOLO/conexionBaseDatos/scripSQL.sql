@@ -1,5 +1,5 @@
 CREATE TABLE ASIGNATURA(
-   id_asignatura   INT NOT NULL AUTO_INCERMENT PRIMARY KEY,
+   id_asignatura   INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
    nombre VARCHAR (40),
    orden  INT,
    id_clase  INT,
@@ -9,12 +9,12 @@ CREATE TABLE ASIGNATURA(
    ON DELETE RESTRICT
 );
 
-INSERT ASIGNATURA (nombre, orden, id_clase) VALUES ('JAVA',0,1);
-INSERT ASIGNATURA (nombre, orden, id_clase) VALUES ('SQL',0,1);
-INSERT ASIGNATURA (nombre, orden, id_clase) VALUES ('SPRING',0,1);
-INSERT ASIGNATURA (nombre, orden, id_clase) VALUES ('SPRING JPA',0,1);
-INSERT ASIGNATURA (nombre, orden, id_clase) VALUES ('SPRING CORE',0,1);
-INSERT ASIGNATURA (nombre, orden, id_clase) VALUES ('SPRING BOOT',0,1);
-INSERT ASIGNATURA (nombre, orden, id_clase) VALUES ('SPRING REST',0,1);
-INSERT ASIGNATURA (nombre, orden, id_clase) VALUES ('SPRING MVC',0,1);
+INSERT INTO ASIGNATURA (nombre, orden, id_clase) VALUES ('JAVA',0,1);
+INSERT INTO ASIGNATURA (nombre, orden, id_clase) VALUES ('SQL',0,1);
+INSERT INTO ASIGNATURA (nombre, orden, id_clase) VALUES ('SPRING',0,1);
+INSERT INTO ASIGNATURA (nombre, orden, id_clase) VALUES ('SPRING JPA',0,1);
+INSERT INTO ASIGNATURA (nombre, orden, id_clase) VALUES ('SPRING CORE',0,1);
+INSERT INTO ASIGNATURA (nombre, orden, id_clase) VALUES ('SPRING BOOT',0,1);
+INSERT INTO ASIGNATURA (nombre, orden, id_clase) VALUES ('SPRING REST',0,1);
+INSERT INTO ASIGNATURA (nombre, orden, id_clase) VALUES ('SPRING MVC',0,1);
 
