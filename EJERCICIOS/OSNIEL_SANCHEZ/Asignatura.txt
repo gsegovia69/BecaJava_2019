@@ -1,4 +1,4 @@
-CREATE TABLE asignatura(
+CREATE TABLE Asignatura(
   id INT PRIMARY KEY AUTO_INCREMENT,
   nombre VARCHAR,
   orden INT,
