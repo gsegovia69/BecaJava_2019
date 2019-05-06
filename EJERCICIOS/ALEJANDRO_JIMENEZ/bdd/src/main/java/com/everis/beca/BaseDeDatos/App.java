@@ -16,8 +16,10 @@ public class App
 		ConnectionDataBase connectionDatabase = new ConnectionDataBase();
 		Connection conn = connectionDatabase.getConnection();
 		Statement st = conn.createStatement();
+		
 		//String queryInsert= "insert into alumno(nombre,apellidos,email,ciudad,id_clase) values ('Alejandro','Jimenez Erades','alejandrojimenezerades@gmail.com','Aspe',1)";
 		//st.executeUpdate(queryInsert);
+		
 		ResultSet rs = null;
 		String QuerySelect = "Select * from profesor";
 		st = conn.createStatement();
@@ -33,7 +35,7 @@ public class App
 		rs = st.executeQuery(QuerySelect);
 		
 		System.out.println("Alumnos");
-		while( rs.next()){
+		while( rs.next()){ 
 			String id =rs.getString(1);
 			String nombre=rs.getString(2);
 			System.out.println(id + " " + nombre + " " + rs.getString(3));

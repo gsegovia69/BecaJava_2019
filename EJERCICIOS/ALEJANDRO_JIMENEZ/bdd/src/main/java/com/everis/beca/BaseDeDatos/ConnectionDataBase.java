@@ -2,7 +2,6 @@ package com.everis.beca.BaseDeDatos;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 
 
 public class ConnectionDataBase {
@@ -14,20 +13,11 @@ public class ConnectionDataBase {
 	public Connection getConnection(){
 		Connection conn = null;
 		
-
-
 				try {
 					Class.forName(DRIVER_CLASS).newInstance();
 					conn= DriverManager.getConnection(URL_DB, USER, PWD);
-				} catch (InstantiationException e) {
-					System.out.println("Error obteniendo el driver" + e.toString());
-				} catch (IllegalAccessException e) {
-					System.out.println("Error obteniendo el driver" + e.toString());
-					e.printStackTrace();
-				} catch (ClassNotFoundException e) {
-					System.out.println("Error obteniendo el driver" + e.toString());
-				} catch (SQLException e) {
-					System.out.println("Error obteniendo la conexion" + e.toString());
+				} catch (Exception e) {
+					System.err.println("Error Conectando a la Base de Datos " + e.toString());
 				}
 
 
@@ -37,3 +27,4 @@ public class ConnectionDataBase {
 
 
 
+ 
