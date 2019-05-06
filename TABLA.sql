@@ -1,10 +1,10 @@
 CREATE TABLE IF NOT EXISTS 'ASIGNATURA' (
-    'id' int(11) NOT NULL AUTO-INCREMENT,
-    'nombre' varchar(50),
-    'orden' int(11),
-    'id_clase' int(11),
-    PRIMARY KEY ('id'),
-    FOREIGN KEY ('id_clase') REFERENCES 'clase' ('id'),
+    id int(11) NOT NULL AUTO-INCREMENT,
+    nombre varchar(50),
+    orden int(11),
+    id_clase int(11),
+    PRIMARY KEY (id),
+    FOREIGN KEY (id_clase) REFERENCES clase (id),
 )
 INSERT INTO ASIGNATURA VALUES ('JAVA', '1', '1');
 INSERT INTO ASIGNATURA VALUES ('SQL', '2', '1');
