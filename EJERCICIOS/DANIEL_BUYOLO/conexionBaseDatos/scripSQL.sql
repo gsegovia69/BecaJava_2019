@@ -1,11 +1,12 @@
 CREATE TABLE ASIGNATURA(
-   id_asignatura   INT NOT NULL AUTO_INCERMENT,
+   id_asignatura   INT NOT NULL AUTO_INCERMENT PRIMARY KEY,
    nombre VARCHAR (40),
    orden  INT,
    id_clase  INT,
 
-   PRIMARY KEY (id_asignatura),
-   FOREIGN KEY (id_clase) REFERENCES clase(id)
+   FOREIGN KEY fk_asig_clase(id_clase) REFERENCES clase(id)
+   ON UPDATE CASCADE
+   ON DELETE RESTRICT
 );
 
 INSERT ASIGNATURA (nombre, orden, id_clase) VALUES ('JAVA',0,1);
