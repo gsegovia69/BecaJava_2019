@@ -1,3 +1,4 @@
+
 CREATE TABLE asignatura(
   id INT PRIMARY KEY AUTOINCREMENT,
   nombre varchar,
