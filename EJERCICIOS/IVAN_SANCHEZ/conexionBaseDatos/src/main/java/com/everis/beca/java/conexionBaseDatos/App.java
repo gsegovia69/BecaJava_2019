@@ -43,7 +43,7 @@ public class App
 		
 		
 		st = conn.createStatement();
-		String querySelectNombreClaseAenApellido = "SELECT alumno.nombre, clase.nombre FROM alumno, clase WHERE alumno.id_clase = clase.id AND alumno.apellidos LIKE '%A%'";
+		String querySelectNombreClaseAenApellido = "SELECT upper(alumno.nombre), upper(clase.nombre) FROM alumno, clase WHERE alumno.id_clase = clase.id AND alumno.apellidos LIKE '%A%'";
 		rs = st.executeQuery(querySelectNombreClaseAenApellido);
 		System.out.println("-----------------Nombre alumno y nombre de clase que tengan una A en apellido ---------------");
 		
@@ -73,7 +73,21 @@ public class App
     
     
     
-    
-    
+//  1.  Crear tabla asignatura
+//    		-Identificador
+//    		-Nombre
+//    		-Clase
+//    2. Establecer clave primaria numerica
+//    3. Establecer clave ajena al a tabla clase
+//    4. INsertar valores:
+//    		-java
+//    		-SQL
+//    		-Spring
+//    		-Spring JPA
+//    		-Spring core
+//    		-Spring Core
+//    		-Spring boot
+//    		-Spring rest
+//    		-Spring MVC
     
 }
