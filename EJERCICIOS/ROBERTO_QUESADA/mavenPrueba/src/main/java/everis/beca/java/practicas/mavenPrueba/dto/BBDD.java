@@ -6,7 +6,10 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import javax.swing.JFrame;
+
 public class BbDd {
+	JFrame frame = new JFrame();
 	private static final String URL_DB = "jdbc:mysql://ALC-67L2MH2:3306/beca_java?useTimezone=true&serverTimezone=UTC";
 	private static final String DRIVER_SQL = "com.mysql.cj.jdbc.Driver";
 	private static final String USER = "beca_java";
