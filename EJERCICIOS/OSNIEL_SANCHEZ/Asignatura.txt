@@ -1,22 +1,22 @@
 CREATE TABLE asignatura(
   id INT PRIMARY KEY AUTO_INCREMENT,
   nombre VARCHAR,
-  orden VARCHAR,
+  orden INT,
   id_clase INT FOREIGN KEY REFERENCES clase(id)
   );
 
 
 INSERT INTO asignatura (nombre,orden,id_clase) 
-   VALUES ('JAVA','50',1);
+   VALUES ('JAVA',50,1);
 INSERT INTO asignatura (nombre,orden,id_clase) 
-   VALUES ('SQL','50',1);
+   VALUES ('SQL',50,1);
 INSERT INTO asignatura (nombre,orden,id_clase) 
-   VALUES ('SPRING','50',1);
+   VALUES ('SPRING',50,1);
 INSERT INTO asignatura (nombre,orden,id_clase) 
-   VALUES ('SPRING JPA','50',1);
+   VALUES ('SPRING JPA',50,1);
 INSERT INTO asignatura (nombre,orden,id_clase) 
-   VALUES ('SPRING CORE','50',1);
+   VALUES ('SPRING CORE',50,1);
 INSERT INTO asignatura (nombre,orden,id_clase) 
-   VALUES ('SPRING BOOT','50',1);
+   VALUES ('SPRING BOOT',50,1);
 INSERT INTO asignatura (nombre,orden,id_clase) 
-   VALUES ('SPRING REST','50',1);
+   VALUES ('SPRING REST',50,1);
