@@ -90,5 +90,23 @@ public class App
     		
 		} catch (Exception e) {
 		}
+    	
+    	// SCRIPT SQL.
+    	// 1. CREAR TABLA ASIGNATURA
+    	//		- IDENTIFICADOR
+    	//		- NOMBRE
+    	//		- ORDEN
+    	//		- CLASE
+    	// 2. ESTABLECER CLAVE PRIMARIA NUMERICA.
+    	// 3. ESTABLECER CLAVE AJENA A LA TABLA CLASE.
+    	// 4. INSERTAR VALORES:
+    	//		- JAVA
+    	//		- SQL
+    	//		- SPRING
+    	//		- SPRING JPA
+    	//		- SPRING CORE
+    	//		- SPRING BOOT
+    	//		- SPRING REST
+    	//		- SPRING MVC
     }
 }
