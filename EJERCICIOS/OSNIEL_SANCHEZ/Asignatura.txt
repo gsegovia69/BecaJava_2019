@@ -1,6 +1,9 @@
 CREATE TABLE asignatura(
-  id INT PRIMARY KEY,
+  id INT PRIMARY KEY AUTOINCREMENT,
   nombre varchar,
   orden varchar,
   id_clase varchar FOREIGN KEY
   );
+
+"INSERT INTO asignatura (nombre,orden,id_clase) 
+   VALUES ('java','50','1')";
