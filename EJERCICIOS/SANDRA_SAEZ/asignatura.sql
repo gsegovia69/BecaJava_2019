@@ -6,6 +6,8 @@ CREATE TABLE asignatura (
     orden INT(100)  NOT NULL,
     id_clase INT(10) NOT NULL,
     FOREIGN KEY(id_clase) REFERENCES clase(id)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
    
 );
 
