@@ -1,4 +1,4 @@
-CREATE TABLE Asignatura(
+CREATE TABLE ASIGNATURA(
   id INT PRIMARY KEY AUTO_INCREMENT,
   nombre VARCHAR,
   orden INT,
@@ -6,17 +6,17 @@ CREATE TABLE Asignatura(
   );
 
 
-INSERT INTO asignatura (nombre,orden,id_clase) 
+INSERT INTO ASIGNATURA (nombre,orden,id_clase) 
    VALUES ('JAVA',50,1);
-INSERT INTO asignatura (nombre,orden,id_clase) 
+INSERT INTO ASIGNATURA (nombre,orden,id_clase) 
    VALUES ('SQL',50,1);
-INSERT INTO asignatura (nombre,orden,id_clase) 
+INSERT INTO ASIGNATURA (nombre,orden,id_clase) 
    VALUES ('SPRING',50,1);
-INSERT INTO asignatura (nombre,orden,id_clase) 
+INSERT INTO ASIGNATURA (nombre,orden,id_clase) 
    VALUES ('SPRING JPA',50,1);
-INSERT INTO asignatura (nombre,orden,id_clase) 
+INSERT INTO ASIGNATURA (nombre,orden,id_clase) 
    VALUES ('SPRING CORE',50,1);
-INSERT INTO asignatura (nombre,orden,id_clase) 
+INSERT INTO ASIGNATURA (nombre,orden,id_clase) 
    VALUES ('SPRING BOOT',50,1);
-INSERT INTO asignatura (nombre,orden,id_clase) 
+INSERT INTO ASIGNATURA (nombre,orden,id_clase) 
    VALUES ('SPRING REST',50,1);
