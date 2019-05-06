@@ -16,6 +16,7 @@ public class Alumno{
     String apellidos;
     String email;
     String ciudad;
+    String id_clase;
 	public boolean isAlejandro() {
 		return this.nombre.equalsIgnoreCase("Alejandro");
 	}

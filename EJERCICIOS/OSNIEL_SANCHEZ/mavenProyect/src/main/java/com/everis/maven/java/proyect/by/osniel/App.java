@@ -25,7 +25,7 @@ public class App {
 			Alumno alumno = null;
 			List<Alumno> alumnos = new ArrayList<Alumno>();
 			//String query = "INSERT INTO alumno (nombre,apellidos,email,ciudad) VALUES ('Osniel','Sanchez Planes','osanchezplanes@yahoo.es','Alicante')";
-			String queryExecute = "select nombre,apellidos,email,ciudad from alumno";
+			String queryExecute = "select alumno.nombre,alumno.apellidos,alumno.email,alumno.ciudad,alumno.id_clase from alumno ";
 			ConnectionBD connectionBD = new ConnectionBD();
 			Connection connection = connectionBD.getConnection();
 			Statement st = connection.createStatement();
@@ -34,7 +34,7 @@ public class App {
 			ResultSet resultSet = st.executeQuery(queryExecute);
 			while(resultSet.next()) {
 				alumno = new Alumno(resultSet.getString("nombre"),resultSet.getString("apellidos")
-						, resultSet.getString("email"), resultSet.getString("ciudad"));
+						, resultSet.getString("email"), resultSet.getString("ciudad"),resultSet.getString("id_clase"));
 				alumnos.add(alumno);
 			}
 			st.close();
