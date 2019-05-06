@@ -33,6 +33,7 @@ public class App
     		// 1. PINTAR POR CONSOLA TODOS LOS DATOS DE LOS ALUMNOS DE LA BBD
     		// 2. PINTAR POR CONSOLA NOMBRE Y EMAIL DE TODOS LOS ALUMNOS DE LA BBDD QUE TENGAN UNA 'S' EN EL NOMBRE
     		// 3. PINTAR POR SONOLA EL NOMBRE DE ALUMNO Y NOMBRE DE CURSO DE TODOS LOS ALUMNOS DE LA BBDD QUE TENGAN UNA 'A' EN EL APELLIDO
+    		// 4. PINTAR POR CONSOLA NOMBRE DE ALUMNO, NOMBRE DE CLASE Y NOMBRE DE ASIGNATURAS DE TODOS LOS ALUMNOS DE LA BBDD
     		
     		
     		// 1.PINTAR POR CONSOLA TODOS LOS DATOS DE LOS ALUMNOS DE LA BBD
@@ -72,6 +73,23 @@ public class App
     		String query3 = "SELECT alumno.nombre, clase.nombre FROM alumno, clase WHERE alumno.id_clase = clase.id AND alumno.apellidos LIKE '%A%'";
     		st = conn.createStatement();
     		rs = st.executeQuery(query3);
+    	 
+    		System.out.println("---------------------------");
+    		System.out.println("-------- Ejercicio 3 ------");
+    		System.out.println("---------------------------");
+    		while (rs.next()) {
+    			String nombre = rs.getString(1);
+    			String curso = rs.getString(2);
+    			
+    			System.out.println(nombre + " " + curso + " ");
+    			
+    		}
+    		
+    		// 4. PINTAR POR CONSOLA NOMBRE DE ALUMNO, NOMBRE DE CLASE Y NOMBRE DE ASIGNATURAS DE TODOS LOS ALUMNOS DE LA BBDD
+    		
+    		String query4 = "SELECT alumno.nombre, clase.nombre asignatura.nombre FROM alumno, clase, asignatura WHERE alumno.id_clase = clase.id AND asignatura.id_clase = clase.id";
+    		st = conn.createStatement();
+    		rs = st.executeQuery(query4);
     	 
     		System.out.println("---------------------------");
     		System.out.println("-------- Ejercicio 3 ------");
