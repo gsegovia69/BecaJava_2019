@@ -38,8 +38,8 @@ public class App {
 				alumnos.add(alumno);
 			}
 			st.close();
-            System.out.println(String.format("%s %25s %30s %30s","Hora", "Nombre", "Email", "Ciudad"));
-            System.out.println(alumnos.get(6).getaAlumnosFormatoFecha());
+			Develop develop = new Develop(alumnos);
+			develop.ordenaListApellidos();
             System.out.println("---yes----");
 
 			/*Clase  developClass= readFileXML();

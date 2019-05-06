@@ -9,7 +9,7 @@ public class ConnectionBD {
 	private static final String USER ="beca_java";
 	private static final String PWD ="beca_java";
 
-	private static final String host_d = "localhost";
+	private static final String host_d = "jdbc:mysql://000webhost.com:3306/id5437765_homevip";
 	private static final String user_d = "id5437765_osanchezplanes";
 	private static final String pass_d = "Osdpapa5";
 	private static final String db_nam = "id5437765_homevip";
@@ -20,6 +20,8 @@ public class ConnectionBD {
 		try {
 			Class.forName(DRIVER_CLASS).newInstance();
 			connection = DriverManager.getConnection(URL_DB,USER,PWD);
+			//connection = DriverManager.getConnection(host_d,USER,PWD);
+
 
 		} catch (ClassNotFoundException e) {
 			System.out.println("Error obteniendo driver"+ e.getMessage());
