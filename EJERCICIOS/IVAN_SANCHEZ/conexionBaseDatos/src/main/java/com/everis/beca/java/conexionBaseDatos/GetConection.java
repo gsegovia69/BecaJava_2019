@@ -6,6 +6,7 @@ import java.sql.SQLException;
 
 public class GetConection {
 
+<<<<<<< HEAD
 	private static final String URL_DB = "jdbc:mysql://ALC-67L2MH2:3306/beca_java?useTimezone=true&serverTimezone=UTC";
 	private static final String DRIVER_CLASS = "com.mysql.cj.jdbc.Driver";
 	private static final String USER = "beca_java";
@@ -33,6 +34,28 @@ public class GetConection {
 		}
 
 		return conn;
+=======
+	
+	public Connection getConnection() throws SQLException{
+	
+		String url= "";
+		
+		try {
+//		Carga del driver jdbc
+			Class.forName("");
+//		Conexion con la base de datos.
+			
+			
+			
+			
+	} catch (ClassNotFoundException e) {
+		System.out.println("Error al conectar con el driver JDBC");
+	}	
+		Connection cn = DriverManager.getConnection(url);
+		
+		return cn;
+>>>>>>> parent of 24c436d... Connection All ok
 	}
-
+	
+	
 }
