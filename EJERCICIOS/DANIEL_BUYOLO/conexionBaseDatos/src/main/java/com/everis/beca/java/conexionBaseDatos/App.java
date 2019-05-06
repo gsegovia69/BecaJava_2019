@@ -87,18 +87,19 @@ public class App
     		
     		// 4. PINTAR POR CONSOLA NOMBRE DE ALUMNO, NOMBRE DE CLASE Y NOMBRE DE ASIGNATURAS DE TODOS LOS ALUMNOS DE LA BBDD
     		
-    		String query4 = "SELECT alumno.nombre, clase.nombre asignatura.nombre FROM alumno, clase, asignatura WHERE alumno.id_clase = clase.id AND asignatura.id_clase = clase.id";
+    		String query4 = "SELECT alumno.nombre, clase.nombre, asignatura.nombre FROM alumno, clase, asignatura WHERE alumno.id_clase = clase.id AND asignatura.id_clase = clase.id";
     		st = conn.createStatement();
     		rs = st.executeQuery(query4);
     	 
     		System.out.println("---------------------------");
-    		System.out.println("-------- Ejercicio 3 ------");
+    		System.out.println("-------- Ejercicio 4 ------");
     		System.out.println("---------------------------");
     		while (rs.next()) {
     			String nombre = rs.getString(1);
     			String curso = rs.getString(2);
+    			String asignatura = rs.getString(3);
     			
-    			System.out.println(nombre + " " + curso + " ");
+    			System.out.println(nombre + " " + curso + " " + " " + asignatura);
     			
     		}
     		st.close();
