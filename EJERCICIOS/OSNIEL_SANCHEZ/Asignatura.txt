@@ -1,5 +1,5 @@
 CREATE TABLE asignatura(
-  id INT PRIMARY KEY AUTOINCREMENT,
+  id INT PRIMARY KEY AUTO_INCREMENT,
   nombre varchar,
   orden varchar,
   id_clase varchar FOREIGN KEY
