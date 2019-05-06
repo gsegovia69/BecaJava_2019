@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS'Asignatura' (
     orden INT,
     clase INT NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY fk_asig_clase(id_clase) references 'clase' (id),
+    CONSTRAINT fk_asigantura_clase FOREIGN KEY id_clase references 'clase' (id),
     );
 
 insert into asignatura values ('java', 1, 1);
