@@ -2,14 +2,24 @@
 
 <persistence version="1.0"
 
-    xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 
-    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
 
- 
 
-       <persistence-unit name="jpaData" />
 
- 
+	<persistence-unit name="jpaData">
+
+		<properties>
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:mysql://ALC-67L2MH2:3306/beca_java?useTimezone=true&amp;serverTimezone=UTC" />
+			<property name="javax.persistence.jdbc.user"
+				value="beca_java" />
+			<property name="javax.persistence.jdbc.password"
+				value="beca_java" />
+
+		</properties>
+	</persistence-unit>
 
 </persistence>
