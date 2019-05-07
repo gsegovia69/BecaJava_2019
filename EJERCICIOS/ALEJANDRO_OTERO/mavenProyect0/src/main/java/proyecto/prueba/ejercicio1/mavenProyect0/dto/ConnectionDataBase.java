@@ -48,6 +48,13 @@ public class ConnectionDataBase {
 				String nombre = rs.getString(2);
 				System.out.println(id + " " + nombre);
 			}
+			querySelect = "select * from  nombreAsignatura + nombreClase + nombreAlumno";
+			String nombreAsignatura = rs.getString(0);
+			String nombreClase= rs.getString(1);
+			String nombreAlumno = rs.getString(02);
+			
+			System.out.println( nombreAsignatura +""+nombreClas e+ nombreAlumno );
+			
 			st.close();
 			rs.close();
 			conn.close();
