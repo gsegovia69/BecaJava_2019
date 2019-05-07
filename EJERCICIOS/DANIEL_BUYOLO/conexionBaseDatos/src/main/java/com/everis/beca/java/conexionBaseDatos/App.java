@@ -4,10 +4,6 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
