@@ -31,7 +31,7 @@ public class ConnectionDatabase {
 			System.out.println("------------------------------------------------------------");
 			while (rs.next()) {
 				String id = rs.getString(1);
-				String nombre = rs.getString(1);
+				String nombre = rs.getString(2);
 				String apellidos = rs.getString(3);
 				String email = rs.getString(4);
 				String ciudad = rs.getString(5);
@@ -62,6 +62,22 @@ public class ConnectionDatabase {
 				String nom3 = rs.getString(2);
 				String curso = rs.getString(3);
 				System.out.println(nom3 + " " + curso);
+			}
+			querySelect = "Select alumno.nombre, clase.nombre, asignatura.nombre FROM alumno, clase, asignatura WHERE asignatura.id_clase = clase.id";
+			rs = st.executeQuery(querySelect);
+			System.out.println("------------------------------------------------------------");
+			System.out.println("------------------------------------------------------------");
+			System.out.println("PINTAR POR CONSOLA NOMBRE DEL ALUMNO, NOMBRE DE CLASE Y NOMBRE DE ASIGNATURAS DE TODOS LOS ALUMNOS DE BBDD");
+			System.out.println("------------------------------------------------------------");
+			System.out.println("------------------------------------------------------------");
+			while (rs.next()) {
+				
+					String nombre = rs.getString(1);
+					String curso = rs.getString(2);
+					String asignatura = rs.getString(3);
+					
+					System.out.println(nombre +" " + curso + " " + asignatura );
+					
 			}
 			rs.close();
 			st.close();
