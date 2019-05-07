@@ -1,9 +1,14 @@
 package dto;
 
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -18,11 +23,17 @@ public class Profesor {
 	
 	@Id
 	@GeneratedValue
-	@Column(name = "id")
+	private int id;
 	private String nombre;
 	private String apellidos;
 	private String email;
 	private String ciudad;
+	
+	
+	
+	@ManyToOne
+	@JoinColumn(name = "id_clase")
+	private Set<Clase> claseProfesor;
 
 //	// Constructores-------------------------
 //
