@@ -1,7 +1,6 @@
-package ListadoClase;
+package ejercicio01_Sem02;
 
 public class Profesor {
-
 	String nombre = "";
 	String apellidos = "";
 	String eMail = "";
@@ -10,10 +9,10 @@ public class Profesor {
 	// Constructores-------------------------
 
 	public Profesor() {
-		this.nombre="";
-		this.apellidos="";
-		this.eMail="";
-		this.ciudad="";
+		this.nombre = "";
+		this.apellidos = "";
+		this.eMail = "";
+		this.ciudad = "";
 	}
 
 	public Profesor(String nombre, String apellidos, String eMail, String ciudad) {
@@ -69,9 +68,21 @@ public class Profesor {
 		return true;
 
 	}
-	
-	public String toString () {
-		return (nombre + apellidos + eMail + ciudad );
+
+	public String toString() {
+		limpia();
+
+		return (this.nombre + this.apellidos + this.eMail + this.ciudad);
 	}
 
+	private void limpia() {
+		this.nombre = this.nombre.replace(ListaConstantes.ETIQUETA_APERTURA_NOMBRE, "")
+				.replace(ListaConstantes.ETIQUETA_CIERRE_NOMBRE.trim(), "");
+		this.apellidos = this.apellidos.replace(ListaConstantes.ETIQUETA_APERTURA_APELLIDO, "")
+				.replace(ListaConstantes.ETIQUETA_CIERRE_APELLIDO.trim(), "");
+		this.eMail = this.eMail.replace(ListaConstantes.ETIQUETA_APERTURA_EMAIL, "")
+				.replace(ListaConstantes.ETIQUETA_CIERRE_EMAIL.trim(), "");
+		this.ciudad = this.ciudad.replace(ListaConstantes.ETIQUETA_APERTURA_CIUDAD, "")
+				.replace(ListaConstantes.ETIQUETA_CIERRE_CIUDAD.trim(), "");
+	}
 }
