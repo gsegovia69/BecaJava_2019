@@ -10,7 +10,8 @@ CREATE TABLE IF NOT EXISTS Asignatura (
 INSERT INTO asignatura(nombre,id_clase) VALUES ('JAVA', 1 );
 INSERT INTO asignatura(nombre,id_clase) VALUES ('SQL',  1 );
 INSERT INTO asignatura(nombre,id_clase) VALUES ('SPRING',1);
-INSERT INTO asignatura(nombre,id_clase) VALUES ('CORE', 1 );
-INSERT INTO asignatura(nombre,id_clase) VALUES ('BOOT', 1 );
-INSERT INTO asignatura(nombre,id_clase) VALUES ('REST', 1 );
-INSERT INTO asignatura(nombre,id_clase) VALUES ('MVC',  1 );
+INSERT INTO asignatura(nombre,id_clase) VALUES ('SPRING JPA',1);
+INSERT INTO asignatura(nombre,id_clase) VALUES ('SPRING CORE', 1 );
+INSERT INTO asignatura(nombre,id_clase) VALUES ('SPRING BOOT', 1 );
+INSERT INTO asignatura(nombre,id_clase) VALUES ('SPRING REST', 1 );
+INSERT INTO asignatura(nombre,id_clase) VALUES ('SPRING MVC',  1 );
