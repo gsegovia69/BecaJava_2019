@@ -1,32 +1,25 @@
 package com.everis.beca.BaseDeDatos;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.persistence.Query;
 
 public class JPA_Persistance {
 
 	public static void main(String[] args) {
-		try {
-			ConnectionDataBase connectionDatabase = new ConnectionDataBase();
-			Connection conn = connectionDatabase.getConnection();
-			Statement st = conn.createStatement();
-			ResultSet rs = null;
-			
-			String querySelect = "Select * from alumno";
-			st = conn.createStatement();
-			rs = st.executeQuery(querySelect);
-			
-			System.out.println("Todos los datos de alumno\n");
-			while (rs.next()) {
-				
-							}
-					
-			
-			
-		}catch(Exception e) {
-			System.err.println("Error " + e.getMessage());
-		}
+	    EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("JPA_Persistance");
+		EntityManager entitymanager = emfactory.createEntityManager();
+		Query query = entitymanager.createQuery("SELECT nombre FROM Alumno");
+	    List<String> lista=query.getResultList();
+	    
+	    for(String e:lista) {
+	    	System.out.println(e);
+	    }
+		
 	}
 
 }
