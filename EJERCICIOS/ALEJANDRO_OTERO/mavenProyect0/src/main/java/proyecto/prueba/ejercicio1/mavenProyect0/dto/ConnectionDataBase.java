@@ -42,24 +42,71 @@ public class ConnectionDataBase {
 			//st.executeUpdate(queryInsert);
 			String querySelect = "Select * from alumno";
 			st = conn.createStatement();
-			rs = st.executeQuery(querySelect);
-			while (rs.next()) {
-				String id = rs.getString(1);
-				String nombre = rs.getString(2);
-				System.out.println(id + " " + nombre);
+			rs = st.executeQuery(querySelect);			
+			   st = conn.createStatement();
+			   rs = st.executeQuery(querySelect);
+			   System.out.println("------------------------------------------------------------");
+			   System.out.println("------------------------------------------------------------");
+			   System.out.println("PINTAR POR CONSOLA TODOS LOS DATOS DE LOS ALUMNOS DE LA BBDD");
+			   System.out.println("------------------------------------------------------------");
+			   System.out.println("------------------------------------------------------------");
+			   while (rs.next()) {
+			    String id = rs.getString(1);
+			    String nombre = rs.getString(2);
+			    String apellidos = rs.getString(3);
+			    String email = rs.getString(4);
+			    String ciudad = rs.getString(5);
+			    System.out.println(id + " " + nombre + " " + apellidos+ " " + ciudad + " " + email);
+			   }
+			   querySelect = "Select alumno.nombre, alumno.email FROM alumno WHERE nombre LIKE '%S%'";
+			   
+			   rs = st.executeQuery(querySelect);
+			    System.out.println("------------------------------------------------------------");
+			   System.out.println("------------------------------------------------------------");
+			   System.out.println("PINTAR POR CONSOLA NOMBRE Y EMAIL DE TODOS LOS ALUMNOS DE LA BBDD QUE TENGAN UNA 'S' EN EL NOMBRE");
+			   System.out.println("------------------------------------------------------------");
+			   System.out.println("------------------------------------------------------------");
+			   while (rs.next()) {
+			    String nom2 = rs.getString(1);
+			    String em2 = rs.getString(2);
+			    System.out.println(nom2 + " " + em2);
+			   }
+			   
+			   querySelect = "Select alumno.apellidos, alumno.nombre, clase.nombre FROM alumno, clase WHERE alumno.id_clase = clase.id AND apellidos LIKE '%A%'";
+			   rs = st.executeQuery(querySelect);
+			   System.out.println("------------------------------------------------------------");
+			   System.out.println("------------------------------------------------------------");
+			   System.out.println("PINTAR POR CONSOLA NOMBRE DEL ALUMNO Y NOMBRE DE CURSO DE TODOS LOS ALUMNOS DE LA BBDD QUE TENGAN UNA 'A' EN EL APELLIDO");
+			   System.out.println("------------------------------------------------------------");
+			   System.out.println("------------------------------------------------------------");
+			   while (rs.next()) {
+			    String nom3 = rs.getString(2);
+			    String curso = rs.getString(3);
+			    System.out.println(nom3 + " " + curso);
+			   }
+			   querySelect = "Select alumno.nombre, clase.nombre, asignatura.nombre FROM alumno, clase, asignatura WHERE asignatura.id_clase = clase.id";
+			   rs = st.executeQuery(querySelect);
+			   System.out.println("------------------------------------------------------------");
+			   System.out.println("------------------------------------------------------------");
+			   System.out.println("PINTAR POR CONSOLA NOMBRE DEL ALUMNO, NOMBRE DE CLASE Y NOMBRE DE ASIGNATURAS DE TODOS LOS ALUMNOS DE BBDD");
+			   System.out.println("------------------------------------------------------------");
+			   System.out.println("------------------------------------------------------------");
+			   while (rs.next()) {
+			    
+			     String nombre = rs.getString(1);
+			     String curso = rs.getString(2);
+			     String asignatura = rs.getString(3);
+			     
+			     System.out.println(nombre +" " + curso + " " + asignatura );
+			     
+			   }
+			   rs.close();
+			   st.close();
+			   
+			   conn.close();
+			  } catch (Exception e) {
+			   System.out.println(e.toString());
+			  }
+			 }
 			}
-			querySelect = "select * from  nombreAsignatura + nombreClase + nombreAlumno";
-			String nombreAsignatura = rs.getString(0);
-			String nombreClase= rs.getString(1);
-			String nombreAlumno = rs.getString(02);
-			
-			System.out.println( nombreAsignatura +""+nombreClas e+ nombreAlumno );
-			
-			st.close();
-			rs.close();
-			conn.close();
-		} catch (Exception e) {
-			System.out.println(e.toString());
-		}
-	}
-}
+				
