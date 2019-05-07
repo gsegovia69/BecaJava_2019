@@ -8,8 +8,11 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
 import java.awt.Font;
+import java.awt.Window;
+
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.util.logging.LoggingMXBean;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextPane;
 
@@ -22,6 +25,7 @@ public class Login extends JFrame {
 	private JPanel contentPane;
 	private JTextField usuario;
 	private JTextField pwd;
+	
 
 	/**
 	 * Launch the application.
@@ -43,6 +47,8 @@ public class Login extends JFrame {
 	 * Create the frame.
 	 */
 	public Login() {
+		
+		Inicio panel2 = new Inicio();
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 554, 549);
 		contentPane = new JPanel();
@@ -89,7 +95,10 @@ public class Login extends JFrame {
 					String pass= "123";
 					if(usuario.getText().contains(user) && pwd.getText().contains(pass)) {
 						textPane.setText("Loggeado correctamente.");
-						new ConnectionDatabase();
+						panel2.setVisible(true);
+						dispose();
+						
+						
 						}else {
 						textPane.setText("USUARIO Y/O CONTRASEÑA INCORRECTOS");
 					}
@@ -99,6 +108,7 @@ public class Login extends JFrame {
 					textPane.setText("TIENES QUE COMPLETAR LOS CAMPOS");
 				}
 			}
+
 		});
 		btnNewButton.setBounds(212, 178, 89, 28);
 		contentPane.add(btnNewButton);
