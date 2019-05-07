@@ -2,8 +2,8 @@ package com.everis.beca.BaseDeDatos.dto;
 
 
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 import lombok.Getter;
@@ -24,22 +24,18 @@ import lombok.ToString;
 @Entity
 @Table(name="alumno")
 public class Alumno {
-	@Column(name="id")
+	
+	@Id
 	private int id;
 	
-	@Column(name="nombre")
 	private String nombre;
-	
-	@Column(name="apellidos")
+
 	private String apellidos;
-	
-	@Column(name="email")
+
 	private String email;
-	
-	@Column(name="ciudad")
+
 	private String ciudad;
 	
-	@Column(name="id_clase")
 	private int id_clase;
 	
 }

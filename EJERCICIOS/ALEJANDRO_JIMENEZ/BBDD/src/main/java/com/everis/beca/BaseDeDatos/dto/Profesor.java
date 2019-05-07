@@ -1,7 +1,9 @@
 package com.everis.beca.BaseDeDatos.dto;
 
 
-import com.thoughtworks.xstream.annotations.XStreamAlias;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,7 +16,11 @@ import lombok.ToString;
 @Setter
 @NoArgsConstructor
 @ToString
+@Entity
+@Table(name="profesor")
  class Profesor {
+	@Id
+	private int id;
 	
 	private String nombre;
 	
@@ -23,5 +29,7 @@ import lombok.ToString;
 	private String email;
 	
 	private String ciudad;
+	
+	private int id_clase;
 	
 }

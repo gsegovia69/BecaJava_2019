@@ -1,10 +1,13 @@
 package com.everis.beca.BaseDeDatos.dto;
 
 
-import java.util.List;
 
 
-import com.thoughtworks.xstream.annotations.XStreamAlias;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
 
 import lombok.Getter;
 import lombok.Setter;
@@ -13,10 +16,13 @@ import lombok.Setter;
 
 @Getter
 @Setter
-
+@Entity
+@Table(name="clase")
 public class Clase {
-
-	private Profesor profesor;
-	private List<Alumno> listaAlumnos;
+	
+	@Id
+	private int id;
+	
+	private String nombre;
 	
 }

@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class Sql07_05 {
+public class JPA_Persistance {
 
 	public static void main(String[] args) {
 		try {
