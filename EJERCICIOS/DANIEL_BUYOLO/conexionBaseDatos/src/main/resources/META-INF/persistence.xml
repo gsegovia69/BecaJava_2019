@@ -9,7 +9,7 @@
 
 
 
-	<persistence-unit name="jpaData">
+	<persistence-unit name="becaJava">
 		<properties>
 			<property name="javax .persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://ALC-67L2MH2:3306/beca_java?useTimezone=true&amp;serverTimezone=UTC" />

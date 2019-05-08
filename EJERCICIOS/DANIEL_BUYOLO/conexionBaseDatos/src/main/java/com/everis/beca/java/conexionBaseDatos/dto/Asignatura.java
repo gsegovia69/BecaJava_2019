@@ -13,7 +13,6 @@ import lombok.ToString;
 
 @Setter
 @Getter
-@ToString
 @Entity
 
 public class Asignatura {
@@ -22,8 +21,10 @@ public class Asignatura {
 		@GeneratedValue
 		@Column(name = "id_asignatura")
 		private int idAsignatura;
-		private String nombre;
-		private int orden;
+		@Column(name = "nombre")
+		private String nombreAsignatura;
+		@Column(name = "orden")
+		private int ordenAsignaturas;
 		
 		@ManyToOne
 		@JoinColumn(name = "id_clase")

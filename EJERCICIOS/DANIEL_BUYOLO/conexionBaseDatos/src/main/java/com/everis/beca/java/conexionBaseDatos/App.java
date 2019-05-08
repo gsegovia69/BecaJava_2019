@@ -19,7 +19,7 @@ public class App
     		
     		st = conn.createStatement();
     		rs = st.executeQuery(querySelect);
-    		System.out.println("Alumnos");
+    		//System.out.println("Alumnos");
     		
     		
     		/* SOLO CON SENTENCIAS SQL
@@ -34,7 +34,9 @@ public class App
     		
     		// 1.PINTAR POR CONSOLA TODOS LOS DATOS DE LOS ALUMNOS DE LA BBD
     		
+    		/*
     		System.out.println("---------------------------");
+    		
     		System.out.println("-------- Ejercicio 1 ------");
     		System.out.println("---------------------------");
     		while (rs.next()) {
@@ -97,7 +99,7 @@ public class App
     			
     			System.out.println(nombre + " " + curso + " " + " " + asignatura);
     			
-    		}
+    		}*/
     		st.close();
     		rs.close();
     		conn.close();

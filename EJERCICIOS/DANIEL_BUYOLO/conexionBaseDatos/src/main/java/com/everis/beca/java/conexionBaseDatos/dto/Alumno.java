@@ -15,7 +15,6 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
 @Entity
 public class Alumno {
 
@@ -23,10 +22,14 @@ public class Alumno {
 	@GeneratedValue
 	@Column(name = "id")
 	private int idAlumno;
-	private String nombre;
-	private String apellidos;
-	private String email;
-	private String ciudad;
+	@Column(name = "nombre")
+	private String nombreAlumno;
+	@Column(name = "apellidos")
+	private String apellidosAlumno;
+	@Column(name = "email")
+	private String emailAlumno;
+	@Column(name = "ciudad")
+	private String ciudadAlumno;
 	
 	@ManyToOne
 	@JoinColumn(name = "id_clase")

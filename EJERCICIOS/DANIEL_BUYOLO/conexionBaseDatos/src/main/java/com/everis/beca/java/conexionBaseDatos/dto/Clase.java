@@ -15,7 +15,6 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
 @Entity
 
 public class Clase {
@@ -24,7 +23,8 @@ public class Clase {
 	@GeneratedValue
 	@Column(name = "id")
 	private int idClase;
-	private String nombre;
+	@Column(name = "nombre")
+	private String nombreClase;
 	
 	@OneToMany(mappedBy = "claseAlumno" )
 	private Set<Alumno> alumnos = new HashSet<Alumno>();
