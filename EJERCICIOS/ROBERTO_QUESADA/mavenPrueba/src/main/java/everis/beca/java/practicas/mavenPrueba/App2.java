@@ -1,4 +1,4 @@
-package everis.beca.java.practicas.mavenPrueba;
+/*package everis.beca.java.practicas.mavenPrueba;
 
 import java.io.IOException;
 import everis.beca.java.practicas.mavenPrueba.dto.ClaseEveris;
@@ -39,3 +39,4 @@ public class App2 {
 	}
 
 }
+*/

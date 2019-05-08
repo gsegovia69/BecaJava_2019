@@ -1,4 +1,4 @@
-package everis.beca.java.practicas.mavenPrueba.dto;
+/*package everis.beca.java.practicas.mavenPrueba.dto;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -32,5 +32,5 @@ public class LeerFichero {
 	return clase;
 	
 	}
-}
+}*/
 

@@ -1,4 +1,4 @@
-package everis.beca.java.practicas.mavenPrueba.dto;
+/*package everis.beca.java.practicas.mavenPrueba.dto;
 
 import java.util.Comparator;
 import java.util.List;
@@ -30,3 +30,4 @@ public class Listado {
 		}
 	}
 }
+*/

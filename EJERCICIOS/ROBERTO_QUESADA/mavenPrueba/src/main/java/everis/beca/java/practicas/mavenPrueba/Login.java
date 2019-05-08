@@ -8,11 +8,8 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
 import java.awt.Font;
-import java.awt.Window;
-
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
-import java.util.logging.LoggingMXBean;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextPane;
 
