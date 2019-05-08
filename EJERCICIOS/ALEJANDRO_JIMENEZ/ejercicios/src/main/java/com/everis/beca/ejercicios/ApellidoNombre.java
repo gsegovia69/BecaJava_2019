@@ -29,12 +29,15 @@ public class ApellidoNombre {
 	}
 	
 	public void ordenarApellido() throws Exception{
+
 		if (!alumnos.isEmpty()) {
 		Collections.sort(alumnos, new Comparator<Alumno>(){
 		@Override
 		public int compare(Alumno o1, Alumno o2) {
-			return o1.getApellidos().toLowerCase().compareTo(o2.getApellidos().toLowerCase());
-		
+			if(o1.getApellidos().toLowerCase().compareTo(o2.getApellidos().toLowerCase())!=0) 
+				return o1.getApellidos().toLowerCase().compareTo(o2.getApellidos().toLowerCase());
+			else
+				return o1.getNombre().toLowerCase().compareTo(o2.getNombre().toLowerCase());
 		}
  		});
 		}
