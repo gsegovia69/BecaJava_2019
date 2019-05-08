@@ -20,8 +20,8 @@ public class Jpa {
 			System.out.println("---------------------------");
 			System.out.println("---------------------------");
 			System.out.println("---------------------------");
-			System.out.println("Curso --->"+ c.getNombreClase());
-			c.getAlumnos().stream().forEach(s -> System.out.println(s.getNombreAlumno()));
+			System.out.println("Curso ---> "+ c.getNombreClase());
+			c.getAlumnos().stream().forEach(s -> System.out.println(s.getNombreAlumno() + " " + s.getApellidosAlumno()));
 		}
 			
 		
