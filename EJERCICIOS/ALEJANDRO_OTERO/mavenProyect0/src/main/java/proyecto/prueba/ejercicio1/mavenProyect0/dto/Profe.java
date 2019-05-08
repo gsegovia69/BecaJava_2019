@@ -1,5 +1,5 @@
 package proyecto.prueba.ejercicio1.mavenProyect0.dto;
 
-public class Fecha {
+public class Profe {
 
 }
