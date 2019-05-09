@@ -22,7 +22,7 @@ import lombok.ToString;
 @ToString
 @Entity
 @Table(name = "profesor")
-class Profesor {
+public class Profesor {
 	
 	@Id
 	@GeneratedValue
@@ -41,6 +41,7 @@ class Profesor {
 	@Column(name="ciudad")
 	private String ciudad;
 
+	
 	@ToStringExclude
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="id_clase")

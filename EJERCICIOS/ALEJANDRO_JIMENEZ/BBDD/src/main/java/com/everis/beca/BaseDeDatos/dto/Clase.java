@@ -35,11 +35,11 @@ public class Clase {
 	
 	
 	// Eager-> los carga directamente
-	@OneToMany(mappedBy="claseAlumno", fetch = FetchType.EAGER)
+	@OneToMany(mappedBy="claseAlumno" )
 	private List<Alumno> alumnos = new ArrayList<Alumno>();
 	
 	// Lazy-> solo los carga cuando utilice los datos.
-	@OneToMany(mappedBy="claseProfesor", fetch = FetchType.LAZY)
+	@OneToMany(mappedBy="claseProfesor")
 	private List<Profesor> profesores = new ArrayList<Profesor>();
 
 	@OneToMany(mappedBy="claseAsignatura")
