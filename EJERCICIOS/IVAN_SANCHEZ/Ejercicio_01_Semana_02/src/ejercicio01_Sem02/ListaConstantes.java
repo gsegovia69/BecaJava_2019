@@ -1,6 +1,7 @@
-package ListadoClase;
+package ejercicio01_Sem02;
 
 public class ListaConstantes {
+
 
 	public static final String 	ETIQUETA_APERTURA_PROFESOR = "<profesor>"; 
 	public static final String 	ETIQUETA_CIERRE_PROFESOR = "</profesor>"; 
@@ -16,4 +17,5 @@ public class ListaConstantes {
 	public static final String 	ETIQUETA_CIERRE_EMAIL = "</email>"; 
 	public static final String 	ETIQUETA_APERTURA_CIUDAD = "<ciudad>"; 
 	public static final String 	ETIQUETA_CIERRE_CIUDAD = "</ciudad>"; 
+	
 }

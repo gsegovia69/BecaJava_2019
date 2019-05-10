@@ -1,7 +1,9 @@
-package ListadoClase;
+package ejercicio01_Sem02;
+
+
 
 public class Alumno {
-
+	
 	String nombre = "";
 	String apellidos = "";
 	String eMail = "";
@@ -78,7 +80,8 @@ public class Alumno {
 		return formatocadena;
 	}
 
-	// resta campos inncesario------------
+	// resta campos inncesario Y muestra por pantalla el resultado
+	//Ojo"Usar esta limpiarCadena=println"
 
 	public void limpiarCadena() {
 		System.out.printf("%-50s%-50s%-50s%-50s\n",
@@ -91,5 +94,7 @@ public class Alumno {
 				this.ciudad.replace(ListaConstantes.ETIQUETA_APERTURA_CIUDAD, "Ciudad: ")
 						.replace(ListaConstantes.ETIQUETA_CIERRE_CIUDAD.trim(), ". "));
 	}
+	
+	
 
 }
