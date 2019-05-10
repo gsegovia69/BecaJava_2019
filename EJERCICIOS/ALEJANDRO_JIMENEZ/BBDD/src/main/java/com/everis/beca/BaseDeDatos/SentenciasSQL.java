@@ -4,7 +4,6 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-import javax.naming.ReferralException;
 
 public class SentenciasSQL {
 
@@ -14,11 +13,9 @@ public class SentenciasSQL {
 			ConnectionDataBase connectionDatabase = new ConnectionDataBase();
 			Connection conn = connectionDatabase.getConnection();
 			Statement st = conn.createStatement();
-			
+			ResultSet rs = null;
 			//String queryInsert= "insert into alumno(nombre,apellidos,email,ciudad,id_clase) values ('Alejandro','Jimenez Erades','alejandrojimenezerades@gmail.com','Aspe',1)";
 			//st.executeUpdate(queryInsert);
-			
-			ResultSet rs = null;
 			String querySelect = "Select * from alumno";
 			st = conn.createStatement();
 			rs = st.executeQuery(querySelect);
@@ -49,7 +46,23 @@ public class SentenciasSQL {
 			while(rs.next()) {
 				System.out.println(rs.getString(1) + " " + rs.getString(2));
 			}
-	
+			querySelect = "select a.nombre , c.nombre , a.id , c.id from alumno a , clase c where c.id=a.id_clase";
+			st = conn.createStatement();
+			rs = st.executeQuery(querySelect);
+		
+			
+			while(rs.next()) {
+				System.out.println(rs.getString(1) + " " + rs.getString(2));
+			}
+
+			querySelect = "select alumno.nombre,clase.nombre, from alumno ,clase where alumno.id_clase = clase.id";
+			st = conn.createStatement();
+			rs = st.executeQuery(querySelect);
+		
+			
+			while(rs.next()) {
+				System.out.println(rs.getString(1) + " " + rs.getString(2));
+			}
 			st.close();
 			rs.close();
 			conn.close();		
