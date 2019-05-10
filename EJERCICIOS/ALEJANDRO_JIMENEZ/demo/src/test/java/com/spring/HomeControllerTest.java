@@ -1,6 +1,8 @@
 package com.spring;
 
+import static org.hamcrest.CoreMatchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
 
@@ -13,7 +15,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(HomeController.class)
-public class IndexControllerTest {
+public class HomeControllerTest {
 
 	@Autowired
 	private MockMvc mockMvc;
@@ -25,7 +27,9 @@ public class IndexControllerTest {
 		
 		.andExpect(status().isOk())
 		
-		.andExpect(view().name("home"));
+		.andExpect(view().name("home"))
+		
+		.andExpect(content().string(containsString("pepino")));
 		
 	}
 	
