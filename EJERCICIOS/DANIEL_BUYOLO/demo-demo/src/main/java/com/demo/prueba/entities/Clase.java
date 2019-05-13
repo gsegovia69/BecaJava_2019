@@ -1,4 +1,4 @@
-package com.demo.prueba.dto;
+package com.demo.prueba.entities;
 
 import java.util.HashSet;
 import java.util.Set;

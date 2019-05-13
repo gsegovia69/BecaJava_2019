@@ -1,4 +1,4 @@
-package com.demo.prueba.dto;
+package com.demo.prueba.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
