@@ -1,4 +1,4 @@
-package com.spring.dto;
+package com.spring.entities;
 
 
 
@@ -28,7 +28,7 @@ public class Clase {
 	@Id
 	@GeneratedValue
 	@Column(name="id")
-	private int id;
+	private Long id;
 	
 	@Column(name="nombre")
 	private String nombre;

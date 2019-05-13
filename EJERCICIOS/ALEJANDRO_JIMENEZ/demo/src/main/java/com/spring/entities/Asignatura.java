@@ -1,4 +1,4 @@
-package com.spring.dto;
+package com.spring.entities;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -25,7 +25,7 @@ public class Asignatura {
 	@Id
 	@GeneratedValue
 	@Column(name = "id_asignatura")
-	private int id;
+	private Long id;
 	
 	@Column(name="nombre")
 	private String nombre;

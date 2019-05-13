@@ -1,4 +1,4 @@
-package com.spring.dto;
+package com.spring.entities;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -15,35 +15,41 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
+/**
+ * Clase Alumno
+ * 
+ * @author Alejandro Jimenez
+ * @version 03.05.2019
+ */
+
 @Getter
 @Setter
 @NoArgsConstructor
 @ToString
 @Entity
-@Table(name = "profesor")
-public class Profesor {
-	
+@Table(name = "alumno")
+public class Alumno {
+
 	@Id
 	@GeneratedValue
 	@Column(name="id")
-	private int id;
+	private Long id;
 	
 	@Column(name="nombre")
 	private String nombre;
 	
 	@Column(name="apellidos")
 	private String apellidos;
-
+	
 	@Column(name="email")
 	private String email;
-
+	
 	@Column(name="ciudad")
 	private String ciudad;
-
 	
 
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="id_clase")
-	private Clase claseProfesor;
+	private Clase claseAlumno;
 
 }
