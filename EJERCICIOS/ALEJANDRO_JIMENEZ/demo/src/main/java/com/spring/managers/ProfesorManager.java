@@ -19,7 +19,7 @@ public class ProfesorManager {
 	}
 	
 	public List<ProfesorDTO> getProfesores(){
-		List<ProfesorEntity> listaEntities = repository.findAll();
+		List<ProfesorEntity> listaEntities = (List<ProfesorEntity>) repository.findAll();
 		List<ProfesorDTO> listaDTO = new ArrayList<>();
 		for(ProfesorEntity entity : listaEntities) {
 			listaDTO.add(entityToDTO(entity));
@@ -27,8 +27,8 @@ public class ProfesorManager {
 		return listaDTO;
 	}
 	
-	public ProfesorDTO getOneProfesor(Long idProfesor) {
-		return entityToDTO(repository.findOne(idProfesor).get());
+	public ProfesorDTO getOneProfesor(int idProfesor) {
+		return entityToDTO(repository.findById(idProfesor).get());
 	}
 	
 	public ProfesorDTO guardarProfesor(ProfesorDTO dto) {

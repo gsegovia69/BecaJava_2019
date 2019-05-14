@@ -19,9 +19,9 @@ public class AsignaturaManager {
 		return repository;
 	}
 	
-	public List<AsignaturaDTO> getAlumnos(){
+	public List<AsignaturaDTO> getAsignatura(){
 		
-		List<AsignaturaEntity> listaEntities =repository.findAll();
+		List<AsignaturaEntity> listaEntities =(List<AsignaturaEntity>) repository.findAll();
 		List<AsignaturaDTO> dtoList= new ArrayList<>();
 		
 		for(AsignaturaEntity entity : listaEntities) {
@@ -31,7 +31,7 @@ public class AsignaturaManager {
 	}
 	
 	public AsignaturaDTO getOneAsignatura(Long idAsignatura) {
-		return entityToDTO(repository.findOne(idAsignatura).get());
+		return entityToDTO(repository.findById(idAsignatura).get());
 	}
 	
 	public AsignaturaDTO guardar(AsignaturaDTO dto) {
