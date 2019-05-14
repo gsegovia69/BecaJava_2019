@@ -2,9 +2,9 @@ package com.spring.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.spring.entities.Clase;
+import com.spring.entities.ClaseEntity;
 
-public interface ClaseRepository extends CrudRepository<Clase, Integer> {
+public interface ClaseRepository extends CrudRepository<ClaseEntity, Integer> {
 	
 	
 	

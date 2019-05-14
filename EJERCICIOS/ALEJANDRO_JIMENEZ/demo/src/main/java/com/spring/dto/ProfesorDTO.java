@@ -24,6 +24,6 @@ public class ProfesorDTO {
 
 	private String ciudad;
 
-	private ClaseDTO claseProfesor;
+	private Long idClase;
 
 }

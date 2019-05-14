@@ -23,7 +23,7 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name="clase")
-public class Clase {
+public class ClaseEntity {
 	
 	@Id
 	@GeneratedValue
@@ -36,13 +36,13 @@ public class Clase {
 	
 	// Eager-> los carga directamente
 	@OneToMany(mappedBy="claseAlumno" )
-	private List<Alumno> alumnos = new ArrayList<Alumno>();
+	private List<AlumnoEntity> alumnos = new ArrayList<AlumnoEntity>();
 	
 	// Lazy-> solo los carga cuando utilice los datos.
 	@OneToMany(mappedBy="claseProfesor")
-	private List<Profesor> profesores = new ArrayList<Profesor>();
+	private List<ProfesorEntity> profesores = new ArrayList<ProfesorEntity>();
 
 	@OneToMany(mappedBy="claseAsignatura")
-	private List<Asignatura> asignaturas = new ArrayList<Asignatura>();
+	private List<AsignaturaEntity> asignaturas = new ArrayList<AsignaturaEntity>();
 }
 

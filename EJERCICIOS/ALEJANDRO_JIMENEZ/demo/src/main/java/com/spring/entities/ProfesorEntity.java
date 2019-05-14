@@ -21,7 +21,7 @@ import lombok.ToString;
 @ToString
 @Entity
 @Table(name = "profesor")
-public class Profesor {
+public class ProfesorEntity {
 	
 	@Id
 	@GeneratedValue
@@ -44,6 +44,6 @@ public class Profesor {
 
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="id_clase")
-	private Clase claseProfesor;
+	private ClaseEntity claseProfesor;
 
 }

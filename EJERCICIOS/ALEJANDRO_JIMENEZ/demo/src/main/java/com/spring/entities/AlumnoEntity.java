@@ -9,32 +9,47 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+
+/**
+ * Clase Alumno
+ * 
+ * @author Alejandro Jimenez
+ * @version 03.05.2019
+ */
 
 @Getter
 @Setter
 @NoArgsConstructor
 @ToString
 @Entity
-@Table(name = "asignatura")
-public class Asignatura {
+@Table(name = "alumno")
+public class AlumnoEntity {
 
 	@Id
 	@GeneratedValue
-	@Column(name = "id_asignatura")
+	@Column(name="id")
 	private Long id;
 	
 	@Column(name="nombre")
 	private String nombre;
 	
-	@Column(name="orden")
-	private int orden;
+	@Column(name="apellidos")
+	private String apellidos;
+	
+	@Column(name="email")
+	private String email;
+	
+	@Column(name="ciudad")
+	private String ciudad;
 	
 
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="id_clase")
-	private Clase claseAsignatura;
+	private ClaseEntity claseAlumno;
+
 }

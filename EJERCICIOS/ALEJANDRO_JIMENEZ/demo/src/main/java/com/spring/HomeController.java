@@ -7,9 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.spring.dto.AsignaturaDTO;
-import com.spring.entities.Asignatura;
-import com.spring.managers.AsignaturaManager;
+
 
 import lombok.Getter;
 import lombok.Setter;
@@ -41,6 +39,16 @@ public class HomeController {
 	public String home() {
 		log.info("Atributo " + atributo);
 		return "home";
+	}
+	
+	public String primeraOpcion(@PathVariable("miVariable") String miVariable, @PathVariable("saludo") String miSaludo, Model model) {
+		if(miSaludo.equals("hola")) {
+			return "hola";
+		}
+		else {
+			model.addAttribute("variableAdios",miVariable);
+			return "adios";
+		}
 	}
 	 
 }

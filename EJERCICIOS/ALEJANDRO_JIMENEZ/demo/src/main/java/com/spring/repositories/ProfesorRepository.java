@@ -5,15 +5,15 @@ import java.util.Optional;
 
 import org.springframework.data.repository.Repository;
 
-import com.spring.entities.Profesor;
+import com.spring.entities.ProfesorEntity;
 
-public interface ProfesorRepository extends Repository<Profesor, Integer> {
+public interface ProfesorRepository extends Repository<ProfesorEntity, Integer> {
 	
-	void delete(Profesor deleted);
+	void delete(ProfesorEntity deleted);
 	
-	List<Profesor> findAll();
+	List<ProfesorEntity> findAll();
 	
-	Optional<Profesor> findOne(int id);
+	Optional<ProfesorEntity> findOne(Long id);
 	
-	Profesor save(Profesor persisted);
+	ProfesorEntity save(ProfesorEntity persisted);
 }

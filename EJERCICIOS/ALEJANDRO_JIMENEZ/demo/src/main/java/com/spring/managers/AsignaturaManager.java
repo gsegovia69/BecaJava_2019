@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.spring.dto.AsignaturaDTO;
-import com.spring.entities.Asignatura;
+import com.spring.entities.AsignaturaEntity;
 import com.spring.repositories.AsignaturaRepository;
 
 @Service
@@ -21,34 +21,37 @@ public class AsignaturaManager {
 	
 	public List<AsignaturaDTO> getAlumnos(){
 		
-		List<Asignatura> listaEntities =repository.findAll();
+		List<AsignaturaEntity> listaEntities =repository.findAll();
 		List<AsignaturaDTO> dtoList= new ArrayList<>();
 		
-		for(Asignatura entity : listaEntities) {
-			dtoList.add(transformEntity(entity));
+		for(AsignaturaEntity entity : listaEntities) {
+			dtoList.add(entityToDTO(entity));
 		}
 		return dtoList;
 	}
 	
 	public AsignaturaDTO getOneAsignatura(Long idAsignatura) {
-		return transformEntity(repository.findOne(idAsignatura).get());
+		return entityToDTO(repository.findOne(idAsignatura).get());
 	}
+	
 	public AsignaturaDTO guardar(AsignaturaDTO dto) {
-		Asignatura entity = transformDTO(dto);
+		AsignaturaEntity entity = dtoToEntity(dto);
 		entity= repository.save(entity);
-		return transformEntity(entity);
+		return entityToDTO(entity);
 	}
-	private AsignaturaDTO transformEntity(Asignatura asignatura) {
+	
+	
+	
+	private AsignaturaDTO entityToDTO(AsignaturaEntity entity) {
 		AsignaturaDTO dto = new AsignaturaDTO();
-		dto.setId(asignatura.getId());
-		dto.setNombre(asignatura.getNombre());
-		dto.setOrden(asignatura.getOrden());
-		dto.setIdClase(asignatura.getId());
+		dto.setId(entity.getId());
+		dto.setNombre(entity.getNombre());
+		dto.setOrden(entity.getOrden());
 		return dto;
 		
 	}
-	private Asignatura transformDTO(AsignaturaDTO dto) {
-		Asignatura entity = new Asignatura();
+	private AsignaturaEntity dtoToEntity(AsignaturaDTO dto) {
+		AsignaturaEntity entity = new AsignaturaEntity();
 		entity.setId(dto.getId());
 		entity.setNombre(dto.getNombre());
 		entity.setOrden(dto.getOrden());

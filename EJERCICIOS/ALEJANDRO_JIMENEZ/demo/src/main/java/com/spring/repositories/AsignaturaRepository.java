@@ -2,22 +2,21 @@ package com.spring.repositories;
 
 import java.util.List;
 import java.util.Optional;
-
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.Repository;
 
-import com.spring.entities.Asignatura;
+import com.spring.entities.AsignaturaEntity;
 
-public interface AsignaturaRepository extends Repository<Asignatura, Long> {
+
+public interface AsignaturaRepository extends Repository<AsignaturaEntity, Long> {
 	
-	void delete(Asignatura deleted);
+	void delete(AsignaturaEntity deleted);
 	
-	List<Asignatura> findAll();
+	List<AsignaturaEntity> findAll();
 	
-	Optional<Asignatura> findOne(Long id);
+	Optional<AsignaturaEntity> findOne(Long id);
 	
-	Asignatura save(Asignatura persisted);
+	AsignaturaEntity save(AsignaturaEntity persisted);
 	
-	@Query(value="Select a from Asignatura a where a.idClase = ?")
-	List<Asignatura> dameAsignaturasPorCurso(Long idClase);
+	
+	
 }
