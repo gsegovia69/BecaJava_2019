@@ -35,21 +35,21 @@ public class HomeController {
 		return "hola";
 	}*/
 	
-//	//@GetMapping("/")
-//	public String home() {
-//		log.info("Atributo " + atributo);
-//		return "home";
-//	}
-//	
-//	
-//	public String primeraOpcion(@PathVariable("miVariable") String miVariable, @PathVariable("saludo") String miSaludo, Model model) {
-//		if(miSaludo.equals("hola")) {
-//			return "hola";
-//		}
-//		else {
-//			model.addAttribute("variableAdios",miVariable);
-//			return "adios";
-//		}
-//	}
+	@GetMapping("/home")
+	public String home() {
+		log.info("Atributo " + atributo);
+		return "home";
+	}
+	
+	/*@GetMapping("/prueba")
+	public String primeraOpcion(@PathVariable("miVariable") String miVariable, @PathVariable("saludo") String miSaludo, Model model) {
+		if(miSaludo.equals("hola")) {
+			return "hola";
+		}
+		else {
+			model.addAttribute("variableAdios",miVariable);
+			return "adios";
+		}
+	}*/
 	 
 }
