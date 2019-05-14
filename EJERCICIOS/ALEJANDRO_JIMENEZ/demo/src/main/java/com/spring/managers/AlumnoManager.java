@@ -1,5 +1,6 @@
 package com.spring.managers;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +26,8 @@ public class AlumnoManager{
 	
 
 	public AlumnoDTO getOneAlumno(Long idAlumno) {
-		return entityToDTO(repository.findById(idAlumno).get());
+		AlumnoEntity entity = repository.findById(idAlumno).orElse(new AlumnoEntity());
+		return entityToDTO(entity);
 	}
 	
 	public AlumnoDTO guardarAlumno(AlumnoDTO dto) {
@@ -34,6 +36,32 @@ public class AlumnoManager{
 		return entityToDTO(entity);
 	}
 
+	public List<AlumnoDTO> buscarPorNombre(String name){
+		List <AlumnoDTO> dtoList = new ArrayList<>();
+		repository.findAllByNombreOrderByApellidosAsc(name)
+		.forEach(entity -> dtoList.add(entityToDTO(entity)));
+		return dtoList;
+	}
+	public List<AlumnoDTO> buscarPorNombreApellidos(String name,String apellidos){
+		List <AlumnoDTO> dtoList = new ArrayList<>();
+		repository.findAllByNombreAndApellidosOrderByApellidosAsc(name,apellidos)
+		.forEach(entity -> dtoList.add(entityToDTO(entity)));
+		return dtoList;
+	}
+	public List<AlumnoDTO> buscarPorNombreApellidosCiudad(String name,String apellidos,String ciudad){
+		List <AlumnoDTO> dtoList = new ArrayList<>();
+		repository.findAllByNombreOrApellidosOrCiudadOrderByEmailAsc(name,apellidos,ciudad)
+		.forEach(entity -> dtoList.add(entityToDTO(entity)));
+		return dtoList;
+	}
+	
+	public List<AlumnoDTO> buscarTodo(String name,String apellidos,String ciudad){
+		List <AlumnoDTO> dtoList = new ArrayList<>();
+		repository.findAllByOrderByNombreDesc()
+		.forEach(entity -> dtoList.add(entityToDTO(entity)));
+		return dtoList;
+	}
+	
 	private AlumnoDTO entityToDTO (AlumnoEntity entity) {
 		AlumnoDTO dto = new AlumnoDTO();
 		dto.setId(entity.getId());
