@@ -37,6 +37,16 @@ public class ProfesorManager {
 		return entityToDTO(entity);
 	}
 	
+	
+	public List<ProfesorDTO> filtrarProfe(ProfesorDTO dto){
+		List <ProfesorDTO> dtoList = new ArrayList<ProfesorDTO>();
+		List<ProfesorEntity> entityList = repository.filtrarEmailCiudad(dto.getNombre(), dto.getCiudad());
+		for(ProfesorEntity entity : entityList) {
+			ProfesorDTO auxDTO = entityToDTO(entity);
+			dtoList.add(auxDTO);
+		}
+		return dtoList;
+	}
 
 	
 	

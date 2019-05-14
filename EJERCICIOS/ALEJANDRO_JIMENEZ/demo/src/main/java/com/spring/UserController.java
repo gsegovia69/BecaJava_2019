@@ -9,17 +9,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class UserController {
 	
-	@RequestMapping(value = "/hola/{userName}")
-	public String hola (@PathVariable("userName") String nombre, Model model) {
-		model.addAttribute("nombre",nombre);
-		return "hola";
-	}
-	
-	@GetMapping("/adios/{userName}")
-	public String adios (@PathVariable("userName") String nombre, Model model) {
-		model.addAttribute("nombre",nombre);
-		return "adios";
-	}
+//	@RequestMapping(value = "/hola/{userName}")
+//	public String hola (@PathVariable("userName") String nombre, Model model) {
+//		model.addAttribute("nombre",nombre);
+//		return "hola";
+//	}
+//	
+//	@GetMapping("/adios/{userName}")
+//	public String adios (@PathVariable("userName") String nombre, Model model) {
+//		model.addAttribute("nombre",nombre);
+//		return "adios";
+//	}
 	
 	
 }

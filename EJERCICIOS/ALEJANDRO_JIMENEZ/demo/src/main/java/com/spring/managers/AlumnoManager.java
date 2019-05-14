@@ -36,9 +36,9 @@ public class AlumnoManager{
 		return entityToDTO(entity);
 	}
 
-	public List<AlumnoDTO> buscarPorNombre(String name){
+	public List<AlumnoDTO> buscarPorNombreDesc(String name){
 		List <AlumnoDTO> dtoList = new ArrayList<>();
-		repository.findAllByNombreOrderByApellidosAsc(name)
+		repository.findAllByNombreOrderByApellidosDesc(name)
 		.forEach(entity -> dtoList.add(entityToDTO(entity)));
 		return dtoList;
 	}
