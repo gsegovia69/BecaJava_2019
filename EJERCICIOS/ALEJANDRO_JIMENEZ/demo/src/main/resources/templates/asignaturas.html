@@ -1,0 +1,27 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+		<h3>Asignaturas</h3>
+      <button onclick="location.href = 'clases';">clases </button>
+      <button onclick="location.href = 'alumnos';">Alumnos</button>
+      <button onclick="location.href = 'profesores';">Profesores</button>
+	
+	<table>
+		<tr>
+			<th>NOMBRE</th>
+			<th>ORDEN</th>
+
+		</tr>	
+		<tr th:each="asig : ${asignaturas}">
+			<td th:text="${asig.nombre}">nombre</td>
+			<td th:text="${asig.orden}">orden</td>
+			<td> <a th:href="@{/editarAsignatura(idAsignatura=${asig.id})}">Editar</a></td>
+		</tr>
+	</table>
+</body>
+</html>

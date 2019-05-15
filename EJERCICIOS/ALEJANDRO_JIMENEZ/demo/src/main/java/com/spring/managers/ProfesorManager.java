@@ -2,13 +2,13 @@ package com.spring.managers;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Service;
 import com.spring.dto.ProfesorDTO;
 import com.spring.entities.ProfesorEntity;
 import com.spring.repositories.ProfesorRepository;
 
+@Service
 public class ProfesorManager {
 
 	@Autowired
@@ -27,8 +27,9 @@ public class ProfesorManager {
 		return listaDTO;
 	}
 	
-	public ProfesorDTO getOneProfesor(int idProfesor) {
-		return entityToDTO(repository.findById(idProfesor).get());
+	public ProfesorDTO getOneProfesor(Long idProfesor) {
+		ProfesorEntity entity = repository.findById(idProfesor).orElse(new ProfesorEntity());
+		return entityToDTO(entity);
 	}
 	
 	public ProfesorDTO guardarProfesor(ProfesorDTO dto) {

@@ -37,7 +37,5 @@ public class AsignaturaEntity {
 	@JoinColumn(name="id_clase")
 	private ClaseEntity claseAsignatura;
 
-
-
 	
 }

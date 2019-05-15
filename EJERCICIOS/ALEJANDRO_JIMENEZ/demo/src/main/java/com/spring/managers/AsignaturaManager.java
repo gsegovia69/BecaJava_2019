@@ -19,11 +19,10 @@ public class AsignaturaManager {
 		return repository;
 	}
 	
-	public List<AsignaturaDTO> getAsignatura(){
+	public List<AsignaturaDTO> getAsignaturas(){
 		
 		List<AsignaturaEntity> listaEntities =(List<AsignaturaEntity>) repository.findAll();
 		List<AsignaturaDTO> dtoList= new ArrayList<>();
-		
 		for(AsignaturaEntity entity : listaEntities) {
 			dtoList.add(entityToDTO(entity));
 		}

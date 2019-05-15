@@ -2,10 +2,8 @@ package com.spring.managers;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.spring.dto.AlumnoDTO;
 import com.spring.entities.AlumnoEntity;
 import com.spring.repositories.AlumnoRepository;
@@ -20,8 +18,14 @@ public class AlumnoManager{
 		return repository;
 	}
 	
-	public List<AlumnoEntity> getAlumnos(){
-		return (List<AlumnoEntity>) repository.findAll();
+	public List<AlumnoDTO> getAlumnos(){
+		List<AlumnoEntity> listaEntities =(List<AlumnoEntity>) repository.findAll();
+		List<AlumnoDTO> dtoList= new ArrayList<>();
+		
+		for(AlumnoEntity entity : listaEntities) {
+			dtoList.add(entityToDTO(entity));
+		}
+		return dtoList;
 	}
 	
 
@@ -32,7 +36,7 @@ public class AlumnoManager{
 	
 	public AlumnoDTO guardarAlumno(AlumnoDTO dto) {
 		AlumnoEntity entity = dtoToEntity(dto);
-		entity = repository.save(entity);
+		repository.save(entity);
 		return entityToDTO(entity);
 	}
 
@@ -79,6 +83,7 @@ public class AlumnoManager{
 		entity.setApellidos(dto.getApellidos());
 		entity.setEmail(dto.getEmail());
 		entity.setCiudad(dto.getCiudad());
+
 		return entity;
 	}
 }
