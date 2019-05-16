@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -13,24 +14,25 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-
-public class Profesor {
+@Table(name = "alumno")
+public class AlumnoEntity {
 
 	@Id
 	@GeneratedValue
 	@Column(name = "id")
-	private int idProfesor;
+	private int idAlumno;
 	@Column(name = "nombre")
-	private String nombreProfesor;
+	private String nombreAlumno;
 	@Column(name = "apellidos")
-	private String apellidosProfesor;
+	private String apellidosAlumno;
 	@Column(name = "email")
-	private String emailProfesor;
+	private String emailAlumno;
 	@Column(name = "ciudad")
-	private String ciudadPRofesor;
+	private String ciudadAlumno;
 	
 	@ManyToOne
 	@JoinColumn(name = "id_clase")
-	private Clase claseProfesor;
+	private ClaseEntity claseAlumno;
 	
 }
+

@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -13,8 +14,8 @@ import lombok.Setter;
 @Setter
 @Getter
 @Entity
-
-public class Asignatura {
+@Table(name = "asignatura")
+public class AsignaturaEntity {
 
 		@Id
 		@GeneratedValue
@@ -27,6 +28,6 @@ public class Asignatura {
 		
 		@ManyToOne
 		@JoinColumn(name = "id_clase")
-		private Clase claseAsignatura;
+		private ClaseEntity claseAsignatura;
 }
 
