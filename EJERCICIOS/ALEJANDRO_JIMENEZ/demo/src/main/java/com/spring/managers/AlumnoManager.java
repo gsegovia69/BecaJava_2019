@@ -7,12 +7,15 @@ import org.springframework.stereotype.Service;
 import com.spring.dto.AlumnoDTO;
 import com.spring.entities.AlumnoEntity;
 import com.spring.repositories.AlumnoRepository;
+import com.spring.utils.Conversor;
 
 @Service
 public class AlumnoManager{
 
 	@Autowired
 	private AlumnoRepository repository;
+	
+	private Conversor conversor = new Conversor();
 	
 	public AlumnoRepository getRepository() {
 		return repository;
@@ -35,6 +38,7 @@ public class AlumnoManager{
 	}
 	
 	public AlumnoDTO guardarAlumno(AlumnoDTO dto) {
+		System.out.println(dto.toString());
 		AlumnoEntity entity = dtoToEntity(dto);
 		repository.save(entity);
 		return entityToDTO(entity);
@@ -68,13 +72,14 @@ public class AlumnoManager{
 	
 	private AlumnoDTO entityToDTO (AlumnoEntity entity) {
 		AlumnoDTO dto = new AlumnoDTO();
+		
 		dto.setId(entity.getId());
 		dto.setNombre(entity.getNombre());
 		dto.setApellidos(entity.getApellidos());
 		dto.setEmail(entity.getEmail());
 		dto.setCiudad(entity.getCiudad());
+		dto.setIdClase(conversor.ClaseToLong(entity.getClaseAlumno()));
 		return dto;
-		
 	}
 	private AlumnoEntity dtoToEntity(AlumnoDTO dto) {
 		AlumnoEntity entity = new AlumnoEntity();
@@ -83,7 +88,7 @@ public class AlumnoManager{
 		entity.setApellidos(dto.getApellidos());
 		entity.setEmail(dto.getEmail());
 		entity.setCiudad(dto.getCiudad());
-
+		entity.setClaseAlumno(conversor.LongToClase(dto.getIdClase()));
 		return entity;
 	}
 }

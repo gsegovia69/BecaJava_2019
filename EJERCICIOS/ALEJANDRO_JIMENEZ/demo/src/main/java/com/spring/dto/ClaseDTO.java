@@ -19,7 +19,6 @@ public class ClaseDTO {
 	
 	private String nombre;
 	
-	private Long idClase;
 	
 	
 }

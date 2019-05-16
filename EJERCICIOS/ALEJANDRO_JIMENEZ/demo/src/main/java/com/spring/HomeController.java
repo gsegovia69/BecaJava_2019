@@ -113,8 +113,8 @@ public class HomeController {
 	
 	@PostMapping("/alumno/edit")
 	public String procesarEditarAlumno(@ModelAttribute AlumnoDTO alu,Model model) {
+		alu.toString();
 		alumnoManager.guardarAlumno(alu);
-		System.out.println(alu.getNombre());
 		return "alumnos";
 	}
 }
