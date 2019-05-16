@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 import com.spring.dto.AlumnoDTO;
 import com.spring.entities.AlumnoEntity;
 import com.spring.repositories.AlumnoRepository;
-import com.spring.utils.Conversor;
 
 @Service
 public class AlumnoManager{
@@ -15,8 +14,10 @@ public class AlumnoManager{
 	@Autowired
 	private AlumnoRepository repository;
 	
-	private Conversor conversor = new Conversor();
+	@Autowired
+	private ClaseManager clasemanager;
 	
+
 	public AlumnoRepository getRepository() {
 		return repository;
 	}
@@ -26,7 +27,7 @@ public class AlumnoManager{
 		List<AlumnoDTO> dtoList= new ArrayList<>();
 		
 		for(AlumnoEntity entity : listaEntities) {
-			dtoList.add(entityToDTO(entity));
+			dtoList.add(toDTO(entity));
 		}
 		return dtoList;
 	}
@@ -34,61 +35,63 @@ public class AlumnoManager{
 
 	public AlumnoDTO getOneAlumno(Long idAlumno) {
 		AlumnoEntity entity = repository.findById(idAlumno).orElse(new AlumnoEntity());
-		return entityToDTO(entity);
+		return toDTO(entity);
 	}
 	
-	public AlumnoDTO guardarAlumno(AlumnoDTO dto) {
-		System.out.println(dto.toString());
-		AlumnoEntity entity = dtoToEntity(dto);
-		repository.save(entity);
-		return entityToDTO(entity);
-	}
+	
 
 	public List<AlumnoDTO> buscarPorNombreDesc(String name){
 		List <AlumnoDTO> dtoList = new ArrayList<>();
 		repository.findAllByNombreOrderByApellidosDesc(name)
-		.forEach(entity -> dtoList.add(entityToDTO(entity)));
+		.forEach(entity -> dtoList.add(toDTO(entity)));
 		return dtoList;
 	}
 	public List<AlumnoDTO> buscarPorNombreApellidos(String name,String apellidos){
 		List <AlumnoDTO> dtoList = new ArrayList<>();
 		repository.findAllByNombreAndApellidosOrderByApellidosAsc(name,apellidos)
-		.forEach(entity -> dtoList.add(entityToDTO(entity)));
+		.forEach(entity -> dtoList.add(toDTO(entity)));
 		return dtoList;
 	}
 	public List<AlumnoDTO> buscarPorNombreApellidosCiudad(String name,String apellidos,String ciudad){
 		List <AlumnoDTO> dtoList = new ArrayList<>();
 		repository.findAllByNombreOrApellidosOrCiudadOrderByEmailAsc(name,apellidos,ciudad)
-		.forEach(entity -> dtoList.add(entityToDTO(entity)));
+		.forEach(entity -> dtoList.add(toDTO(entity)));
 		return dtoList;
 	}
 	
 	public List<AlumnoDTO> buscarTodo(String name,String apellidos,String ciudad){
 		List <AlumnoDTO> dtoList = new ArrayList<>();
 		repository.findAllByOrderByNombreDesc()
-		.forEach(entity -> dtoList.add(entityToDTO(entity)));
+		.forEach(entity -> dtoList.add(toDTO(entity)));
 		return dtoList;
 	}
 	
-	private AlumnoDTO entityToDTO (AlumnoEntity entity) {
+	public AlumnoDTO guardarAlumno(AlumnoDTO dto) {
+		AlumnoEntity entity = toEntity(dto);
+		repository.save(entity);
+		return toDTO(entity);
+	}
+	
+	private AlumnoDTO toDTO (AlumnoEntity entity) {
 		AlumnoDTO dto = new AlumnoDTO();
-		
 		dto.setId(entity.getId());
 		dto.setNombre(entity.getNombre());
 		dto.setApellidos(entity.getApellidos());
 		dto.setEmail(entity.getEmail());
 		dto.setCiudad(entity.getCiudad());
-		dto.setIdClase(conversor.ClaseToLong(entity.getClaseAlumno()));
+		if(entity.getClaseAlumno().getId()!=null) {
+		dto.setIdClase(entity.getClaseAlumno().getId());
+		}
 		return dto;
 	}
-	private AlumnoEntity dtoToEntity(AlumnoDTO dto) {
+	private AlumnoEntity toEntity(AlumnoDTO dto) {
 		AlumnoEntity entity = new AlumnoEntity();
 		entity.setId(dto.getId());
 		entity.setNombre(dto.getNombre());
 		entity.setApellidos(dto.getApellidos());
 		entity.setEmail(dto.getEmail());
 		entity.setCiudad(dto.getCiudad());
-		entity.setClaseAlumno(conversor.LongToClase(dto.getIdClase()));
+		entity.setClaseAlumno(clasemanager.dameClaseEntitdad(dto.getIdClase()));
 		return entity;
 	}
 }

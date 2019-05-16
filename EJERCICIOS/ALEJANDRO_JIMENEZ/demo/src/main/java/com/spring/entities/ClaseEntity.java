@@ -44,5 +44,7 @@ public class ClaseEntity {
 
 	@OneToMany(mappedBy="claseAsignatura")
 	private List<AsignaturaEntity> asignaturas = new ArrayList<AsignaturaEntity>();
+	
+	
 }
 

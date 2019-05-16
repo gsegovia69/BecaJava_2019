@@ -3,6 +3,8 @@ package com.spring.dto;
 
 
 
+import java.util.List;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -35,6 +37,8 @@ public class AlumnoDTO {
 	
 
 	private String ciudad;
+
+	private List<ClaseDTO> listaClases;
 	
 	private Long idClase;
 

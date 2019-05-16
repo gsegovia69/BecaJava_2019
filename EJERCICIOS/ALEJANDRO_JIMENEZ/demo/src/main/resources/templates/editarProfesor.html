@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div>
-		<form action="" th:object="${prof}" method="get">
+		<form action="#" th:action="@{/profesor/edit}" th:object="${prof}" method="post">
 			<fieldset>
     			<legend>ALUMNO</legend>
     				<table>
@@ -28,13 +28,22 @@
     					<td><input type="text" th:field="*{ciudad}"/></td>
     				</tr>
     				<tr>
+    					<td><label th:text="Clase"></label><td>
+    					<td><select th:field="${prof.idClase}">
+						<option th:each="clase : ${prof.listaClases}"
+								th:value="${{clase.id}}"
+								th:text="${clase.nombre}"
+								th:selected="(${clase.id} eq ${prof.idClase})"/>
+						</select></td>
+    				</tr>
+    				<tr>
 	                <td>
 	                    <button type="submit">Editar</button>
 	                </td>
 	                </tr>
     				</table>
     		</fieldset>
-            
+            <input type="hidden" th:field="${prof.id}"/>
 		</form>
 	</div>
 

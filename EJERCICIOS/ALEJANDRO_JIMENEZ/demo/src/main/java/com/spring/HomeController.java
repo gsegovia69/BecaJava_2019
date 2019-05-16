@@ -9,7 +9,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.spring.dto.AlumnoDTO;
@@ -86,6 +85,7 @@ public class HomeController {
 	@GetMapping("/editarAlumno")
 	public String editarAlumno(@RequestParam Long idAlumno ,Model model) {
 		AlumnoDTO alum =alumnoManager.getOneAlumno(idAlumno);
+		alum.setListaClases(claseManager.getClases());
 		model.addAttribute("alum",alum);
 		return "editarAlumno";
 	}
@@ -93,6 +93,7 @@ public class HomeController {
 	@GetMapping("/editarProfesor")
 	public String editarProfesor(@RequestParam Long idProfesor ,Model model) {
 		ProfesorDTO prof =profesorManager.getOneProfesor(idProfesor);
+		prof.setListaClases(claseManager.getClases());
 		model.addAttribute("prof",prof);
 		return "editarProfesor";
 	}
@@ -100,6 +101,7 @@ public class HomeController {
 	@GetMapping("/editarAsignatura")
 	public String editarAsignatura(@RequestParam Long idAsignatura ,Model model) {
 		AsignaturaDTO asig =asignaturaManager.getOneAsignatura(idAsignatura);
+		asig.setListaClases(claseManager.getClases());
 		model.addAttribute("asig",asig);
 		return "editarAsignatura";
 	}
@@ -113,8 +115,23 @@ public class HomeController {
 	
 	@PostMapping("/alumno/edit")
 	public String procesarEditarAlumno(@ModelAttribute AlumnoDTO alu,Model model) {
-		alu.toString();
 		alumnoManager.guardarAlumno(alu);
-		return "alumnos";
+		return "redirect:/lista/alumnos";
 	}
+	@PostMapping("/asignatura/edit")
+	public String procesarEditarAsignatura(@ModelAttribute AsignaturaDTO asig,Model model) {
+		asignaturaManager.guardarAsignatura(asig);
+		return "redirect:/lista/asignaturas";
+	}
+	@PostMapping("/profesor/edit")
+	public String procesarEditarProfesor(@ModelAttribute ProfesorDTO prof,Model model) {
+		profesorManager.guardarProfesor(prof);
+		return "redirect:/lista/profesores";
+	}
+	@PostMapping("/clase/edit")
+	public String procesarEditarClase(@ModelAttribute ClaseDTO clase,Model model) {
+		claseManager.guardarClase(clase);
+		return "redirect:/lista/clases";
+	}
+	
 }

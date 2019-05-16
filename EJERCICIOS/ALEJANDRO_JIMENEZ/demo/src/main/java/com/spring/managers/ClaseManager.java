@@ -22,34 +22,40 @@ public class ClaseManager {
 		List<ClaseEntity> listaEntities =(List<ClaseEntity>) repository.findAll();
 		List<ClaseDTO> dtoList= new ArrayList<>();
 		for(ClaseEntity entity : listaEntities) {
-			dtoList.add(entityToDTO(entity));
+			dtoList.add(toDTO(entity));
 		}
 		return dtoList;
 	}
 	
 	
 	public ClaseDTO getOneClase(Long idClase) {
-		return entityToDTO(repository.findById(idClase).get());
+		 ClaseEntity entity =repository.findById(idClase).get();
+		 ClaseDTO clase = toDTO(entity);
+		return clase;
 	}
 	
 	public ClaseDTO guardarClase(ClaseDTO dto) {
-		ClaseEntity entity = dtoToEntity(dto);
+		ClaseEntity entity = toEntity(dto);
 		entity = repository.save(entity);
-		return entityToDTO(entity);
+		return toDTO(entity);
 	}
 	
-	private ClaseDTO entityToDTO(ClaseEntity entity) {
+	private ClaseDTO toDTO(ClaseEntity entity) {
 		ClaseDTO dto = new ClaseDTO();
 		dto.setId(entity.getId());
 		dto.setNombre(entity.getNombre());
 		return dto;
 		
 	}
-	private ClaseEntity dtoToEntity(ClaseDTO dto) {
+	private ClaseEntity toEntity(ClaseDTO dto) {
 		ClaseEntity entity = new ClaseEntity();
 		entity.setId(dto.getId());
 		entity.setNombre(dto.getNombre());
 		return entity;
 		
+	}
+	
+	public ClaseEntity dameClaseEntitdad (Long id) {
+		return repository.findById(id).orElse(new ClaseEntity());
 	}
 }

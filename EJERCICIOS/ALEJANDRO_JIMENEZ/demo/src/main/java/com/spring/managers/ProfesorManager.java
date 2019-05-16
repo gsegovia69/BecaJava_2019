@@ -14,6 +14,9 @@ public class ProfesorManager {
 	@Autowired
 	private ProfesorRepository repository;
 	
+	@Autowired
+	private ClaseManager claseManager;
+	
 	public ProfesorRepository getRepository() {
 		return repository;
 	}
@@ -22,20 +25,20 @@ public class ProfesorManager {
 		List<ProfesorEntity> listaEntities = (List<ProfesorEntity>) repository.findAll();
 		List<ProfesorDTO> listaDTO = new ArrayList<>();
 		for(ProfesorEntity entity : listaEntities) {
-			listaDTO.add(entityToDTO(entity));
+			listaDTO.add(toDTO(entity));
 		}
 		return listaDTO;
 	}
 	
 	public ProfesorDTO getOneProfesor(Long idProfesor) {
 		ProfesorEntity entity = repository.findById(idProfesor).orElse(new ProfesorEntity());
-		return entityToDTO(entity);
+		return toDTO(entity);
 	}
 	
 	public ProfesorDTO guardarProfesor(ProfesorDTO dto) {
-		ProfesorEntity entity = dtoToEntity(dto);
+		ProfesorEntity entity = toEntity(dto);
 		entity = repository.save(entity);
-		return entityToDTO(entity);
+		return toDTO(entity);
 	}
 	
 	
@@ -43,7 +46,7 @@ public class ProfesorManager {
 		List <ProfesorDTO> dtoList = new ArrayList<ProfesorDTO>();
 		List<ProfesorEntity> entityList = repository.filtrarEmailCiudad(dto.getNombre(), dto.getCiudad());
 		for(ProfesorEntity entity : entityList) {
-			ProfesorDTO auxDTO = entityToDTO(entity);
+			ProfesorDTO auxDTO = toDTO(entity);
 			dtoList.add(auxDTO);
 		}
 		return dtoList;
@@ -53,23 +56,27 @@ public class ProfesorManager {
 	
 	
 	
-	private ProfesorDTO entityToDTO(ProfesorEntity entity) {
+	private ProfesorDTO toDTO(ProfesorEntity entity) {
 		ProfesorDTO dto = new ProfesorDTO();
 		dto.setId(entity.getId());
 		dto.setNombre(entity.getNombre());
 		dto.setApellidos(entity.getApellidos());
 		dto.setEmail(entity.getEmail());
 		dto.setCiudad(entity.getCiudad());
+		if(entity.getClaseProfesor().getId()!=null) {
+			dto.setIdClase(entity.getClaseProfesor().getId());
+		}
 		return dto;
-		
 	}
-	private ProfesorEntity dtoToEntity(ProfesorDTO dto) {
+	
+	private ProfesorEntity toEntity(ProfesorDTO dto) {
 		ProfesorEntity entity = new ProfesorEntity();
 		entity.setId(dto.getId());
 		entity.setNombre(dto.getNombre());
 		entity.setApellidos(dto.getApellidos());
 		entity.setEmail(dto.getEmail());
 		entity.setCiudad(dto.getCiudad());
+		entity.setClaseProfesor(claseManager.dameClaseEntitdad(dto.getIdClase()));
 		return entity;
 	}
 }

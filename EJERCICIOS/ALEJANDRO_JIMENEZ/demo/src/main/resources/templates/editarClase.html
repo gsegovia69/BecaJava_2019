@@ -7,7 +7,7 @@
 </head>
 <body>
 		<div>
-		<form action="" th:object="${clase}" method="get">
+		<form action="#" th:action="@{/clase/edit}" th:object="${clase}" method="post">
 			<fieldset>
     			<legend>Clase</legend>
     				<table>
@@ -22,7 +22,7 @@
 	                </tr>
     				</table>
     		</fieldset>
-            
+       <input type="hidden" th:field="${clase.id}"/>
 		</form>
 	</div>
 

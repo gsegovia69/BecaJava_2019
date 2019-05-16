@@ -27,6 +27,15 @@
     					<td><label th:text="Ciudad"></label><td>
     					<td><input type="text" th:field="*{ciudad}"/></td>
     				</tr>
+	                <tr>
+    					<td><label th:text="Clase"></label><td>
+    					<td><select th:field="${alum.idClase}">
+						<option th:each="clase : ${alum.listaClases}"
+								th:value="${{clase.id}}"
+								th:text="${clase.nombre}"
+								th:selected="(${clase.id} eq ${alum.idClase})"/>
+						</select></td>
+    				</tr>
     				<tr>
 	                <td>
 	                    <button type="submit">Editar</button>
@@ -34,9 +43,8 @@
 	                </tr>
     				</table>
     		</fieldset>
-            
+            <input type="hidden" th:field="*{id}"/>
 		</form>
 	</div>
-
 </body>
 </html>

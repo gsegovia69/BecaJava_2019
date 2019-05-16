@@ -1,6 +1,8 @@
 package com.spring.dto;
 
 
+import java.util.List;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -18,6 +20,8 @@ public class AsignaturaDTO {
 	private String nombre;
 	
 	private int orden;
+	
+	private List<ClaseDTO> listaClases;
 	
 	private Long idClase;
 }

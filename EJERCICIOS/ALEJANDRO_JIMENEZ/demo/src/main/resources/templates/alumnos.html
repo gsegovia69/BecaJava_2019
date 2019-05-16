@@ -13,18 +13,20 @@
 
 	<table>
 		<tr>
+			<th>ID</th>
 			<th>NOMBRE</th>
 			<th>APELLIDOS</th>
 			<th>EMAIL</th>
 			<th>CIUDAD</th>
-
+			<th>ID_CLASE</th>
 		</tr>	
 		<tr th:each="alum : ${alumnos}">
-		
+			<td th:text="${alum.id}">nombre</td>
 			<td th:text="${alum.nombre}">nombre</td>
 			<td th:text="${alum.apellidos}">apellidos</td>
 			<td th:text="${alum.email}">email</td>
 			<td th:text="${alum.ciudad}">ciudad</td>
+			<td th:text="${alum.idClase}">id Clase</td>
 			<td> <a th:href="@{/editarAlumno(idAlumno=${alum.id})}">Editar</a></td>
 		</tr>
 	</table>
