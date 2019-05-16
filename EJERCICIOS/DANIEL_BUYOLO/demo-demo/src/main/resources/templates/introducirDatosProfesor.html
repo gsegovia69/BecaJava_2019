@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insertar Datos Profesor</title>
+
+<style type="text/css">
+
+.formulario{
+
+	width: 450px;
+	font-size: 16px;
+	background: #495C70;
+	padding: 30px 30px 15px 30px;
+	border: 5px solid #53687E;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #fff;
+}
+form{
+
+		
+}
+
+form label {
+	display:block;
+	margin-bottom: 10px;
+	/* display: inline-block;
+	float: left;
+	width: 150px; */
+}
+
+form input[type=text],
+form input[type=email] 
+{
+	background: transparent;
+	border: none;
+	border-bottom: 1px dashed #83A4C5;
+	width: 275px;
+	outline: none;
+	padding: 0px 0px 0px 0px;
+	font-style: italic;
+	color: yellow;
+}
+
+form input[type=text]:focus,
+form input[type=email]:focus,
+form input[type=email] :focus
+{
+	border-bottom: 1px dashed #D9FFA9;
+}
+
+form input[type=submit],
+form input[type=button]{
+	background: #576E86;
+	border: none;
+	padding: 8px 10px 8px 10px;
+	border-radius: 5px;
+	color: white; 
+	
+}
+form input[type=submit]:hover,
+form input[type=button]:hover{
+	background: #394D61;
+}
+
+</style>
+</head>
+<body>
+<div class="formulario">
+	<form action="" th:action="@{/guardaDatosProfesor}" th:object="${profesorDto}" method="post">
+		<div>
+			<label for="nombre">Nombre: </label> 
+			<input type="text"	th:field="*{nombre}" />
+		</div>
+		<div>
+			<label for="apellidos">Apellidos: </label> 
+			<input type="text"	th:field="*{apellidos}" />
+		</div>
+		<div>
+			<label for="email">Email: </label> 
+			<input type="text"	th:field="*{email}" />
+		</div>
+		<div>
+			<label for="ciudad">Ciudad: </label> 
+			<input type="text"	th:field="*{ciudad}" />
+		</div>
+		<div>
+			<label for="cursos">Cursos: </label>
+			
+			<select th:field="${profesorDto.idClase}">
+
+				<option th:each="curso : ${profesorDto.listaClase}"
+						th:value="${{curso.idClase}}"
+						th:text="${curso.nombreClase}"
+						th:selected="(${curso.idClase} eq ${profesorDto.idClase})" />
+			</select>
+		</div>
+		<div >
+		<label for=""> </label>
+			<input type="hidden" th:field="${profesorDto.id}" value="${profesorDto.id}" />
+			<input type="submit" value="Modificar" />
+		</div>
+	</form>
+	</div>
+</body>
+</html>

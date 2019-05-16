@@ -22,6 +22,7 @@ public class ClaseManager {
 	
 	public List<ClaseDTO> dameClases() {
 		List<ClaseDTO> listaClaseDto = new ArrayList<>();
+		
 		repository.findAll().forEach(claseEntity -> listaClaseDto.add(transformEntity(claseEntity)));
 		
 		return listaClaseDto;

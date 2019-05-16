@@ -15,7 +15,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.demo.prueba.dto.AlumnoDTO;
+import com.demo.prueba.dto.AsignaturaDTO;
+import com.demo.prueba.dto.ProfesorDTO;
 import com.demo.prueba.manager.AlumnoManager;
+import com.demo.prueba.manager.AsignaturaManager;
+import com.demo.prueba.manager.ProfesorManager;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -32,6 +36,12 @@ public class HomeController {
 	
 	@Autowired
 	private AlumnoManager alumnoManager;
+	
+	@Autowired
+	private ProfesorManager profesorManager;
+	
+	@Autowired
+	private AsignaturaManager asignaturaManager;
 	
 	@GetMapping("/home")
 	public String home() {
@@ -64,16 +74,49 @@ public class HomeController {
 		return "listaAlumnos";
 	}
 	
-	@GetMapping("/introducirDatos")
+	@GetMapping("/introducirDatosAlumno")
 	public String introducirDatos(@RequestParam Integer identificador, Model model) {
 		model.addAttribute("alumnoDto", alumnoManager.dameUnAlumno(identificador));
-		return "introducirDatos";
+		return "introducirDatosAlumno";
 	}
 	
-	@PostMapping("/guardaDatos")
-	public String guardaDAtos(@Valid AlumnoDTO alumnoDto, Model model) {
+	@PostMapping("/guardaDatosAlumno")
+	public String guardaDatosAlumno(@Valid AlumnoDTO alumnoDto, Model model) {
 		System.out.println(alumnoDto.toString());
 		alumnoManager.guardaAlumnoBaseDatos(alumnoDto);
 		return listaAlumnos(model);
+	}
+	
+	@GetMapping("/listaProfesores")
+	public String listaProfesores(Model model ) {
+		List<ProfesorDTO> profesorDto = profesorManager.dameProfesores();
+		model.addAttribute("profesorDto", profesorDto);
+		return "listaProfesores";
+	}
+	
+	@GetMapping("/introducirDatosProfesor")
+	public String introducirDatosProfesor(@RequestParam Integer identificador, Model model) {
+		model.addAttribute("profesorDto", profesorManager.dameUnProfesor(identificador));
+		return "introducirDatosProfesor";
+	}
+	
+	@PostMapping("/guardaDatosProfesor")
+	public String guardaDatosProfesor(@Valid ProfesorDTO profesorDto, Model model) {
+		System.out.println(profesorDto.toString());
+		profesorManager.guardaProfesorBaseDatos(profesorDto);
+		return listaProfesores(model);
+	}
+	
+	@GetMapping("/listaAsignaturas")
+	public String listaAsignaturas(Model model ) {
+		List<AsignaturaDTO> asignaturaDto = asignaturaManager.dameAsignaturas();
+		model.addAttribute("asignaturaDto", asignaturaDto);
+		return "listaAsignaturas";
+	}
+	
+	@GetMapping("/introducirDatosAsignatura")
+	public String introducirDatosAsignatura(@RequestParam Integer identificador, Model model) {
+		model.addAttribute("asignaturaDto", asignaturaManager.dameUnaAsignatura(identificador));
+		return "introducirDatosAsignatura";
 	}
 }

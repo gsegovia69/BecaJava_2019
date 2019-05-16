@@ -74,11 +74,11 @@ public class AlumnoManager {
 		return alumnoDto;
 	}
 	
-	private ClaseEntity transformClaseDtoaEntity(AlumnoDTO alumnoDTO) {
+	private ClaseEntity transformClaseDtoaEntity(AlumnoDTO alumnoDto) {
 		ClaseEntity claseEntity = new ClaseEntity();
 		
-		claseEntity.setIdClase(alumnoDTO.getIdClase());
-		claseEntity.setNombreClase(alumnoDTO.getNombreClase());
+		claseEntity.setIdClase(alumnoDto.getIdClase());
+		claseEntity.setNombreClase(alumnoDto.getNombreClase());
 		
 		return claseEntity;
 	}

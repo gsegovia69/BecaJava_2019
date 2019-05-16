@@ -3,7 +3,7 @@
 	xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Insertar Datos</title>
+<title>Insertar Datos Alumno</title>
 
 <style type="text/css">
 
@@ -69,7 +69,7 @@ form input[type=button]:hover{
 </head>
 <body>
 <div class="formulario">
-	<form action="" th:action="@{/guardaDatos}" th:object="${alumnoDto}" method="post">
+	<form action="" th:action="@{/guardaDatosAlumno}" th:object="${alumnoDto}" method="post">
 		<div>
 			<label for="nombre">Nombre: </label> 
 			<input type="text"	th:field="*{nombre}" />

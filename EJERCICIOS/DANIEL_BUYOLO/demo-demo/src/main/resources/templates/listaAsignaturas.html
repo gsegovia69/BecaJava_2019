@@ -3,7 +3,7 @@
 	xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Lista Alumnos</title>
+<title>Lista Asignaturas</title>
 </head>
 <style>
 table.blueTable {
@@ -68,18 +68,14 @@ table.blueTable tfoot .links a{
 	<table class="blueTable">
 		<tr>
 			<th>NOMBRE</th>
-			<th>APELLIDOS</th>
-			<th>EMAIL</th>
-			<th>CIUDAD</th>
+			<th>ORDEN</th>
 			<th>CURSO</th>
 		</tr>
-		<tr th:each="alumno : ${alumnoDto}">
-			<td th:text="${alumno.nombre}"></td>
-			<td th:text="${alumno.apellidos}"></td>
-			<td th:text="${alumno.email}"></td>
-			<td th:text="${alumno.ciudad}"></td>
-			<td th:text="${alumno.nombreClase}"></td>
-			<td><a th:href="@{/introducirDatosAlumno(identificador=${alumno.id})}">EDITAR</a></td>
+		<tr th:each="asignatura : ${asignaturaDto}">
+			<td th:text="${asignatura.nombre}"></td>
+			<td th:text="${asignatura.orden}"></td>
+			<td th:text="${asignatura.nombreClase}"></td>
+			<td><a th:href="@{/introducirDatosAsignatura(identificador=${asignatura.id})}">EDITAR</a></td>
 		</tr>
 	</table>
 </body>

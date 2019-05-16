@@ -17,6 +17,9 @@ public class ProfesorManager {
 	@Autowired
 	private ProfesorRepository repository;
 	
+	@Autowired
+	private ClaseManager claseManager;
+	
 	public ProfesorRepository getRepository() {
 		return repository;
 	}
@@ -63,6 +66,7 @@ public class ProfesorManager {
 		profesorDto.setCiudad(profesorEntity.getCiudadProfesor());
 		profesorDto.setIdClase(profesorEntity.getClaseProfesor().getIdClase());
 		profesorDto.setNombreClase(profesorEntity.getClaseProfesor().getNombreClase());
+		profesorDto.setListaClase(claseManager.dameClases());
 		
 		return profesorDto;
 	}

@@ -3,8 +3,9 @@
 	xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Lista Alumnos</title>
+<title>Insert title here</title>
 </head>
+<body>
 <style>
 table.blueTable {
   border: 1px solid #1C6EA4;
@@ -73,13 +74,13 @@ table.blueTable tfoot .links a{
 			<th>CIUDAD</th>
 			<th>CURSO</th>
 		</tr>
-		<tr th:each="alumno : ${alumnoDto}">
-			<td th:text="${alumno.nombre}"></td>
-			<td th:text="${alumno.apellidos}"></td>
-			<td th:text="${alumno.email}"></td>
-			<td th:text="${alumno.ciudad}"></td>
-			<td th:text="${alumno.nombreClase}"></td>
-			<td><a th:href="@{/introducirDatosAlumno(identificador=${alumno.id})}">EDITAR</a></td>
+		<tr th:each="profesor : ${profesorDto}">
+			<td th:text="${profesor.nombre}"></td>
+			<td th:text="${profesor.apellidos}"></td>
+			<td th:text="${profesor.email}"></td>
+			<td th:text="${profesor.ciudad}"></td>
+			<td th:text="${profesor.nombreClase}"></td>
+			<td><a th:href="@{/introducirDatosProfesor(identificador=${profesor.id})}">EDITAR</a></td>
 		</tr>
 	</table>
 </body>
