@@ -40,14 +40,7 @@ public class AsignaturaManager {
 	}
 	
 	public AsignaturaDTO dameUnaAsignatura(Integer idAsignatura) {
-		AsignaturaDTO asignaturaDTO = new AsignaturaDTO();
-		AsignaturaEntity asignaturaEntity = asignaturaRepository.findById(idAsignatura).orElse(new AsignaturaEntity());
-		
-		asignaturaDTO.setId(asignaturaEntity.getIdAsignatura());
-		asignaturaDTO.setNombre(asignaturaEntity.getNombreAsignatura());
-		asignaturaDTO.setOrden(asignaturaEntity.getOrdenAsignaturas());
-		
-		return asignaturaDTO;
+		return transformEntity(asignaturaRepository.findById(idAsignatura).orElse(new AsignaturaEntity()));
 		
 	}
 	

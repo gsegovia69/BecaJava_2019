@@ -5,6 +5,7 @@ import java.util.List;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.actuate.health.ShowDetails;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,6 +20,7 @@ import com.demo.prueba.dto.AsignaturaDTO;
 import com.demo.prueba.dto.ProfesorDTO;
 import com.demo.prueba.manager.AlumnoManager;
 import com.demo.prueba.manager.AsignaturaManager;
+import com.demo.prueba.manager.ClaseManager;
 import com.demo.prueba.manager.ProfesorManager;
 
 import lombok.Getter;
@@ -42,6 +44,9 @@ public class HomeController {
 	
 	@Autowired
 	private AsignaturaManager asignaturaManager;
+	
+	@Autowired
+	private ClaseManager claseManager;
 	
 	@GetMapping("/home")
 	public String home() {
@@ -76,15 +81,31 @@ public class HomeController {
 	
 	@GetMapping("/introducirDatosAlumno")
 	public String introducirDatos(@RequestParam Integer identificador, Model model) {
-		model.addAttribute("alumnoDto", alumnoManager.dameUnAlumno(identificador));
+		AlumnoDTO alumnoDto = new AlumnoDTO();
+		
+		if ( identificador != null && identificador.intValue() > 0) {
+			alumnoDto = alumnoManager.dameUnAlumno(identificador);	
+		}
+		
+		alumnoDto.setListaClase(claseManager.dameClases());
+		model.addAttribute("alumnoDto", alumnoDto);
 		return "introducirDatosAlumno";
+	}
+	
+	@GetMapping("/borrarDatosAlumno")
+	public String borrarDatosAlumno(@RequestParam Integer identificador, Model model) {
+		if (identificador != null) {
+			alumnoManager.borraAlumno(identificador);
+		} 
+		
+		return "redirect:/listaAlumnos";
 	}
 	
 	@PostMapping("/guardaDatosAlumno")
 	public String guardaDatosAlumno(@Valid AlumnoDTO alumnoDto, Model model) {
-		System.out.println(alumnoDto.toString());
+		//System.out.println(alumnoDto.toString());
 		alumnoManager.guardaAlumnoBaseDatos(alumnoDto);
-		return listaAlumnos(model);
+		return "redirect:/listaAlumnos";
 	}
 	
 	@GetMapping("/listaProfesores")
@@ -102,9 +123,9 @@ public class HomeController {
 	
 	@PostMapping("/guardaDatosProfesor")
 	public String guardaDatosProfesor(@Valid ProfesorDTO profesorDto, Model model) {
-		System.out.println(profesorDto.toString());
+		//System.out.println(profesorDto.toString());
 		profesorManager.guardaProfesorBaseDatos(profesorDto);
-		return listaProfesores(model);
+		return "redirect:/listaProfesores";
 	}
 	
 	@GetMapping("/listaAsignaturas")
@@ -118,5 +139,12 @@ public class HomeController {
 	public String introducirDatosAsignatura(@RequestParam Integer identificador, Model model) {
 		model.addAttribute("asignaturaDto", asignaturaManager.dameUnaAsignatura(identificador));
 		return "introducirDatosAsignatura";
+	}
+	
+	@PostMapping("/guardaDatosAsignatura")
+	public String guardaDatosAsignatura(@Valid AsignaturaDTO asignaturaDto, Model model) {
+		//System.out.println(asignaturaDto.toString());
+		asignaturaManager.guardaAsignaturaBaseDatos(asignaturaDto);
+		return "redirect:/listaAsignaturas";
 	}
 }

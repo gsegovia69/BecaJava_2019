@@ -31,6 +31,7 @@ public class ClaseManager {
 	public ClaseDTO dameUnaClase(Integer idClase) {
 		ClaseDTO claseDTO = new ClaseDTO();
 		ClaseEntity claseEntity = repository.findById(idClase).orElse(new ClaseEntity());
+		
 		claseDTO.setIdClase(claseEntity.getIdClase());
 		claseDTO.setNombreClase(claseEntity.getNombreClase());
 		
@@ -40,6 +41,7 @@ public class ClaseManager {
 	
 	private ClaseDTO transformEntity(ClaseEntity claseEntity) {
 		ClaseDTO claseDTO = new ClaseDTO();
+		
 		claseDTO.setIdClase(claseEntity.getIdClase());
 		claseDTO.setNombreClase(claseEntity.getNombreClase());
 		

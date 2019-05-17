@@ -65,6 +65,11 @@ table.blueTable tfoot .links a{
 }
 </style>
 <body>
+<ul>
+<li><a href=/listaAlumnos>Tabla Alumnos </a></li>
+<li><a href=/listaProfesores>Tabla Profesores </a></li>
+<li><a href=/listaAsignaturas>Tabla Asignaturas </a></li>
+</ul>
 	<table class="blueTable">
 		<tr>
 			<th>NOMBRE</th>
@@ -72,6 +77,7 @@ table.blueTable tfoot .links a{
 			<th>EMAIL</th>
 			<th>CIUDAD</th>
 			<th>CURSO</th>
+			<th><a th:href="@{/introducirDatosAlumno(identificador=-1)}">NUEVO ALUMNO</a></th>
 		</tr>
 		<tr th:each="alumno : ${alumnoDto}">
 			<td th:text="${alumno.nombre}"></td>
@@ -80,6 +86,7 @@ table.blueTable tfoot .links a{
 			<td th:text="${alumno.ciudad}"></td>
 			<td th:text="${alumno.nombreClase}"></td>
 			<td><a th:href="@{/introducirDatosAlumno(identificador=${alumno.id})}">EDITAR</a></td>
+			<td><a th:href="@{/borrarDatosAlumno(identificador=${alumno.id})}">BORRAR</a></td>
 		</tr>
 	</table>
 </body>

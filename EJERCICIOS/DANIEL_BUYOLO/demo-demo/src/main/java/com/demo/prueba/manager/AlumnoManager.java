@@ -59,6 +59,12 @@ public class AlumnoManager {
 		return alumnoEntity;
 	}
 	
+	public void borraAlumno(Integer id) {
+		AlumnoEntity alumnoEntity = new AlumnoEntity();
+		alumnoEntity.setIdAlumno(id);
+		alumnoRepository.delete(alumnoEntity);
+	}
+	
 	private AlumnoDTO transformEntity (AlumnoEntity alumnoEntity) {
 		AlumnoDTO alumnoDto = new AlumnoDTO();
 		
