@@ -47,8 +47,11 @@ public class AsignaturaController {
 	}
 	
 	@GetMapping("/editarAsignatura")
-	public String editarAsignatura(@RequestParam Long idAsignatura ,Model model) {
-		AsignaturaDTO asig =asignaturaManager.getOneAsignatura(idAsignatura);
+	public String editarAsignatura( Long idAsignatura ,Model model) {
+		AsignaturaDTO asig = new AsignaturaDTO();
+		if(idAsignatura!=null) {
+			asig =asignaturaManager.getOneAsignatura(idAsignatura);
+		}
 		asig.setListaClases(claseManager.getClases());
 		model.addAttribute("asig",asig);
 		return "asignaturas/editarAsignatura";

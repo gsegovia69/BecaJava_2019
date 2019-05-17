@@ -25,6 +25,9 @@
 			<td th:text="${prof.ciudad}">ciudad</td>
 			<td> <a th:href="@{/editarProfesor(idProfesor=${prof.id})}">Editar</a></td>
 		</tr>
+		<tr>				
+			<td> <a th:href="@{/editarProfesor}">Nuevo</a></td>
+		</tr>
 	</table>
 </body>
 </html>

@@ -45,8 +45,15 @@ public class ClaseController {
 	}
 	
 	@GetMapping("/editarClase")
-	public String editarClases(@RequestParam Long idClase ,Model model) {
-		ClaseDTO clase =claseManager.getOneClase(idClase);
+	public String editarClases(Long idClase ,Model model) {
+		ClaseDTO clase = new ClaseDTO();		
+		if(idClase!=null) {
+			clase =claseManager.getOneClase(idClase);
+		}
+		else {
+			clase.setId((long) claseManager.getClases().size() + 1 );
+		}
+		
 		model.addAttribute("clase",clase);
 		return "clases/editarClase";
 	}

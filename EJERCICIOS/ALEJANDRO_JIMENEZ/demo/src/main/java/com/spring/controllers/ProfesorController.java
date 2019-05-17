@@ -47,8 +47,11 @@ public class ProfesorController {
 	}
 	
 	@GetMapping("/editarProfesor")
-	public String editarProfesor(@RequestParam Long idProfesor ,Model model) {
-		ProfesorDTO prof =profesorManager.getOneProfesor(idProfesor);
+	public String editarProfesor( Long idProfesor ,Model model) {
+		ProfesorDTO prof = new ProfesorDTO();
+		if(idProfesor!=null) {
+			prof =profesorManager.getOneProfesor(idProfesor);
+		}
 		prof.setListaClases(claseManager.getClases());
 		model.addAttribute("prof",prof);
 		return "profesores/editarProfesor";

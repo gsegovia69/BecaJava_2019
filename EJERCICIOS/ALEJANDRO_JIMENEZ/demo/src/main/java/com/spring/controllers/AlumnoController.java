@@ -42,8 +42,11 @@ public class AlumnoController {
 	}
 	
 	@GetMapping("/editarAlumno")
-	public String editarAlumno(@RequestParam Long idAlumno ,Model model) {
-		AlumnoDTO alum =alumnoManager.getOneAlumno(idAlumno);
+	public String editarAlumno( Long idAlumno ,Model model) {
+		AlumnoDTO alum = new AlumnoDTO();		
+		if(idAlumno!=null) {
+			alum =alumnoManager.getOneAlumno(idAlumno);
+		}
 		alum.setListaClases(claseManager.getClases());
 		model.addAttribute("alum",alum);
 		return "alumnos/editarAlumno";
@@ -54,4 +57,6 @@ public class AlumnoController {
 		alumnoManager.guardarAlumno(alu);
 		return "redirect:/lista/alumnos";
 	}
+	
+	
 }
