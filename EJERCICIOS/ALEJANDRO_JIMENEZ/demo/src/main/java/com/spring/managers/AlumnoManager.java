@@ -79,8 +79,11 @@ public class AlumnoManager{
 		dto.setApellidos(entity.getApellidos());
 		dto.setEmail(entity.getEmail());
 		dto.setCiudad(entity.getCiudad());
-		if(entity.getClaseAlumno().getId()!=null) {
-		dto.setIdClase(entity.getClaseAlumno().getId());
+		try {
+			dto.setIdClase(entity.getClaseAlumno().getId());
+		}
+		catch(Exception e) {
+			
 		}
 		return dto;
 	}
