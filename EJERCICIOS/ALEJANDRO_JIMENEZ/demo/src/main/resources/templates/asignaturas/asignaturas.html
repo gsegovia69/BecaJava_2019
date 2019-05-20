@@ -3,30 +3,44 @@
 	  xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Asignaturas</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-		<h3>Asignaturas</h3>
-      <button onclick="location.href = 'clases';">clases </button>
-      <button onclick="location.href = 'alumnos';">Alumnos</button>
-      <button onclick="location.href = 'profesores';">Profesores</button>
+<div class="jumbotron text-center">
+		<h1>Asignaturas</h1>
+      <button onclick="location.href = 'clases';" class="btn btn-primary btn-lg">clases </button>
+      <button onclick="location.href = 'alumnos';" class="btn btn-primary btn-lg">Alumnos</button>
+      <button onclick="location.href = 'profesores';" class="btn btn-primary btn-lg">Profesores</button>
 	
-	<table>
+	<table class="table table-striped">
 		<tr>
-			<th>ID</th>
-			<th>NOMBRE</th>
-			<th>ORDEN</th>
+			<td><b>ID</b></td>
+			<td><b>NOMBRE</b></td>
+			<td><b>ORDEN</b></td>
+			<td><b>CLASE</b></td>
+			<td></td><td></td>
 	
 		</tr>	
 		<tr th:each="asig : ${asignaturas}">
 			<td th:text="${asig.id}">id</td>
 			<td th:text="${asig.nombre}">nombre</td>
 			<td th:text="${asig.orden}">orden</td>
-			<td> <a th:href="@{/editarAsignatura(idAsignatura=${asig.id})}">Editar</a></td>
+			<td th:text="${asig.nombreClase}">idClase</td>
+			<td> <a th:href="@{/editarAsignatura(idAsignatura=${asig.id})}" class="btn btn-success">Editar</a></td>
+			<td> <a th:href="@{/borrarAsignatura(idAsignatura=${asig.id})}" class="btn btn-danger" onclick='alert("Borrando")'>Borrar</a></td>
 		</tr>
-		<tr>				
-			<td> <a th:href="@{/editarAsignatura}">Nuevo</a></td>
+		<tr>
+			<td></td><td></td><td></td><td></td>				
+			<td> <a th:href="@{/editarAsignatura}" class="btn btn-primary">Nuevo</a></td>
 		</tr>
 	</table>
+</div>
+
+
+
+            
 </body>
 </html>

@@ -5,11 +5,9 @@ package com.spring.entities;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -39,10 +37,10 @@ public class ClaseEntity {
 	private List<AlumnoEntity> alumnos = new ArrayList<AlumnoEntity>();
 	
 	// Lazy-> solo los carga cuando utilice los datos.
-	@OneToMany(mappedBy="claseProfesor")
+	@OneToMany(mappedBy="claseProfesor", cascade = CascadeType.ALL)
 	private List<ProfesorEntity> profesores = new ArrayList<ProfesorEntity>();
 
-	@OneToMany(mappedBy="claseAsignatura")
+	@OneToMany(mappedBy="claseAsignatura", cascade = CascadeType.ALL)
 	private List<AsignaturaEntity> asignaturas = new ArrayList<AsignaturaEntity>();
 	
 	

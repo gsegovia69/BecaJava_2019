@@ -26,6 +26,8 @@ public class ProfesorDTO {
 
 	private String ciudad;
 	
+	private String nombreClase;
+	
 	private List<ClaseDTO> listaClases;
 	
 	private Long idClase;

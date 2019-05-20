@@ -48,7 +48,7 @@ public class AlumnoEntity {
 	@Column(name="ciudad")
 	private String ciudad;
 	
-	@ManyToOne(cascade = CascadeType.ALL)
+	@ManyToOne
 	@JoinColumn(name="id_clase")
 	private ClaseEntity claseAlumno;
 

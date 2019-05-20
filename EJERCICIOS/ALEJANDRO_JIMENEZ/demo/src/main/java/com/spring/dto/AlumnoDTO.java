@@ -37,6 +37,8 @@ public class AlumnoDTO {
 	
 
 	private String ciudad;
+	
+	private String nombreClase;
 
 	private List<ClaseDTO> listaClases;
 	

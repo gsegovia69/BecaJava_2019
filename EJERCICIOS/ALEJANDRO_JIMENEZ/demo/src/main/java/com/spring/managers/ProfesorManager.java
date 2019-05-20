@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.spring.dto.AlumnoDTO;
 import com.spring.dto.ProfesorDTO;
 import com.spring.entities.ProfesorEntity;
 import com.spring.repositories.ProfesorRepository;
@@ -53,7 +55,9 @@ public class ProfesorManager {
 	}
 
 	
-	
+	public void borrarProfesor(ProfesorDTO dto) {
+		repository.delete(toEntity(dto));
+	}
 	
 	
 	private ProfesorDTO toDTO(ProfesorEntity entity) {
@@ -63,8 +67,13 @@ public class ProfesorManager {
 		dto.setApellidos(entity.getApellidos());
 		dto.setEmail(entity.getEmail());
 		dto.setCiudad(entity.getCiudad());
-		if(entity.getClaseProfesor().getId()!=null) {
+		
+		try {
+			dto.setNombreClase(entity.getClaseProfesor().getNombre());
 			dto.setIdClase(entity.getClaseProfesor().getId());
+		}
+		catch(Exception e) {
+			
 		}
 		return dto;
 	}

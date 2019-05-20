@@ -35,7 +35,7 @@ public class AsignaturaEntity {
 	@Column(name="orden")
 	private int orden;
 	
-	@ManyToOne(cascade = CascadeType.ALL)
+	@ManyToOne
 	@JoinColumn(name="id_clase")
 	private ClaseEntity claseAsignatura;
 

@@ -9,14 +9,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
-import com.spring.dto.AlumnoDTO;
 import com.spring.dto.AsignaturaDTO;
-import com.spring.dto.ClaseDTO;
 import com.spring.dto.ProfesorDTO;
-import com.spring.managers.AlumnoManager;
-import com.spring.managers.AsignaturaManager;
 import com.spring.managers.ClaseManager;
 import com.spring.managers.ProfesorManager;
 
@@ -62,4 +57,16 @@ public class ProfesorController {
 		profesorManager.guardarProfesor(prof);
 		return "redirect:/lista/profesores";
 	}
+	
+	@GetMapping("/borrarProfesor")
+	public String borrarProfesor( Long idProfesor) {
+		ProfesorDTO prof = new ProfesorDTO();		
+		
+		prof =profesorManager.getOneProfesor(idProfesor);
+
+		 profesorManager.borrarProfesor(prof);
+		
+		return "redirect:/lista/profesores";
+	}
+
 }

@@ -9,16 +9,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import com.spring.dto.AlumnoDTO;
 import com.spring.dto.AsignaturaDTO;
-import com.spring.dto.ClaseDTO;
-import com.spring.dto.ProfesorDTO;
-import com.spring.managers.AlumnoManager;
 import com.spring.managers.AsignaturaManager;
 import com.spring.managers.ClaseManager;
-import com.spring.managers.ProfesorManager;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -60,6 +55,17 @@ public class AsignaturaController {
 	@PostMapping("/asignatura/edit")
 	public String procesarEditarAsignatura(@ModelAttribute AsignaturaDTO asig,Model model) {
 		asignaturaManager.guardarAsignatura(asig);
+		return "redirect:/lista/asignaturas";
+	}
+	
+	@GetMapping("/borrarAsignatura")
+	public String borrarAsignatura( Long idAsignatura) {
+		AsignaturaDTO asig = new AsignaturaDTO();		
+		
+		asig =asignaturaManager.getOneAsignatura(idAsignatura);
+
+		 asignaturaManager.borrarAsignatura(asig);
+		
 		return "redirect:/lista/asignaturas";
 	}
 

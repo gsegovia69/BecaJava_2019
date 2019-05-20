@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.spring.dto.AlumnoDTO;
 import com.spring.dto.AsignaturaDTO;
 import com.spring.entities.AsignaturaEntity;
 import com.spring.repositories.AsignaturaRepository;
@@ -48,11 +49,19 @@ public class AsignaturaManager {
 		dto.setId(entity.getId());
 		dto.setNombre(entity.getNombre());
 		dto.setOrden(entity.getOrden());
-		if(entity.getClaseAsignatura().getId()!=null) {
+		try {
 			dto.setIdClase(entity.getClaseAsignatura().getId());
+			dto.setNombreClase(entity.getClaseAsignatura().getNombre());
+		}
+		catch(Exception e) {
+			
 		}
 		return dto;
 		
+	}
+	
+	public void borrarAsignatura(AsignaturaDTO dto) {
+		repository.delete(toEntity(dto));
 	}
 	
 	private AsignaturaEntity toEntity(AsignaturaDTO dto) {

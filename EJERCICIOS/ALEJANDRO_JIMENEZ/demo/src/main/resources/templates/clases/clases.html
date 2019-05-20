@@ -3,25 +3,32 @@
 	  xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Clases</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-		<h3>Clases</h3>
-      <button onclick="location.href = 'alumnos';">Alumnos </button>
-      <button onclick="location.href = 'asignaturas';">Asignaturas</button>
-      <button onclick="location.href = 'profesores';">Profesores</button>
+<div class="jumbotron text-center">
+		<h1>Clases</h1>
+ 	  <button onclick="location.href = '/lista/alumnos';" class="btn btn-primary btn-lg">alumnos </button>
+      <button onclick="location.href = '/lista/asignaturas';" class="btn btn-primary btn-lg">Asignaturas</button>
+      <button onclick="location.href = '/lista/profesores';" class="btn btn-primary btn-lg">Profesores</button>
 	
-	<table>
+	<table class="table table-striped">
 		<tr>
-			<th>NOMBRE</th>
+			<td><b>NOMBRE</b></td><td></td>
 		</tr>	
 		<tr th:each="clase : ${clases}">
 			<td th:text="${clase.nombre}">nombre</td>
-			<td> <a th:href="@{/editarClase(idClase=${clase.id})}">Editar</a></td>
+			<td> <a th:href="@{/editarClase(idClase=${clase.id})}" class="btn btn-success">Editar</a></td>
+			
 		</tr>
-				<tr>				
-			<td> <a th:href="@{/editarClase}">Nuevo</a></td>
+		<tr>	
+			<td></td>			
+			<td> <a th:href="@{/editarClase}" class="btn btn-primary">Nuevo</a></td>
 		</tr>
 	</table>
+</div>
 </body>
 </html>

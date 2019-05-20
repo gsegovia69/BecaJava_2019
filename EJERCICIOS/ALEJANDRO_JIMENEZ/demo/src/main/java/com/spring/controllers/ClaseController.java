@@ -10,22 +10,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
-import com.spring.dto.AlumnoDTO;
-import com.spring.dto.AsignaturaDTO;
 import com.spring.dto.ClaseDTO;
-import com.spring.dto.ProfesorDTO;
-import com.spring.managers.AlumnoManager;
-import com.spring.managers.AsignaturaManager;
 import com.spring.managers.ClaseManager;
-import com.spring.managers.ProfesorManager;
 
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.java.Log;
-
-
 
 @Getter
 @Setter
@@ -41,6 +32,7 @@ public class ClaseController {
 	public String listaClases(Model model) {
 		List<ClaseDTO> clases = claseManager.getClases();
 		model.addAttribute("clases",clases);
+		
 		return "clases/clases";
 	}
 	

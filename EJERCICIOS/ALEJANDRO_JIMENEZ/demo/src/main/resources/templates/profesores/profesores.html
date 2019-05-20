@@ -3,31 +3,43 @@
 	  xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Lista alumnos</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-		<h3>Profesores</h3>
-      <button onclick="location.href = 'clases';">clases </button>
-      <button onclick="location.href = 'asignaturas';">Asignaturas</button>
-      <button onclick="location.href = 'alumnos';">Alumnos</button>
-	
-	<table>
+<div class="jumbotron text-center">
+	<h1>Profesores</h1>
+      <button onclick="location.href = '/lista/clases';" class="btn btn-primary btn-lg">clases </button>
+      <button onclick="location.href = '/lista/asignaturas';" class="btn btn-primary btn-lg">Asignaturas</button>
+      <button onclick="location.href = '/lista/alumnos';" class="btn btn-primary btn-lg">Profesores</button>
+	<table class="table table-striped">
 		<tr>
-			<th>NOMBRE</th>
-			<th>APELLIDOS</th>
-			<th>EMAIL</th>
-			<th>CIUDAD</th>
+			<td><b>ID</b></td>
+			<td><b>NOMBRE</b></td>
+			<td><b>APELLIDOS</b></td>
+			<td><b>EMAIL</b></td>
+			<td><b>CIUDAD</b></td>
+			<td><b>ID_CLASE</b></td>
+			<td></td>
+			<td></td>
 		</tr>	
 		<tr th:each="prof : ${profesores}">
+			<td th:text="${prof.id}">nombre</td>
 			<td th:text="${prof.nombre}">nombre</td>
 			<td th:text="${prof.apellidos}">apellidos</td>
 			<td th:text="${prof.email}">email</td>
 			<td th:text="${prof.ciudad}">ciudad</td>
-			<td> <a th:href="@{/editarProfesor(idProfesor=${prof.id})}">Editar</a></td>
+			<td th:text="${prof.nombreClase}">id Clase</td>
+			<td> <a th:href="@{/editarProfesor(idProfesor=${prof.id})}" class="btn btn-success">Editar</a></td>
+			<td> <a th:href="@{/borrarProfesor(idProfesor=${prof.id})}" class="btn btn-danger">Borrar</a></td>
 		</tr>
-		<tr>				
-			<td> <a th:href="@{/editarProfesor}">Nuevo</a></td>
+		<tr>
+		<td></td><td></td><td></td><td></td><td></td><td></td>
+		<td> <a th:href="@{/editarProfesor}" class="btn btn-primary">Nuevo</a></td>
 		</tr>
 	</table>
+</div>
 </body>
 </html>

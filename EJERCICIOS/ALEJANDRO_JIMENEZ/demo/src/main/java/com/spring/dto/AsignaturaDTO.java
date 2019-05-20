@@ -21,6 +21,8 @@ public class AsignaturaDTO {
 	
 	private int orden;
 	
+	private String nombreClase;
+	
 	private List<ClaseDTO> listaClases;
 	
 	private Long idClase;

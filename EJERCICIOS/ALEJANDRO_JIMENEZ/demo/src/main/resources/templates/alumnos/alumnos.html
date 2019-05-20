@@ -3,22 +3,27 @@
 	  xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Lista alumnos</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<h3>Alumnos</h3>
-      <button onclick="location.href = '/lista/clases';">clases </button>
-      <button onclick="location.href = '/lista/asignaturas';">Asignaturas</button>
-      <button onclick="location.href = '/lista/profesores';">Profesores</button>
-
-	<table>
+<div class="jumbotron text-center">
+	<h1>Alumnos</h1>
+      <button onclick="location.href = '/lista/clases';" class="btn btn-primary btn-lg">clases </button>
+      <button onclick="location.href = '/lista/asignaturas';" class="btn btn-primary btn-lg">Asignaturas</button>
+      <button onclick="location.href = '/lista/profesores';" class="btn btn-primary btn-lg">Profesores</button>
+	<table class="table table-striped">
 		<tr>
-			<th>ID</th>
-			<th>NOMBRE</th>
-			<th>APELLIDOS</th>
-			<th>EMAIL</th>
-			<th>CIUDAD</th>
-			<th>ID_CLASE</th>
+			<td><b>ID</b></td>
+			<td><b>NOMBRE</b></td>
+			<td><b>APELLIDOS</b></td>
+			<td><b>EMAIL</b></td>
+			<td><b>CIUDAD</b></td>
+			<td><b>ID_CLASE</b></td>
+			<td></td>
+			<td></td>
 		</tr>	
 		<tr th:each="alum : ${alumnos}">
 			<td th:text="${alum.id}">nombre</td>
@@ -26,12 +31,15 @@
 			<td th:text="${alum.apellidos}">apellidos</td>
 			<td th:text="${alum.email}">email</td>
 			<td th:text="${alum.ciudad}">ciudad</td>
-			<td th:text="${alum.idClase}">id Clase</td>
-			<td> <a th:href="@{/editarAlumno(idAlumno=${alum.id})}">Editar</a></td>
+			<td th:text="${alum.nombreClase}">Nombre Clase</td>
+			<td> <a th:href="@{/editarAlumno(idAlumno=${alum.id})}" class="btn btn-success">Editar</a></td>
+			<td> <a th:href="@{/borrarAlumno(idAlumno=${alum.id})}" class="btn btn-danger">Borrar</a></td>
 		</tr>
 		<tr>
-			<td> <a th:href="@{/editarAlumno}">Nuevo</a></td>
+		<td></td><td></td><td></td><td></td><td></td><td></td>
+			<td> <a th:href="@{/editarAlumno}" class="btn btn-primary">Nuevo</a></td>
 		</tr>
 	</table>
+</div>
 </body>
 </html>

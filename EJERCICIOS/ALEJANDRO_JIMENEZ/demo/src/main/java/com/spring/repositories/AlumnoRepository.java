@@ -15,6 +15,8 @@ public interface AlumnoRepository extends CrudRepository<AlumnoEntity, Long> {
 	
 	List<AlumnoEntity> findAllByOrderByNombreDesc();
 	
+	void delete(AlumnoEntity alumno);
+	
 	
 	
 }

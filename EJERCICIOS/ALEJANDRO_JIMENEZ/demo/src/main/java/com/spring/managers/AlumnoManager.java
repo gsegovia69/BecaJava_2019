@@ -72,6 +72,10 @@ public class AlumnoManager{
 		return toDTO(entity);
 	}
 	
+	public void borrarAlumno(AlumnoDTO dto) {
+		repository.delete(toEntity(dto));
+	}
+	
 	private AlumnoDTO toDTO (AlumnoEntity entity) {
 		AlumnoDTO dto = new AlumnoDTO();
 		dto.setId(entity.getId());
@@ -80,6 +84,7 @@ public class AlumnoManager{
 		dto.setEmail(entity.getEmail());
 		dto.setCiudad(entity.getCiudad());
 		try {
+			dto.setNombreClase(entity.getClaseAlumno().getNombre());
 			dto.setIdClase(entity.getClaseAlumno().getId());
 		}
 		catch(Exception e) {
