@@ -42,8 +42,10 @@ public class ClaseManager {
 	private ClaseDTO transformEntity(ClaseEntity claseEntity) {
 		ClaseDTO claseDTO = new ClaseDTO();
 		
-		claseDTO.setIdClase(claseEntity.getIdClase());
-		claseDTO.setNombreClase(claseEntity.getNombreClase());
+		if (claseEntity != null) {
+			claseDTO.setIdClase(claseEntity.getIdClase());
+			claseDTO.setNombreClase(claseEntity.getNombreClase());
+		}
 		
 		return claseDTO;
 	}

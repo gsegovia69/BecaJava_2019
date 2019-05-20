@@ -44,15 +44,28 @@ public class AsignaturaManager {
 		
 	}
 	
+	public List<AsignaturaDTO> dameAsignaturasAlumno(Integer id) {
+		List<AsignaturaDTO> listaAsignaturaDto = new ArrayList<>();
+		
+		asignaturaRepository.findAll().forEach(asignaturaEntity -> {
+		if( asignaturaEntity.getClaseAsignatura().getIdClase() == id ) 
+			listaAsignaturaDto.add(transformEntity(asignaturaEntity));
+		});
+		
+		return listaAsignaturaDto;
+	}
+	
 	private AsignaturaDTO transformEntity(AsignaturaEntity asignaturaEntity) {
 		AsignaturaDTO asignaturaDTO = new AsignaturaDTO();
 		
-		asignaturaDTO.setId(asignaturaEntity.getIdAsignatura());
-		asignaturaDTO.setNombre(asignaturaEntity.getNombreAsignatura());
-		asignaturaDTO.setOrden(asignaturaEntity.getOrdenAsignaturas());
-		asignaturaDTO.setIdClase(asignaturaEntity.getClaseAsignatura().getIdClase());
-		asignaturaDTO.setNombreClase(asignaturaEntity.getClaseAsignatura().getNombreClase());
-		asignaturaDTO.setListaClase(claseManager.dameClases());
+		if (asignaturaEntity.getClaseAsignatura() != null) {
+			asignaturaDTO.setId(asignaturaEntity.getIdAsignatura());
+			asignaturaDTO.setNombre(asignaturaEntity.getNombreAsignatura());
+			asignaturaDTO.setOrden(asignaturaEntity.getOrdenAsignaturas());
+			asignaturaDTO.setIdClase(asignaturaEntity.getClaseAsignatura().getIdClase());
+			asignaturaDTO.setNombreClase(asignaturaEntity.getClaseAsignatura().getNombreClase());
+			asignaturaDTO.setListaClase(claseManager.dameClases());
+		}
 		
 		return asignaturaDTO;
 	}

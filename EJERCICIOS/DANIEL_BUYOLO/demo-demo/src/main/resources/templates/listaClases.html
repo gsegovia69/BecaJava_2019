@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:th="http://www.thymeleaf.org">
+<html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Lista Asignaturas</title>
+<title>Lista Clases</title>
 <link REL=StyleSheet HREF="css/style.css" type="text/css" >
-</head>
 
+</head>
 <body>
 <nav>
 <ul>
@@ -23,17 +22,11 @@
 		<tr>
 			<th>NOMBRE</th>
 			<th>ORDEN</th>
-			<th>CURSO</th>
 		</tr>
-		<tr th:each="asignatura : ${asignaturaDto}">
-			<td th:text="${asignatura.nombre}"></td>
-			<td th:text="${asignatura.orden}"></td>
-			<td th:text="${asignatura.nombreClase}"></td>
-			<td><a th:href="@{/introducirDatosAsignatura(identificador=${asignatura.id})}">EDITAR</a></td>
+		<tr th:each="clase : ${claseDto}">
+			<td th:text="${clase.idClase}"></td>
+			<td th:text="${clase.nombreClase}"></td>
 		</tr>
 	</table>
-	<form>
-		<input type="button" onclick="history.back()" value="Volver" />
-	</form>
 </body>
 </html>

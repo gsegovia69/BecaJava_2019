@@ -68,14 +68,16 @@ public class AlumnoManager {
 	private AlumnoDTO transformEntity (AlumnoEntity alumnoEntity) {
 		AlumnoDTO alumnoDto = new AlumnoDTO();
 		
-		alumnoDto.setId(alumnoEntity.getIdAlumno());
-		alumnoDto.setNombre(alumnoEntity.getNombreAlumno());
-		alumnoDto.setApellidos(alumnoEntity.getApellidosAlumno());
-		alumnoDto.setEmail(alumnoEntity.getEmailAlumno());
-		alumnoDto.setCiudad(alumnoEntity.getCiudadAlumno());
-		alumnoDto.setIdClase(alumnoEntity.getClaseAlumno().getIdClase());
-		alumnoDto.setNombreClase(alumnoEntity.getClaseAlumno().getNombreClase());
-		alumnoDto.setListaClase(claseManager.dameClases());
+		if (alumnoEntity.getClaseAlumno() != null ) {
+			alumnoDto.setId(alumnoEntity.getIdAlumno());
+			alumnoDto.setNombre(alumnoEntity.getNombreAlumno());
+			alumnoDto.setApellidos(alumnoEntity.getApellidosAlumno());
+			alumnoDto.setEmail(alumnoEntity.getEmailAlumno());
+			alumnoDto.setCiudad(alumnoEntity.getCiudadAlumno());
+			alumnoDto.setIdClase(alumnoEntity.getClaseAlumno().getIdClase());
+			alumnoDto.setNombreClase(alumnoEntity.getClaseAlumno().getNombreClase());
+			alumnoDto.setListaClase(claseManager.dameClases());
+		}
 		
 		return alumnoDto;
 	}

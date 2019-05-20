@@ -47,6 +47,7 @@ public class ProfesorManager {
 	
 	private ProfesorEntity transformDTO(ProfesorDTO profesorDto ) {
 		ProfesorEntity profesorEntity = new ProfesorEntity();
+		
 		profesorEntity.setIdProfesor(profesorDto.getId());
 		profesorEntity.setNombreProfesor(profesorDto.getNombre());
 		profesorEntity.setApellidosProfesor(profesorDto.getApellidos());
@@ -59,14 +60,17 @@ public class ProfesorManager {
 	
 	private ProfesorDTO transformEntity (ProfesorEntity profesorEntity) {
 		ProfesorDTO profesorDto = new ProfesorDTO();
-		profesorDto.setId(profesorEntity.getIdProfesor());
-		profesorDto.setNombre(profesorEntity.getNombreProfesor());
-		profesorDto.setApellidos(profesorEntity.getApellidosProfesor());
-		profesorDto.setEmail(profesorEntity.getEmailProfesor());
-		profesorDto.setCiudad(profesorEntity.getCiudadProfesor());
-		profesorDto.setIdClase(profesorEntity.getClaseProfesor().getIdClase());
-		profesorDto.setNombreClase(profesorEntity.getClaseProfesor().getNombreClase());
-		profesorDto.setListaClase(claseManager.dameClases());
+		
+		if ( profesorEntity.getClaseProfesor() != null) {
+			profesorDto.setId(profesorEntity.getIdProfesor());
+			profesorDto.setNombre(profesorEntity.getNombreProfesor());
+			profesorDto.setApellidos(profesorEntity.getApellidosProfesor());
+			profesorDto.setEmail(profesorEntity.getEmailProfesor());
+			profesorDto.setCiudad(profesorEntity.getCiudadProfesor());
+			profesorDto.setIdClase(profesorEntity.getClaseProfesor().getIdClase());
+			profesorDto.setNombreClase(profesorEntity.getClaseProfesor().getNombreClase());
+			profesorDto.setListaClase(claseManager.dameClases());
+		}
 		
 		return profesorDto;
 	}

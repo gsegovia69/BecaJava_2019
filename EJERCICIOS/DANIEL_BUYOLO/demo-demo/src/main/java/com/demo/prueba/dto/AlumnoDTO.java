@@ -2,6 +2,8 @@ package com.demo.prueba.dto;
 
 import java.util.List;
 
+import com.demo.prueba.entities.ClaseEntity;
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;

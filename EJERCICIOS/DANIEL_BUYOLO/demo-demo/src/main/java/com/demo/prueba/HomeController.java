@@ -1,5 +1,6 @@
 package com.demo.prueba;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.validation.Valid;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.demo.prueba.dto.AlumnoDTO;
 import com.demo.prueba.dto.AsignaturaDTO;
+import com.demo.prueba.dto.ClaseDTO;
 import com.demo.prueba.dto.ProfesorDTO;
 import com.demo.prueba.manager.AlumnoManager;
 import com.demo.prueba.manager.AsignaturaManager;
@@ -89,16 +91,34 @@ public class HomeController {
 		
 		alumnoDto.setListaClase(claseManager.dameClases());
 		model.addAttribute("alumnoDto", alumnoDto);
+		
 		return "introducirDatosAlumno";
 	}
 	
 	@GetMapping("/borrarDatosAlumno")
 	public String borrarDatosAlumno(@RequestParam Integer identificador, Model model) {
 		if (identificador != null) {
-			alumnoManager.borraAlumno(identificador);
+			//alumnoManager.borraAlumno(identificador);
 		} 
 		
 		return "redirect:/listaAlumnos";
+	}
+	
+	@GetMapping("/listaAsignaturasAlumno")
+	public String listaAsignaturasAlumno (@RequestParam Integer identificador, Model model) {
+		AlumnoDTO alumnoDto = new AlumnoDTO();
+		List<AsignaturaDTO> asignaturaDto = new ArrayList<AsignaturaDTO>();
+				
+		if ( identificador != null && identificador.intValue() > 0) {
+			alumnoDto = alumnoManager.dameUnAlumno(identificador);	
+			asignaturaDto = asignaturaManager.dameAsignaturasAlumno(alumnoDto.getIdClase());
+		}
+		
+		//alumnoDto.setListaClase(claseManager.dameClases());
+		model.addAttribute("alumnoDto", alumnoDto);
+		model.addAttribute("asignaturaDto",asignaturaDto);
+		
+		return "/listaAsignaturasAlumno";
 	}
 	
 	@PostMapping("/guardaDatosAlumno")
@@ -111,6 +131,7 @@ public class HomeController {
 	@GetMapping("/listaProfesores")
 	public String listaProfesores(Model model ) {
 		List<ProfesorDTO> profesorDto = profesorManager.dameProfesores();
+		
 		model.addAttribute("profesorDto", profesorDto);
 		return "listaProfesores";
 	}
@@ -131,6 +152,7 @@ public class HomeController {
 	@GetMapping("/listaAsignaturas")
 	public String listaAsignaturas(Model model ) {
 		List<AsignaturaDTO> asignaturaDto = asignaturaManager.dameAsignaturas();
+		
 		model.addAttribute("asignaturaDto", asignaturaDto);
 		return "listaAsignaturas";
 	}
@@ -146,5 +168,13 @@ public class HomeController {
 		//System.out.println(asignaturaDto.toString());
 		asignaturaManager.guardaAsignaturaBaseDatos(asignaturaDto);
 		return "redirect:/listaAsignaturas";
+	}
+	
+	@GetMapping("/listaClases")
+	public String listaClases(Model model ) {
+		List<ClaseDTO> claseDto = claseManager.dameClases();
+		
+		model.addAttribute("claseDto", claseDto);
+		return "listaClases";
 	}
 }

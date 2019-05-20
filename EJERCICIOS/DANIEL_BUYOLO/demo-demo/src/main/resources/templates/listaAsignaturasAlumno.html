@@ -3,22 +3,28 @@
 	xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Lista Asignaturas</title>
-<link REL=StyleSheet HREF="css/style.css" type="text/css" >
+<title>Insert title here</title>
 </head>
-
 <body>
-<nav>
-<ul>
-	<li><a href=/listaAlumnos>Tabla Alumnos </a>
-		<ul>
-			<li><a th:href="@{/introducirDatosAlumno(identificador=-1)}">NUEVO ALUMNO</a></li>
-		</ul>
-	<li><a href=/listaProfesores>Tabla Profesores </a></li>
-	<li><a href=/listaAsignaturas>Tabla Asignaturas </a></li>
-	<li><a href=/listaClases>Tabla Clases</a>
-</ul>
-</nav>
+<link REL=StyleSheet HREF="css/style.css" type="text/css" >
+
+<table class="blueTable">
+		<tr>
+			<th>NOMBRE</th>
+			<th>APELLIDOS</th>
+			<th>EMAIL</th>
+			<th>CIUDAD</th>
+			<th>CURSO</th>
+		</tr>
+		<tr th:each="alumno : ${alumnoDto}">
+			<td th:text="${alumno.nombre}"></td>
+			<td th:text="${alumno.apellidos}"></td>
+			<td th:text="${alumno.email}"></td>
+			<td th:text="${alumno.ciudad}"></td>
+			<td th:text="${alumno.nombreClase}"></td>
+		</tr>
+	</table>
+	<br>
 	<table class="blueTable">
 		<tr>
 			<th>NOMBRE</th>
@@ -29,7 +35,6 @@
 			<td th:text="${asignatura.nombre}"></td>
 			<td th:text="${asignatura.orden}"></td>
 			<td th:text="${asignatura.nombreClase}"></td>
-			<td><a th:href="@{/introducirDatosAsignatura(identificador=${asignatura.id})}">EDITAR</a></td>
 		</tr>
 	</table>
 	<form>
