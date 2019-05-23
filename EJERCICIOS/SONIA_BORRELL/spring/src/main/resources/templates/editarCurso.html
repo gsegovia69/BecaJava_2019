@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/199/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="#" th:action="@{/guardarCurso}" th:object="${cursos}" method="post">
+		Nombre: <input type="text" th:field="*{nombre}" /><br/> 
+		Id: <input type="text" th:field="*{id}"> 
+		<input type="hidden" th:field="${cursos.id}" value="${cursos.id}" />
+		<input type="submit" value="Guardar" />
+	</form>
+</body>
+</html>
