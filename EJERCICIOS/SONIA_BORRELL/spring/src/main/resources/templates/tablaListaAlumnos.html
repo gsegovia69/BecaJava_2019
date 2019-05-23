@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/199/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<link href="/css/estilos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<h1>Lista de Alumnos</h1>
+<body>
+	<table>
+	<tr>
+	<td>Id </td>
+	<td>Nombre 	<div th:if="${direccion ==1}">
+  	<a  th:href="@{/ordenarAlumno?}"><span class="fas fa-arrow-alt-circle-down"></span>  </a> 
+  	</div> 
+  <div th:unless="${direccion==1}">
+	<a  th:href="@{/ordenarAlumnoDesc2?direccion=1}"><span class="far fa-arrow-alt-circle-up"></span></a>
+</div>	</td>
+	<td>Apellidos </td>
+	<td>Email </td>
+	</tr>
+		<tr th:each= "alumnos:${listaAlumnos}"> <!--NUEVA FILA  -->
+			<td th:text="${alumnos.id}"> <!--NUEVA LINEA-->
+			<td th:text="${alumnos.nombreAlumno}"> <!--NUEVA LINEA-->				
+			<td th:text="${alumnos.apellidosAlumno}"> <!--NUEVA LINEA-->
+			<td th:text="${alumnos.emailAlumno}"> <!--NUEVA LINEA-->
+			 <td><a th:href="@{/editarAlumno(identificador=${alumnos.id})}"><span class="far fa-edit"></span></a></td>
+			  <td><a th:href="@{/borrarAlumno(identificador=${alumnos.id})}"><span class="fas fa-trash-alt"></span></a></td>
+		</tr>
+		</table>
+		
+		<br/>
+		<button><a type="submit" th:href="@{/editarAlumno(identificador=${null})}"> Insertar </a></button><br/><br/>
+		<span th:if="${listaAlumnos.hasPrevious()}">
+		<button><a type="submit" th:href="@{/tablaListaAlumnos(page=${listaAlumnos.number-1})}"> Anterior </a></button>
+		</span>
+		<span th:if="${listaAlumnos.hasNext()}">
+		<button><a type="submit" th:href="@{/tablaListaAlumnos(page=${listaAlumnos.number+1})}"> Siguiente </a></button>
+		</span>
+</body> 
+</html>
