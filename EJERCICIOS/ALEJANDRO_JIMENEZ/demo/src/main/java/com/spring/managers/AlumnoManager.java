@@ -3,6 +3,8 @@ package com.spring.managers;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import com.spring.dto.AlumnoDTO;
 import com.spring.entities.AlumnoEntity;
@@ -33,13 +35,65 @@ public class AlumnoManager{
 	}
 	
 
+
 	public AlumnoDTO getOneAlumno(Long idAlumno) {
 		AlumnoEntity entity = repository.findById(idAlumno).orElse(new AlumnoEntity());
 		return toDTO(entity);
 	}
 	
+	public List<AlumnoDTO> ordenarNombreAsc (){
+		List<AlumnoDTO> dtoList=new ArrayList<>();
+		repository.findAllByOrderByNombreAsc().forEach(entity -> dtoList.add(toDTO(entity)));
+		
+		return dtoList;
+	}
 	
-
+	
+	public List<AlumnoDTO> ordenarApellidoAsc (){
+		List<AlumnoDTO> dtoList=new ArrayList<>();
+		repository.findAllByOrderByApellidosAsc().forEach(entity -> dtoList.add(toDTO(entity)));
+		return dtoList;
+	}
+	
+	
+	
+	public List<AlumnoDTO> ordenarEmailAsc (){
+		List<AlumnoDTO> dtoList=new ArrayList<>();
+		repository.findAllByOrderByEmailAsc().forEach(entity -> dtoList.add(toDTO(entity)));
+		
+		return dtoList;
+	}
+	
+	public List<AlumnoDTO> ordenarCiudadAsc (){
+		List<AlumnoDTO> dtoList=new ArrayList<>();
+		repository.findAllByOrderByCiudadAsc().forEach(entity -> dtoList.add(toDTO(entity)));
+		
+		return dtoList;
+	}
+	public List<AlumnoDTO> buscarNombre(String nombre){
+		List<AlumnoDTO> lista=new ArrayList<>();
+		List<AlumnoDTO> dtoList=new ArrayList<>();
+		repository.findAllByOrderByNombreAsc().forEach(entity -> lista.add(toDTO(entity))); 
+		for(int i = 0 ; i<lista.size();i++) {
+			if(lista.get(i).getNombre().contains(nombre)) {
+				dtoList.add(lista.get(i));
+			}
+		}
+		return dtoList;
+	}
+	
+	public List<AlumnoDTO> buscarLetra(String nombre){
+		List<AlumnoDTO> lista=new ArrayList<>();
+		List<AlumnoDTO> dtoList=new ArrayList<>();
+		repository.findAllByOrderByNombreAsc().forEach(entity -> lista.add(toDTO(entity))); 
+		for(int i = 0 ; i<lista.size();i++) {
+			if(lista.get(i).getNombre().startsWith(nombre)) {
+				dtoList.add(lista.get(i));
+			}
+		}
+		return dtoList;
+	}
+/*
 	public List<AlumnoDTO> buscarPorNombreDesc(String name){
 		List <AlumnoDTO> dtoList = new ArrayList<>();
 		repository.findAllByNombreOrderByApellidosDesc(name)
@@ -58,6 +112,7 @@ public class AlumnoManager{
 		.forEach(entity -> dtoList.add(toDTO(entity)));
 		return dtoList;
 	}
+	*/
 	
 	public List<AlumnoDTO> buscarTodo(String name,String apellidos,String ciudad){
 		List <AlumnoDTO> dtoList = new ArrayList<>();

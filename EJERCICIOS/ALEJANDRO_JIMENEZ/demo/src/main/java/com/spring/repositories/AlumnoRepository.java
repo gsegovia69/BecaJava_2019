@@ -7,16 +7,24 @@ import com.spring.entities.AlumnoEntity;
 
 public interface AlumnoRepository extends CrudRepository<AlumnoEntity, Long> {
 	
-	List<AlumnoEntity> findAllByNombreOrderByApellidosDesc(String name);
 	
-	List<AlumnoEntity> findAllByNombreAndApellidosOrderByApellidosAsc(String name, String apellidos);
 	
-	List<AlumnoEntity> findAllByNombreOrApellidosOrCiudadOrderByEmailAsc(String name, String apellidos, String ciudad);
+	List<AlumnoEntity> findAllByOrderByIdAsc();
+	List<AlumnoEntity> findAllByOrderByIdDesc();
 	
+	
+	List<AlumnoEntity> findAllByOrderByNombreAsc();
 	List<AlumnoEntity> findAllByOrderByNombreDesc();
 	
-	void delete(AlumnoEntity alumno);
+	List<AlumnoEntity> findAllByOrderByApellidosAsc();
+	List<AlumnoEntity> findAllByOrderByApellidosDesc();
 	
+	List<AlumnoEntity> findAllByOrderByEmailAsc();
+	List<AlumnoEntity> findAllByOrderByEmailDesc();
+
+	List<AlumnoEntity> findAllByOrderByCiudadAsc();
+	List<AlumnoEntity> findAllByOrderByCiudadDesc();
 	
+	List<AlumnoEntity> findAllByNombreOrderByNombreAsc(String nombre);	
 	
 }

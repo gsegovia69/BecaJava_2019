@@ -7,20 +7,67 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 </head>
 <body>
+
+
+
 <div class="jumbotron text-center">
-	<h1>Alumnos</h1>
-      <button onclick="location.href = '/lista/clases';" class="btn btn-primary btn-lg">clases </button>
+  <h1>Alumnos</h1> 
+  <a href="/home">home</a>     
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <a class="navbar-brand"></a>
+<form class="form-inline"  th:action="@{/buscar/alumnos}"  method="post">
+    <input  class="form-control mr-sm-2" type="text" placeholder="Search" th:value="${sourceText}" name="sourceText"/>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>	
+</nav>
+	  <button onclick="location.href = '/lista/clases';" class="btn btn-primary btn-lg">Clases </button>
       <button onclick="location.href = '/lista/asignaturas';" class="btn btn-primary btn-lg">Asignaturas</button>
       <button onclick="location.href = '/lista/profesores';" class="btn btn-primary btn-lg">Profesores</button>
-	<table class="table table-striped">
+</div>
+
+
+<div class="jumbotron text-center">
+
+
+
+    <a  th:href="@{/alumno/buscar?letra=A}" class="btn btn-info">A</a>
+    <a  th:href="@{/alumno/buscar?letra=B}" class="btn btn-info">B</a>
+    <a  th:href="@{/alumno/buscar?letra=C}" class="btn btn-info">C</a>
+    <a  th:href="@{/alumno/buscar?letra=D}" class="btn btn-info">D</a>
+    <a  th:href="@{/alumno/buscar?letra=E}" class="btn btn-info">E</a>
+    <a  th:href="@{/alumno/buscar?letra=F}" class="btn btn-info">F</a>
+    <a  th:href="@{/alumno/buscar?letra=G}" class="btn btn-info">G</a>
+    <a  th:href="@{/alumno/buscar?letra=H}" class="btn btn-info">H</a>
+    <a  th:href="@{/alumno/buscar?letra=I}" class="btn btn-info">I</a>
+    <a  th:href="@{/alumno/buscar?letra=J}" class="btn btn-info">J</a>
+    <a  th:href="@{/alumno/buscar?letra=K}" class="btn btn-info">K</a>
+    <a  th:href="@{/alumno/buscar?letra=L}" class="btn btn-info">L</a>
+    <a  th:href="@{/alumno/buscar?letra=M}" class="btn btn-info">M</a>
+    <a  th:href="@{/alumno/buscar?letra=N}" class="btn btn-info">N</a>
+    <a  th:href="@{/alumno/buscar?letra=O}" class="btn btn-info">O</a>
+    <a  th:href="@{/alumno/buscar?letra=P}" class="btn btn-info">P</a>
+    <a  th:href="@{/alumno/buscar?letra=Q}" class="btn btn-info">Q</a>
+    <a  th:href="@{/alumno/buscar?letra=R}" class="btn btn-info">R</a>
+    <a  th:href="@{/alumno/buscar?letra=S}" class="btn btn-info">S</a>
+    <a  th:href="@{/alumno/buscar?letra=T}" class="btn btn-info">T</a>
+    <a  th:href="@{/alumno/buscar?letra=U}" class="btn btn-info">U</a>
+    <a  th:href="@{/alumno/buscar?letra=V}" class="btn btn-info">V</a>
+    <a  th:href="@{/alumno/buscar?letra=W}" class="btn btn-info">W</a>
+    <a  th:href="@{/alumno/buscar?letra=X}" class="btn btn-info">X</a>
+    <a  th:href="@{/alumno/buscar?letra=Y}" class="btn btn-info">Y</a>
+    <a  th:href="@{/alumno/buscar?letra=Z}" class="btn btn-info">Z</a>
+
+
+	<table id="tabla" class="table table-striped">
 		<tr>
 			<td><b>ID</b></td>
-			<td><b>NOMBRE</b></td>
-			<td><b>APELLIDOS</b></td>
-			<td><b>EMAIL</b></td>
-			<td><b>CIUDAD</b></td>
+			<td><a th:href="@{/ordenarNombreAlumnos}" style=' color : black'><b>NOMBRE</b></a></td>
+			<td><a th:href="@{/ordenarApellidoAlumnos}" style=' color : black'><b>APELLIDOS</b></a></td>
+			<td><a th:href="@{/ordenarEmailAlumnos}" style=' color : black'><b>EMAIL</b></a></td>
+			<td><a th:href="@{/ordenarCiudadAlumnos}" style=' color : black'><b>CIUDAD</b></a></td>
 			<td><b>ID_CLASE</b></td>
 			<td></td>
 			<td></td>
@@ -41,5 +88,10 @@
 		</tr>
 	</table>
 </div>
+
+
+
+
+
 </body>
 </html>

@@ -1,5 +1,6 @@
 package com.spring.controllers;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +10,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.spring.dto.AlumnoDTO;
 import com.spring.dto.AsignaturaDTO;
 import com.spring.dto.ProfesorDTO;
 import com.spring.managers.ClaseManager;
@@ -37,6 +40,20 @@ public class ProfesorController {
 	@GetMapping("/lista/profesores")
 	public String listaProfesores(Model model) {
 		List<ProfesorDTO> profesores = profesorManager.getProfesores();
+		model.addAttribute("profesores",profesores);
+		return "profesores/profesores";
+	}
+	
+	@RequestMapping("/buscar/profesores")
+	public String buscarProfesores(Model model, String sourceText) {
+		
+		List<ProfesorDTO> profesores = new ArrayList<>();
+		if (sourceText==null) {
+		profesores = profesorManager.getProfesores();
+		}
+		else {
+		profesores = profesorManager.buscarNombre(sourceText);
+		}
 		model.addAttribute("profesores",profesores);
 		return "profesores/profesores";
 	}

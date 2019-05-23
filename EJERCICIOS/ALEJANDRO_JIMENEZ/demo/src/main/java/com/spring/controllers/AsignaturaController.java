@@ -1,5 +1,6 @@
 package com.spring.controllers;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.spring.dto.AlumnoDTO;
 import com.spring.dto.AsignaturaDTO;
@@ -37,6 +39,17 @@ public class AsignaturaController {
 	@GetMapping("/lista/asignaturas")
 	public String listaAsignaturas(Model model) {
 		List<AsignaturaDTO> asignaturas = asignaturaManager.getAsignaturas();
+		model.addAttribute("asignaturas",asignaturas);
+		return "asignaturas/asignaturas";
+	}
+	
+	@RequestMapping("/buscar/asignaturas")
+	public String buscarAsignaturas(Model model, String sourceText) {
+		List <AsignaturaDTO> asignaturas= new ArrayList<>();
+		if (sourceText==null) {
+			asignaturas = asignaturaManager.getAsignaturas();
+		}
+		asignaturas = asignaturaManager.buscarNombre(sourceText);
 		model.addAttribute("asignaturas",asignaturas);
 		return "asignaturas/asignaturas";
 	}

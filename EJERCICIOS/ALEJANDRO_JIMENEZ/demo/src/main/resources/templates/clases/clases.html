@@ -9,9 +9,23 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+
 <div class="jumbotron text-center">
-		<h1>Clases</h1>
- 	  <button onclick="location.href = '/lista/alumnos';" class="btn btn-primary btn-lg">alumnos </button>
+  <h1>Clases</h1>      
+    <a href="/home">home</a>  
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <a class="navbar-brand"></a>
+<form class="form-inline"  th:action="@{/buscar/clases}"  method="post">
+    <input  class="form-control mr-sm-2" type="text" placeholder="Search" th:value="${sourceText}" name="sourceText"/>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>	
+</nav>
+
+</nav>
+</div>
+
+<div class="jumbotron text-center">
+ 	  <button onclick="location.href = '/lista/alumnos';" class="btn btn-primary btn-lg">Alumnos </button>
       <button onclick="location.href = '/lista/asignaturas';" class="btn btn-primary btn-lg">Asignaturas</button>
       <button onclick="location.href = '/lista/profesores';" class="btn btn-primary btn-lg">Profesores</button>
 	

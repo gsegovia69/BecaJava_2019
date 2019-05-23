@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.spring.dto.AlumnoDTO;
+import com.spring.dto.AsignaturaDTO;
 import com.spring.dto.ProfesorDTO;
 import com.spring.entities.ProfesorEntity;
 import com.spring.repositories.ProfesorRepository;
@@ -30,6 +31,30 @@ public class ProfesorManager {
 			listaDTO.add(toDTO(entity));
 		}
 		return listaDTO;
+	}
+	
+	public List<ProfesorDTO> buscarNombre(String nombre){
+		List<ProfesorDTO> lista=new ArrayList<>();
+		List<ProfesorDTO> dtoList=new ArrayList<>();
+		repository.findAllByOrderByNombreAsc().forEach(entity -> lista.add(toDTO(entity))); 
+		for(int i = 0 ; i<lista.size();i++) {
+			if(lista.get(i).getNombre().contains(nombre)) {
+				dtoList.add(lista.get(i));
+			}
+		}
+		return dtoList;
+	}
+	
+	public List<ProfesorDTO> buscarLetra(String letra){
+		List<ProfesorDTO> lista=new ArrayList<>();
+		List<ProfesorDTO> dtoList=new ArrayList<>();
+		repository.findAllByOrderByNombreAsc().forEach(entity -> lista.add(toDTO(entity))); 
+		for(int i = 0 ; i<lista.size();i++) {
+			if(lista.get(i).getNombre().toLowerCase().startsWith(letra)) {
+				dtoList.add(lista.get(i));
+			}
+		}
+		return dtoList;
 	}
 	
 	public ProfesorDTO getOneProfesor(Long idProfesor) {

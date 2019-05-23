@@ -24,6 +24,18 @@ public class AsignaturaManager {
 		return repository;
 	}
 	
+	public List<AsignaturaDTO> buscarNombre(String nombre){
+		List<AsignaturaDTO> lista=new ArrayList<>();
+		List<AsignaturaDTO> dtoList=new ArrayList<>();
+		repository.findAllByOrderByNombreAsc().forEach(entity -> lista.add(toDTO(entity))); 
+		for(int i = 0 ; i<lista.size();i++) {
+			if(lista.get(i).getNombre().contains(nombre)) {
+				dtoList.add(lista.get(i));
+			}
+		}
+		return dtoList;
+	}
+	
 	public List<AsignaturaDTO> getAsignaturas(){
 		
 		List<AsignaturaEntity> listaEntities =(List<AsignaturaEntity>) repository.findAll();

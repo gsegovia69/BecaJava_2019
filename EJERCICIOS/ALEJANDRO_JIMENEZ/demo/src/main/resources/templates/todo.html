@@ -1,0 +1,104 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Lista alumnos</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="jumbotron text-center">
+  <h1>Todo</h1>      
+</div>
+
+
+<div class="jumbotron text-center">
+	  <h3>Alumnos</h3>
+	<table class="table table-striped">
+	
+
+		<tr>
+			<td><b>ID</b></td>
+			<td><a th:href="@{/ordenarNombreAlumnos}" style=' color : black'><b>NOMBRE</b></a></td>
+			<td><a th:href="@{/ordenarApellidoAlumnos}" style=' color : black'><b>APELLIDOS</b></a></td>
+			<td><a th:href="@{/ordenarEmailAlumnos}" style=' color : black'><b>EMAIL</b></a></td>
+			<td><a th:href="@{/ordenarCiudadAlumnos}" style=' color : black'><b>CIUDAD</b></a></td>
+			<td><b>CLASE</b></td>
+			<td></td>
+			<td></td>
+		</tr>	
+		<tr th:each="alum : ${alumnos}">
+			<td th:text="${alum.id}">nombre</td>
+			<td th:text="${alum.nombre}">nombre</td>
+			<td th:text="${alum.apellidos}">apellidos</td>
+			<td th:text="${alum.email}">email</td>
+			<td th:text="${alum.ciudad}">ciudad</td>
+			<td th:text="${alum.nombreClase}">Nombre Clase</td>
+			<td> <a th:href="@{/editarAlumno(idAlumno=${alum.id})}" class="btn btn-success">Editar</a></td>
+			<td> <a th:href="@{/borrarAlumno(idAlumno=${alum.id})}" class="btn btn-danger">Borrar</a></td>
+		</tr>
+	</table>
+	<div class="jumbotron text-center">
+		  <h3>Profesores</h3>
+		<table class="table table-striped">
+		<tr>
+			<td><b>ID</b></td>
+			<td><b>NOMBRE</b></td>
+			<td><b>APELLIDOS</b></td>
+			<td><b>EMAIL</b></td>
+			<td><b>CIUDAD</b></td>
+			<td><b>ID_CLASE</b></td>
+			<td></td>
+			<td></td>
+		</tr>	
+		<tr th:each="prof : ${profesores}">
+			<td th:text="${prof.id}">nombre</td>
+			<td th:text="${prof.nombre}">nombre</td>
+			<td th:text="${prof.apellidos}">apellidos</td>
+			<td th:text="${prof.email}">email</td>
+			<td th:text="${prof.ciudad}">ciudad</td>
+			<td th:text="${prof.nombreClase}">id Clase</td>
+			<td> <a th:href="@{/editarProfesor(idProfesor=${prof.id})}" class="btn btn-success">Editar</a></td>
+			<td> <a th:href="@{/borrarProfesor(idProfesor=${prof.id})}" class="btn btn-danger">Borrar</a></td>
+		</tr>
+	</table>
+	</div>
+	<div class="jumbotron text-center">
+		  <h3>Asignaturas</h3>
+	<table class="table table-striped">
+		<tr>
+			<td><b>ID</b></td>
+			<td><b>NOMBRE</b></td>
+			<td><b>ORDEN</b></td>
+			<td><b>CLASE</b></td>
+			<td></td><td></td>
+	
+		</tr>	
+		<tr th:each="asig : ${asignaturas}">
+			<td th:text="${asig.id}">id</td>
+			<td th:text="${asig.nombre}">nombre</td>
+			<td th:text="${asig.orden}">orden</td>
+			<td th:text="${asig.nombreClase}">idClase</td>
+			<td> <a th:href="@{/editarAsignatura(idAsignatura=${asig.id})}" class="btn btn-success">Editar</a></td>
+			<td> <a th:href="@{/borrarAsignatura(idAsignatura=${asig.id})}" class="btn btn-danger" onclick='alert("Borrando")'>Borrar</a></td>
+		</tr>
+	</table>
+	</div>
+	<div class="jumbotron text-center">
+		<h3>Clase</h3>
+		<table class="table table-striped">
+		<tr>
+			<td><b>NOMBRE</b></td><td></td>
+		</tr>	
+		<tr th:each="clase : ${clases}">
+			<td th:text="${clase.nombre}">nombre</td>
+			<td> <a th:href="@{/editarClase(idClase=${clase.id})}" class="btn btn-success">Editar</a></td>
+			
+		</tr>
+	</table>	
+	</div>
+</div>
+</body>
+</html>

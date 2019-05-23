@@ -1,11 +1,47 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Index</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<p>pepino</p>
 
+<div class="jumbotron text-center">
+  <h1>Hola</h1>      
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <a class="navbar-brand"></a>
+<form class="form-inline"  th:action="@{/buscarTodo}"  method="post">
+    <input  class="form-control mr-sm-2" type="text" placeholder="Search" th:value="${sourceText}" name="sourceText"/>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>	
+</nav>
+</div>
+
+<audio src="circo.mp3" autoplay="autoplay" hidden="true"></audio>
+
+<img src=https://img.buzzfeed.com/buzzfeed-static/static/2017-02/7/5/asset/buzzfeed-prod-web-04/anigif_sub-buzz-14598-1486463378-3.gif>
+<img src= https://media.tenor.com/images/40e62c1da5bdc26102376d86373bc511/tenor.gif>
+<img src=https://media.tenor.com/images/f57cfc67871d9aa4c551ff5bb8b4f065/tenor.gif>
+
+<img src=https://img.buzzfeed.com/buzzfeed-static/static/2017-02/7/5/asset/buzzfeed-prod-web-04/anigif_sub-buzz-14598-1486463378-3.gif>
+<img src= https://media.tenor.com/images/40e62c1da5bdc26102376d86373bc511/tenor.gif>
+<img src=https://media.tenor.com/images/f57cfc67871d9aa4c551ff5bb8b4f065/tenor.gif>
+
+
+
+<div class="jumbotron text-center">
+
+ 	  <button onclick="location.href = '/lista/alumnos';" class="btn btn-primary btn-lg">Alumnos </button>
+      <button onclick="location.href = '/lista/asignaturas';" class="btn btn-primary btn-lg">Asignaturas</button>
+      <button onclick="location.href = '/lista/profesores';" class="btn btn-primary btn-lg">Profesores</button>
+      <button onclick="location.href = '/lista/clases';" class="btn btn-primary btn-lg">Clases</button>
+</div>
+<div class="jumbotron text-center">
+	<button onclick="location.href = '/destruir';" class="btn btn-danger">Destruir Base de Datos</button>
+</div>
 </body>
 </html>
