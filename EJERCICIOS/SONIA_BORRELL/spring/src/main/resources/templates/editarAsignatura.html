@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/199/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="#" th:action="@{/guardarAsignatura}" th:object="${asignaturas}" method="post">
+		Name: <input type="text" th:field="*{nombreAsignatura}" /><br/> 
+		Orden: <input type="text" th:field="*{Orden}" /><br/> 
+		id: <input type="text" th:field="*{idAsignatura}">  
+		<br/>
+		 Lista Cursos: 		 
+		<select th:field ="${asignaturas.idCurso.id}">
+			<option th:each ="curso:${asignaturas.cursos}"
+			th:value="${{curso.id}}"
+			th:text="${curso.nombre}"
+			th:select ="(${curso.id} == ${asignaturas.idCurso.id})"/>
+			</select>
+		<input type="hidden" th:field="${asignaturas.idAsignatura}" value="${asignaturas.idAsignatura}" />
+		<input type="submit" value="Guardar" />
+	</form>
+</body>
+</html>
