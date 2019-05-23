@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/199/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<link href="/css/estilos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+<h1>Lista de Asignaturas</h1>
+<table>
+	
+	<tr>
+	<td>Id </td>
+	<td>Nombre Asignatura </td>
+	<td>Orden </td>
+	
+	</tr>
+		<tr th:each= "asignaturas:${listaAsignatura}"> <!--NUEVA FILA  -->
+			<td th:text="${asignaturas.idAsignatura}"> <!--NUEVA LINEA-->
+			<td th:text="${asignaturas.nombreAsignatura}"> <!--NUEVA LINEA-->
+			<td th:text="${asignaturas.orden}"> <!--NUEVA LINEA-->
+			<td><a th:href="@{/borrarAsignatura(identificador=${asignaturas.idAsignatura})}"><span class="far fa-edit"></a></td>
+			 <td><a th:href="@{/editarAsignatura(identificador=${asignaturas.idAsignatura})}"><span class="fas fa-trash-alt"></a></td>
+		</tr>
+		</table>
+		<br/>
+		<button><a type="submit" th:href ="@{/editarAsignatura(identificador=${null})}" > Insertar </a></button>
+</body>
+</html>
