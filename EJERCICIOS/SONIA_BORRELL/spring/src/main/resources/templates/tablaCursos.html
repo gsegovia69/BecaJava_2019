@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/199/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<link href="/css/estilos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<body>
+<h1>Lista de Cursos</h1>
+	<table>
+	<tr>
+	<td>Id </td>
+	<td>Nombre  </td>
+
+	</tr>
+		<tr th:each= "curso : ${lista}"> <!--NUEVA FILA  -->
+			<td th:text="${curso.id}">
+			<td th:text="${curso.nombre}">
+			 <td><a th:href="@{/editarCurso(identificador=${curso.id})}"><span class="far fa-edit"></a></td>	 
+		</tr>
+		</table>
+</body>
+</html>
