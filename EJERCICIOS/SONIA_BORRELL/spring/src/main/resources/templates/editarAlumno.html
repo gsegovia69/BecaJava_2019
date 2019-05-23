@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/199/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="#" th:action="@{/guardarAlumno}" th:object="${alumnos}" method="post">
+		Name: <input type="text" th:field="*{nombreAlumno}" /><br/> 
+		Surname: <input type="text" th:field="*{apellidosAlumno}" /><br/> 
+		Email: <input type="text" th:field="*{emailAlumno}" /><br/> 
+		City: <input type="text" th:field="*{ciudadAlumno}" /><br/> <br/>
+		id: <input type="text" th:field="*{id}">
+		 <br/>
+		 Lista Cursos: 		 
+		<select th:field ="${alumnos.id_curso.id}">
+			<option th:each ="curso:${alumnos.cursos}"
+			th:value="${{curso.id}}"
+			th:text="${curso.nombre}"
+			th:select ="(${curso.id} == ${alumnos.id_curso.id})"/>
+			</select>
+		<input type="hidden" th:field="${alumnos.id}" value="${alumnos.id}" />
+		<input type="submit" value="Guardar" />
+	</form>
+</body>
+</html>
