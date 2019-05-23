@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/199/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link href="/css/estilos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+<h1>Lista Profesores</h1>
+	<table>
+	<tr>
+	<td>Id </td>
+	<td>Nombre Profesor </td>
+	<td>Apellidos </td>
+	<td>Email </td>
+	
+	</tr>
+		<tr th:each= "profesores:${listaProfesores}"> <!--NUEVA FILA  -->
+			<td th:text="${profesores.id}"> <!--NUEVA LINEA-->
+			<td th:text="${profesores.nombreProfesor}"> </td><!--NUEVA LINEA-->
+			<td th:text="${profesores.apellidosProfesor}"> </td><!--NUEVA LINEA-->
+			<td th:text="${profesores.emailProfesor}"> </td><!--NUEVA LINEA-->
+		 <td><a th:href="@{/editarProfesor(identificador=${profesores.id})}"><span class="far fa-edit"></span></a></td>
+		  <td><a th:href="@{/borrarProfesor(identificador=${profesores.id})}"><span class="fas fa-trash-alt"></span></a></td>
+		</tr>
+		</table>
+		<br/>
+		<button><a type="submit" th:href="@{/editarProfesor(identificador=${null})}"> Insertar </a></button>
+</body>
+</html>
+
+
+	
