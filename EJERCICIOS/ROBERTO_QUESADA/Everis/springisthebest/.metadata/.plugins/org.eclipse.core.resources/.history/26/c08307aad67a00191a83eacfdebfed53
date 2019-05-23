@@ -1,0 +1,25 @@
+package paramo.de.la.programacion.repositories;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.repository.CrudRepository;
+
+import paramo.de.la.programacion.dto.AsignaturaDTO;
+import paramo.de.la.programacion.entities.Asignatura;
+
+public interface AsignaturaRepository extends CrudRepository<Asignatura, Integer> {
+	void delete(Asignatura asignatura);
+
+	List<Asignatura> findAll();
+
+	Optional<Asignatura> findById(int idAsignatura);
+
+	@SuppressWarnings("unchecked")
+	Asignatura save(Asignatura asignatura);
+
+	// @Query(value = "Select a from Asignatura a where a.id_clase = ?")
+	// List<Asignatura> dameAsignaturasPorCurso(int id_clase);
+
+	List<AsignaturaDTO> findAllByIdClase(int idclase);
+}

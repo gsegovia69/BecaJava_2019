@@ -1,0 +1,9 @@
+package paramo.de.la.programacion.repositories;
+
+import org.springframework.data.repository.CrudRepository;
+
+import paramo.de.la.programacion.entities.Usuario;
+
+public interface UsuarioRepository extends CrudRepository<Usuario, Integer>{
+
+}

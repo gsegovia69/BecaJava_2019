@@ -1,0 +1,44 @@
+package paramo.de.la.programacion;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.extern.java.Log;
+@Getter
+@Setter
+@Log
+@Controller
+@ConfigurationProperties(prefix="rules.pepino")
+public class HomePepinoController {
+	private String atributo = "Hola mundo";
+	private String miVariable = "";
+	@GetMapping("/")
+	public String homePepino() {
+		log.info("Atributo: " + atributo);
+		return "homepepino";
+	}
+	@RequestMapping("/hola/{miVariable}")
+	public String bienvenida(@PathVariable("miVariable") String miVariable, Model map) {
+		Usuario usuario = new Usuario();
+		usuario.setNombre(miVariable);
+		map.addAttribute("Nombre", usuario.getNombre());
+		log.info(map.toString());
+		return "bienvenida";
+	}
+	@GetMapping("/adios/{miVariable}")
+	public String despedida(@PathVariable("miVariable") String miVariable, Model map) {
+		Usuario usuario = new Usuario();
+		usuario.setNombre(miVariable);
+		map.addAttribute("Nombre", usuario.getNombre());
+		log.info(map.toString());
+		return "despedida";
+	}
+	
+	
+}

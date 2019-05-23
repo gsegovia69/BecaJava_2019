@@ -1,0 +1,11 @@
+ackage everis.beca.java.practicas.mavenPrueba;
+
+import javax.swing.JDesktopPane;
+import javax.swing.JFrame;
+import javax.swing.JInternalFrame;
+
+public class Inicio {
+	JFrame ventana = new JFrame();
+	JDesktopPane desktop = new JDesktopPane();
+
+}

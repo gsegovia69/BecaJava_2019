@@ -1,0 +1,29 @@
+package everis.beca.java.practicas.mavenPrueba.dto;
+
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@ToString
+@Setter
+@Getter
+@Entity
+@Table( name = "asignatura")
+
+public class Asignatura {
+	@Id
+	@Column(name = "id_asignatura")
+	private int id_asignatura;
+	@Column(name = "nombre")
+	private String nombre;
+	@Column(name = "orden")
+	private int orden;
+	@Column(name = "id_clase")
+	private int id_clase;
+}

@@ -1,0 +1,18 @@
+package everis.beca.java.practicas.mavenPrueba;
+
+
+public class JpaUtil {
+private static final EntityManagerFactory emf;
+static{
+try{
+emf=Persistence.createEntityManagerFactory("ProyectoJPA_PU");
+} catch (Throwable ex) {
+// Log the exception.
+System.err.println("Initial SessionFactory creation failed." + ex);
+throw new ExceptionInInitializerError(ex);
+}
+}
+public static EntityManagerFactory getEntityManagerFactory(){
+return emf;
+}
+}

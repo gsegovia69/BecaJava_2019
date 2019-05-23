@@ -1,0 +1,17 @@
+package everis.beca.java.practicas.mavenPrueba.dto;
+
+import java.sql.DriverManager;
+
+public class Connection {
+public Connection getConexion() {
+	String url = "";
+	try {
+		Class.forName("com.mysql.jdbc.Driver");
+		
+	} catch (Exception e) {
+		System.out.println("Error al conectar a la base de datos.");
+	}
+	Connection cn = DriverManager.getConnection(url);
+	return cn;
+}
+}

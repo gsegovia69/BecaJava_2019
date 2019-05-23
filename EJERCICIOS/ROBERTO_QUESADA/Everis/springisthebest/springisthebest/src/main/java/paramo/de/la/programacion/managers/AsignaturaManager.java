@@ -1,0 +1,90 @@
+package paramo.de.la.programacion.managers;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import paramo.de.la.programacion.dto.AsignaturaDTO;
+import paramo.de.la.programacion.dto.ClaseDTO;
+import paramo.de.la.programacion.entities.Asignatura;
+import paramo.de.la.programacion.entities.Clase;
+import paramo.de.la.programacion.repositories.AsignaturaRepository;
+import paramo.de.la.programacion.utils.ConversorUtils;
+
+@Service
+public class AsignaturaManager {
+	@Autowired
+	private AsignaturaRepository repository;
+
+	public AsignaturaRepository getRepository() {
+		return repository;
+	}
+
+	public List<AsignaturaDTO> dameAsignaturas() {
+		List<Asignatura> listaEntities = repository.findAll();
+		List<AsignaturaDTO> dtoList = new ArrayList<>();
+		for (Asignatura entity : listaEntities) {
+			dtoList.add(transform(entity));
+		}
+		return dtoList;
+	}
+	public  void borramelo(AsignaturaDTO dto) {
+		Asignatura entity = transformDTO(dto);
+		repository.delete(entity);
+	}
+
+	public AsignaturaDTO giveMeOneAsignatura(Long idAsignatura) {
+		AsignaturaDTO dto = new AsignaturaDTO();
+		Asignatura entity = repository.findByIdAsignatura(idAsignatura).orElse(new Asignatura());
+		dto.setIdAsignatura(entity.getIdAsignatura());
+		dto.setNombre(entity.getNombre());
+		dto.setOrden(entity.getOrden());
+		dto.setIdClase(ConversorUtils.conversorClaseToClaseDTO(entity.getIdClase()));
+		dto.setNombreCurso(entity.getIdClase().getNombre());
+		dto.setIdCurso(entity.getIdClase().getId());
+		return dto;
+	}
+
+	public List<AsignaturaDTO> findAllByIdClase(Long idClase) {
+		List<AsignaturaDTO> dtoList = new ArrayList<>();
+		List<Asignatura> listaEntities = repository.findAllByIdClase(idClase);
+		for (Asignatura entity : listaEntities) {
+			dtoList.add(transform(entity));
+		}
+		return dtoList;
+	}
+
+	public AsignaturaDTO guardamelo(AsignaturaDTO dto) {
+		Asignatura entity = transformDTO(dto);
+		entity = repository.save(entity);
+		return transform(entity);
+	}
+
+	private AsignaturaDTO transform(Asignatura asignatura) {
+		AsignaturaDTO dto = new AsignaturaDTO();
+		if (asignatura.getIdClase() != null) {
+			ClaseDTO utils = ConversorUtils.conversorClaseToClaseDTO(asignatura.getIdClase());
+			dto.setIdAsignatura(asignatura.getIdAsignatura());
+			dto.setNombre(asignatura.getNombre());
+			dto.setOrden(asignatura.getOrden());
+			dto.setIdClase(utils);
+			dto.setNombreCurso(asignatura.getIdClase().getNombre());
+			dto.setIdCurso(asignatura.getIdClase().getId());
+		}
+		return dto;
+	}
+
+	private Asignatura transformDTO(AsignaturaDTO asignatura) {
+		Asignatura entity = new Asignatura();
+		Clase utils = ConversorUtils.conversorClaseDTOToClase(asignatura.getIdClase());
+		entity.setIdAsignatura(asignatura.getIdAsignatura());
+		entity.setNombre(asignatura.getNombre());
+		entity.setOrden(asignatura.getOrden());
+		entity.setIdClase(utils);
+
+		return entity;
+	}
+
+}

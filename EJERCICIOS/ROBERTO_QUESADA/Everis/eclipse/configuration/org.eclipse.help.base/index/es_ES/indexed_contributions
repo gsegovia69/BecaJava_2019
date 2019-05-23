@@ -1,0 +1,30 @@
+#This is a generated file; do not edit.
+#Thu May 09 16:08:06 CEST 2019
+de.jcup.batcheditor=de.jcup.batcheditor\n1.0.1
+org.eclipse.wst.sse.doc.user=org.eclipse.wst.sse.doc.user\n1.2.0.v201901071922
+org.eclipse.wb.swing.doc.user=org.eclipse.wb.swing.doc.user\n1.9.0.201608250402
+org.eclipse.help.base=org.eclipse.help.base\n4.2.500.v20190307-0500
+org.eclipse.m2e.core.ui=org.eclipse.m2e.core.ui\n1.11.0.20190220-2119
+org.eclipse.mylyn.help.ui=org.eclipse.mylyn.help.ui\n3.24.2.v20180905-0003
+org.eclipse.epp.mpc.ui=org.eclipse.epp.mpc.ui\n1.7.5.v20190301-1516
+org.eclipse.wst.xmleditor.doc.user=org.eclipse.wst.xmleditor.doc.user\n1.1.0.v201901071922
+org.eclipse.wb.doc.user=org.eclipse.wb.doc.user\n1.9.0.201608250402
+org.eclipse.jdt=org.eclipse.jdt\n3.17.0.v20190307-0500
+org.eclipse.jdt.doc.user=org.eclipse.jdt.doc.user\n3.15.200.v20190306-0908
+org.eclipse.wb.rcp.doc.user=org.eclipse.wb.rcp.doc.user\n1.9.0.201608250402
+org.eclipse.egit.doc=org.eclipse.egit.doc\n5.3.0.201903130848-r
+org.eclipse.oomph.setup.doc=org.eclipse.oomph.setup.doc\n1.10.0.v20180706-1242
+org.eclipse.eclemma.doc=org.eclipse.eclemma.doc\n3.1.2.201903112331
+org.eclipse.ui.cheatsheets=org.eclipse.ui.cheatsheets\n3.5.400.v20190218-1039
+org.eclipse.wst.xsdeditor.doc.user=org.eclipse.wst.xsdeditor.doc.user\n1.0.800.v201901071922
+org.eclipse.ui.intro=org.eclipse.ui.intro\n3.5.500.v20190218-1654
+org.eclipse.help=org.eclipse.help\n3.8.300.v20190216-1017
+org.eclipse.mylyn.wikitext.help.ui=org.eclipse.mylyn.wikitext.help.ui\n3.0.25.201806201740
+org.eclipse.epp.mpc.help.ui=org.eclipse.epp.mpc.help.ui\n1.7.5.v20190206-1811
+org.eclipse.pde.doc.user=org.eclipse.pde.doc.user\n3.14.300.v20190307-0943
+org.eclipse.platform=org.eclipse.platform\n4.11.0.v20190307-0500
+org.eclipse.oomph.p2.doc=org.eclipse.oomph.p2.doc\n1.10.0.v20180706-1242
+org.eclipse.pde=org.eclipse.pde\n3.13.500.v20190307-0500
+org.eclipse.platform.doc.user=org.eclipse.platform.doc.user\n4.11.0.v20190227-0848
+org.eclipse.wst.dtdeditor.doc.user=org.eclipse.wst.dtdeditor.doc.user\n1.1.0.v201901071922
+org.eclipse.ui.intro.universal=org.eclipse.ui.intro.universal\n3.3.400.v20190218-1654

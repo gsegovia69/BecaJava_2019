@@ -1,0 +1,13 @@
+package velocidad.del.pepino.demoVelocidadPepinil.velocidad.del.pepino.demoVelocidadPepinil;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DemoVelocidadPepinilApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DemoVelocidadPepinilApplication.class, args);
+	}
+
+}

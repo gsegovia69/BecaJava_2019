@@ -1,0 +1,20 @@
+package everis.beca.java.practicas.mavenPrueba;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+
+import everis.beca.java.practicas.mavenPrueba.dto.Clase;
+
+public class Pruebas {
+	public static void main(String[] args) {
+		EntityManager em = JpaUtil.getEntityManagerFactory().createEntityManager();
+
+		List<Clase> query = em.createQuery("SELECT c FROM Clase c", Clase.class).getResultList();
+		for (Clase c: query) {
+			System.out.println("Curso ->"+ c.getNombre().toString());
+		}
+		
+
+	}
+}

@@ -1,0 +1,19 @@
+package everis.beca.java.practicas.mavenPrueba;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.TypedQuery;
+
+import everis.beca.java.practicas.mavenPrueba.dto.Alumno;
+import everis.beca.java.practicas.mavenPrueba.dto.Clase;
+
+public class Pruebas {
+	public static void main(String[] args) {
+		EntityManager em = JpaUtil.getEntityManagerFactory().createEntityManager();
+
+		TypedQuery<Clase> query = em.createQuery("Select nombre FROM alumno", Clase.class);
+		List<Clase> results = query.getResultList();
+		System.out.println(results.toString());
+	}
+}

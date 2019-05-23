@@ -2,7 +2,7 @@ package everis.beca.java.practicas.mavenPrueba;
 
 import javax.persistence.EntityManager;
 
-import everis.beca.java.practicas.mavenPrueba.dto.Alumno;
+import paramo.de.la.programacion.dto.Alumno;
 
 public class DAOalumno {
 	public static Alumno find(int id){

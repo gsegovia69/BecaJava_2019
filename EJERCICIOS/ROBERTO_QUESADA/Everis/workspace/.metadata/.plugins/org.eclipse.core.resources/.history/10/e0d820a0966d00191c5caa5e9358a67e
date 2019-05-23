@@ -1,0 +1,8 @@
+package everis.beca.java.practicas.mavenPrueba;
+
+import java.io.IOException;
+
+public class InteraccionBBDD {
+public void delete(Client client) throws IOException
+ String sql = "BORRAR CLIENTES CUYO NIF SEA = '" + client.getDni() + "'"
+}

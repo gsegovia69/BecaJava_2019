@@ -1,0 +1,23 @@
+package everis.beca.java.practicas.mavenPrueba;
+
+import javax.persistence.EntityManager;
+
+import everis.beca.java.practicas.mavenPrueba.dto.Alumno;
+import everis.beca.java.practicas.mavenPrueba.dto.alumno;
+
+public class DAOalumno {
+	public static Alumno find(Long id){
+		EntityManager em = JpaUtil.getEntityManagerFactory().createEntityManager();
+		Alumno alumno = null;
+		try{
+		alumno = em.find(alumno.class, id);
+		}catch(Exception ex){
+		System.out.println("upss!! ha ocurrido un error");
+		ex.printStackTrace();
+		}
+		finally{
+		em.close();
+		}
+		return alumno;
+		}
+}

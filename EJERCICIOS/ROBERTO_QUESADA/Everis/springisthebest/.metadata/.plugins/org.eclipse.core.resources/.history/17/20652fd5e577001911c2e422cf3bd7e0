@@ -1,0 +1,95 @@
+package paramo.de.la.programacion.managers;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import paramo.de.la.programacion.dto.ClaseDTO;
+import paramo.de.la.programacion.dto.ProfesorDTO;
+import paramo.de.la.programacion.entities.Clase;
+import paramo.de.la.programacion.entities.Profesor;
+import paramo.de.la.programacion.repositories.ProfesorRepository;
+import paramo.de.la.programacion.utils.ConversorUtils;
+
+@Service
+public class ProfesorManager {
+	@Autowired
+	private ProfesorRepository repository;
+
+	public ProfesorRepository getRepository() {
+		return repository;
+	}
+
+	public List<ProfesorDTO> dameProfesors() {
+		List<Profesor> listaEntities = repository.findAll();
+		List<ProfesorDTO> dtoList = new ArrayList<>();
+		for (Profesor entity : listaEntities) {
+			dtoList.add(transform(entity));
+		}
+		return dtoList;
+	}
+
+	public List<ProfesorDTO> obtenerProfesoresFiltrandoPorEmailOrdenadoPorCiudadDescNombreAsc(String email,
+			String ciudad) {
+		List<Profesor> listaEntities = repository
+				.obtenerProfesoresFiltrandoPorEmailOrdenadoPorCiudadDescNombreAsc(email, ciudad);
+		List<ProfesorDTO> dtoList = new ArrayList<>();
+		for (Profesor entity : listaEntities) {
+			dtoList.add(transform(entity));
+		}
+
+		return dtoList;
+	}
+
+	public ProfesorDTO giveMeOneProfesor(int id) {
+		ProfesorDTO dto = new ProfesorDTO();
+		Profesor entity = repository.findById(id).orElse(new Profesor());
+		dto.setId(entity.getId());
+		dto.setNombre(entity.getNombre());
+		dto.setApellidos(entity.getApellidos());
+		dto.setCiudad(entity.getCiudad());
+		dto.setEmail(entity.getEmail());
+		dto.setIdClase(ConversorUtils.conversorClaseToClaseDTO(entity.getIdClase()));
+		dto.setNombreCurso(entity.getIdClase().getNombre());
+		dto.setIdCurso(entity.getIdClase().getId());
+		return dto;
+	}
+
+	public ProfesorDTO guardamelo(ProfesorDTO dto) {
+		Profesor entity = transformDTO(dto);
+		entity = repository.save(entity);
+		return transform(entity);
+	}
+
+	private ProfesorDTO transform(Profesor profesor) {
+		ProfesorDTO dto = new ProfesorDTO();
+		if(profesor.getIdClase() != null) {
+		ClaseDTO utils = ConversorUtils.conversorClaseToClaseDTO(profesor.getIdClase());
+		dto.setId(profesor.getId());
+		dto.setNombre(profesor.getNombre());
+		dto.setApellidos(profesor.getApellidos());
+		dto.setCiudad(profesor.getCiudad());
+		dto.setEmail(profesor.getEmail());
+		dto.setIdClase(utils);
+		dto.setNombreCurso(profesor.getIdClase().getNombre());
+		//dto.setIdCurso(profesor.getIdClase().getId());
+		}
+		return dto;
+	}
+
+	private Profesor transformDTO(ProfesorDTO profesor) {
+		Clase utils = ConversorUtils.conversorClaseDTOToClase(profesor.getIdClase());
+		Profesor entity = new Profesor();
+		entity.setId(profesor.getId());
+		entity.setNombre(profesor.getNombre());
+		entity.setApellidos(profesor.getApellidos());
+		entity.setCiudad(profesor.getCiudad());
+		entity.setEmail(profesor.getEmail());
+		entity.setIdClase(utils);
+		System.out.println("PRUEBA ------->" + entity.getIdClase());
+		return entity;
+	}
+
+}

@@ -4,7 +4,7 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 
-import everis.beca.java.practicas.mavenPrueba.dto.Clase;
+import paramo.de.la.programacion.dto.Clase;
 
 public class Pruebas {
 	public static void main(String[] args) {

@@ -1,0 +1,41 @@
+package paramo.de.la.programacion.managers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import paramo.de.la.programacion.dto.UsuarioDTO;
+import paramo.de.la.programacion.entities.Usuario;
+import paramo.de.la.programacion.repositories.UsuarioRepository;
+
+@Service
+public class UsuarioManager {
+	@Autowired
+	private UsuarioRepository repository;
+
+	public UsuarioRepository getRepository() {
+		return repository;
+	}
+	public UsuarioDTO guardar(UsuarioDTO dto) {
+		Usuario entity = transformDTO(dto);
+		repository.save(entity);
+		return transformEntity(entity);
+	}
+
+	private UsuarioDTO transformEntity(Usuario entity) {
+		UsuarioDTO dto = new UsuarioDTO();
+
+		dto.setId(entity.getId());
+		dto.setUsername(entity.getUsername());
+		dto.setPassword(entity.getPassword());
+		return dto;
+	}
+
+	private Usuario transformDTO(UsuarioDTO dto) {
+		Usuario entity = new Usuario();
+
+		entity.setId(dto.getId());
+		entity.setUsername(dto.getUsername());
+		entity.setPassword(dto.getPassword());
+		return entity;
+	}
+}

@@ -1,0 +1,30 @@
+package paramo.de.la.programacion.dto;
+
+import java.util.List;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Setter
+@Getter
+@ToString
+public class AsignaturaDTO {
+
+	private Long idAsignatura;
+
+	private String nombre;
+
+	private int orden;
+	
+	private int idCurso;
+	
+	private String nombreCurso;
+	
+	private ClaseDTO idClase;
+
+	private List<ClaseDTO> cursos;
+		
+		
+	
+}

@@ -1,0 +1,5 @@
+package paramo.de.la.programacion.managers;
+
+public class UsuarioManager {
+
+}

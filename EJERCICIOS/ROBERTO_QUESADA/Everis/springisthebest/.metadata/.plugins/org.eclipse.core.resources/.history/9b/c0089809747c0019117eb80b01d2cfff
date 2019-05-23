@@ -1,0 +1,163 @@
+package paramo.de.la.programacion;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.extern.java.Log;
+import paramo.de.la.programacion.dto.AlumnoDTO;
+import paramo.de.la.programacion.dto.AsignaturaDTO;
+import paramo.de.la.programacion.dto.ClaseDTO;
+import paramo.de.la.programacion.dto.ProfesorDTO;
+import paramo.de.la.programacion.managers.AlumnoManager;
+import paramo.de.la.programacion.managers.AsignaturaManager;
+import paramo.de.la.programacion.managers.ClaseManager;
+import paramo.de.la.programacion.managers.ProfesorManager;
+
+@Getter
+@Setter
+@Log
+@Controller
+@ConfigurationProperties(prefix = "rules.pepino")
+public class HomePepinoController {
+	private String atributo = "Hola mundo";
+	private String miVariable = "";
+	@Autowired
+	private AlumnoManager aluManager;
+	@Autowired
+	private ProfesorManager proManager;
+	@Autowired
+	private AsignaturaManager asiManager;
+	@Autowired
+	private ClaseManager claManager;
+
+
+	
+	  @GetMapping("/") public String homePepino() { 
+		  
+		  log.info("Atributo: " + atributo);
+		  return "Home"; 
+	  
+	  }
+	 
+	@GetMapping("/listado")
+	public String listado(Model model) {
+		
+		Pageable pageable = PageRequest.of(0, 5);
+		
+		List<AlumnoDTO> alumnos = aluManager.findAllByOrderByName(pageable);
+
+		Pageable a = pageable.next();
+		
+		model.addAttribute("alumnos", alumnos);
+		
+		model.addAttribute("nextPagina", a);
+		return "listado";
+	}
+
+	@GetMapping("/listadoprofesores")
+	public String listadoprofesores(Model model) {
+
+		List<ProfesorDTO> profesores = proManager.dameProfesors();
+
+		model.addAttribute("profesores", profesores);
+		return "listadoprofesores";
+	}
+
+	@GetMapping("/listasign")
+	public String listadoasign(Model model) {
+
+		List<AsignaturaDTO> asign = asiManager.dameAsignaturas();
+		model.addAttribute("asign", asign);
+		
+		return "listasign";
+	}
+
+	@GetMapping("/editar/alumno")
+	public String editar(Long id, Model map) {
+		AlumnoDTO alumno = new AlumnoDTO();
+		if (id != null){
+		alumno = aluManager.giveMeOneAlumno(id);
+		}
+		List<ClaseDTO> clase = claManager.dameClases();
+		alumno.setCursos(clase);
+		map.addAttribute("alumno", alumno);
+		return "editar";
+	}
+	@GetMapping("/editar/asignaturas")
+	public String editarAsignatura(Long id, Model map) {
+		AsignaturaDTO asign = new AsignaturaDTO();
+		if (id != null){
+		asign = asiManager.giveMeOneAsignatura(id);
+		}
+		List<ClaseDTO> clase = claManager.dameClases();
+		asign.setCursos(clase);
+		map.addAttribute("asign", asign);
+		return "editarasign";
+	}
+	@GetMapping("/editar/profesor")
+	public String editarProfesores(Long id, Model map) {
+		ProfesorDTO profe = new ProfesorDTO();
+		if (id != null){
+		profe = proManager.giveMeOneProfesor(id);
+		}
+		List<ClaseDTO> clase = claManager.dameClases();
+		profe.setCursos(clase);
+		map.addAttribute("profe", profe);
+		return "editarprofe";
+	}
+
+	@GetMapping("/adios/{miVariable}")
+	public String despedida(@PathVariable("miVariable") String miVariable, Model map) {
+		Usuario usuario = new Usuario();
+		usuario.setNombre(miVariable);
+		map.addAttribute("Nombre", usuario.getNombre());
+		log.info(map.toString());
+		return "despedida";
+	}
+	@PostMapping("/editarAlumno")
+	public String editarAlumno(@ModelAttribute AlumnoDTO alumno) {
+		aluManager.guardamelo(alumno);
+		return "redirect:/listado";
+	}
+	@GetMapping("/eliminarAlumno")
+	public String borrarAlumno(long id) {
+		AlumnoDTO alumno = aluManager.giveMeOneAlumno(id);
+		aluManager.borramelo(alumno);
+		return "redirect:/listado";
+	}
+	@PostMapping("/editarasign")
+	public String editarAsignatura(@ModelAttribute AsignaturaDTO asignatura) {
+		asiManager.guardamelo(asignatura);
+		return "redirect:/listasign";
+	}
+	@GetMapping("/eliminarAsignatura")
+	public String borrarAsignatura(long id) {
+		AsignaturaDTO asignatura = asiManager.giveMeOneAsignatura(id);
+		asiManager.borramelo(asignatura);
+		return "redirect:/listasign";
+	}
+	@PostMapping("/editarProfe")
+	public String editarprofesores(ProfesorDTO profesores) {
+		proManager.guardamelo(profesores);
+		return "redirect:/listadoprofesores";
+	}
+	@GetMapping("/eliminarProfe")
+	public String borrarProfe(long id) {
+		ProfesorDTO profe= proManager.giveMeOneProfesor(id);
+		proManager.borramelo(profe);
+		return "redirect:/listadoprofesores";
+	}
+
+}

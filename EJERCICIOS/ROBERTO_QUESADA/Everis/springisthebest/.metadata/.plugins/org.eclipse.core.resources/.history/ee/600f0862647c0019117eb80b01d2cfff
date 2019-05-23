@@ -1,0 +1,48 @@
+package paramo.de.la.programacion.repositories;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.query.Param;
+
+import paramo.de.la.programacion.entities.Alumno;
+
+public interface AlumnoRepository extends CrudRepository<Alumno, Integer> {
+	void delete(Alumno alumno);
+
+	List<Alumno> findAll();
+
+	Optional<Alumno> findById(Long id);
+
+	@SuppressWarnings("unchecked")
+	Alumno save(Alumno alumno);
+
+	// Select * FROM ALUMNO WHERE NOMBRE = 'nombre' ORDER BY APELLIDOS
+	//@Query(value = "Select a from alumno a where a.nombre = :nombre order by a.apellidos")
+	public List<Alumno> findAllByNombreOrderByApellidos(String nombre);
+
+	// Select * FROM ALUMNO WHERE NOMBRE = 'nombre' AND APELLIDOS = 'apellidos' ORDER BY APELLIDOS
+	//@Query(value = "Select a from alumno a where a.nombre = :nombre and a.apellidos = :apellidos order by a.apellidos")
+	public List<Alumno> findAllByNombreAndApellidosOrderByApellidos(String nombre, String apellidos);
+
+	// Select * FROM ALUMNO WHERE NOMBRE = 'nombre' OR APELLIDOS = 'apellidos' OR CIUDAD = 'ciudad' ORDER BY EMAIL
+	//@Query(value = "Select a from alumno a where a.nombre = :nombre or a.apellidos = :apellidos or a.ciudad = :ciudad order by a.email")
+	public List<Alumno> findAllByNombreOrApellidosOrCiudadOrderByEmail(String nombre, String apellidos, String ciudad);
+	
+	@Query(value= "Select a from Alumno a where a.nombre = :nombre order by a.apellidos desc")
+	public List<Alumno> findAllByNombreOrderByApellidosDesc(@Param("nombre")String nombre);
+	
+	
+
+	//@Query(value = "Select a from alumno a order by a.nombre")
+	// Select * FROM ALUMNO ORDER BY NOMBRE
+	public List<Alumno> findAllOrderByNombre();
+}
+
+/*
+ * 1. Método con consulta JPQL para obtener un listado de alumnos filtrando por Nombre y  ordenando por Apellidos de forma descendente
+ * 2. Método con consulta SQL para obtener un listado de Profesores filtrando por Email y ordenando por Nombre de forma ascendente y por Ciudad de forma descendente
+ * 3. 
+ */

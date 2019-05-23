@@ -1,0 +1,31 @@
+server:
+  port: 36656
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: beca_java
+    url: jdbc:mysql://ALC-HCN89H2:3306/beca_java?useTimezone=true&serverTimezone=UTC
+    username: beca_java
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: false
+    generate-ddl: false
+
+rules:
+  pepino:
+    atributo: pepino
+info:
+  contact:
+    email: pepino@hortaliza.com
+    phone: 666
+management:
+ endpoint:
+   health:
+     show-details: always
+ endpoints:
+   web:
+    base-path: /
+    exposure:
+      include: health,info,env,metrics

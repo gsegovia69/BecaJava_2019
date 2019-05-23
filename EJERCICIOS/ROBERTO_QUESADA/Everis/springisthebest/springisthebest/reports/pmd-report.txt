@@ -1,0 +1,536 @@
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:19:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:19:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:19:	Header comments are required
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:19:	Header comments are required
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:20:	Field comments are required
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:20:	Field comments are required
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:21:	Field comments are required
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:21:	Field comments are required
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:28:	Parameter 'map' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:28:	Parameter 'map' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:28:	Parameter 'miVariable' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:28:	Parameter 'miVariable' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:28:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:28:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:29:	Local variable 'usuario' could be declared final
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:29:	Local variable 'usuario' could be declared final
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:37:	Parameter 'map' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:37:	Parameter 'map' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:37:	Parameter 'miVariable' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:37:	Parameter 'miVariable' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:37:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:37:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:38:	Local variable 'usuario' could be declared final
+src/main/java/paramo/de/la/programacion/HomePepinoController.java:38:	Local variable 'usuario' could be declared final
+src/main/java/paramo/de/la/programacion/SpringisthebestApplication.java:7:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/main/java/paramo/de/la/programacion/SpringisthebestApplication.java:7:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/main/java/paramo/de/la/programacion/SpringisthebestApplication.java:7:	Header comments are required
+src/main/java/paramo/de/la/programacion/SpringisthebestApplication.java:7:	Header comments are required
+src/main/java/paramo/de/la/programacion/SpringisthebestApplication.java:11:	Parameter 'args' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/SpringisthebestApplication.java:11:	Parameter 'args' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/SpringisthebestApplication.java:11:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/SpringisthebestApplication.java:11:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/Usuario.java:10:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/Usuario.java:10:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/Usuario.java:10:	Header comments are required
+src/main/java/paramo/de/la/programacion/Usuario.java:10:	Header comments are required
+src/main/java/paramo/de/la/programacion/Usuario.java:11:	Field comments are required
+src/main/java/paramo/de/la/programacion/Usuario.java:11:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/AlumnoDTO.java:9:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/dto/AlumnoDTO.java:9:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/dto/AlumnoDTO.java:9:	Header comments are required
+src/main/java/paramo/de/la/programacion/dto/AlumnoDTO.java:9:	Header comments are required
+src/main/java/paramo/de/la/programacion/dto/AlumnoDTO.java:11:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/dto/AlumnoDTO.java:11:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/dto/AlumnoDTO.java:11:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/AlumnoDTO.java:11:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/AlumnoDTO.java:13:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/AlumnoDTO.java:13:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/AlumnoDTO.java:15:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/AlumnoDTO.java:15:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/AlumnoDTO.java:17:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/AlumnoDTO.java:17:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/AlumnoDTO.java:19:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/AlumnoDTO.java:19:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/AlumnoDTO.java:21:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/AlumnoDTO.java:21:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/AsignaturaDTO.java:9:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/dto/AsignaturaDTO.java:9:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/dto/AsignaturaDTO.java:9:	Header comments are required
+src/main/java/paramo/de/la/programacion/dto/AsignaturaDTO.java:9:	Header comments are required
+src/main/java/paramo/de/la/programacion/dto/AsignaturaDTO.java:11:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/AsignaturaDTO.java:11:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/AsignaturaDTO.java:13:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/AsignaturaDTO.java:13:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/AsignaturaDTO.java:15:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/AsignaturaDTO.java:15:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/AsignaturaDTO.java:17:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/AsignaturaDTO.java:17:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:12:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:12:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:12:	Header comments are required
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:12:	Header comments are required
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:14:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:14:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:14:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:14:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:16:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:16:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:18:	Explicit type arguments can be replaced by Diamond Operator
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:18:	Explicit type arguments can be replaced by Diamond Operator
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:18:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:18:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:20:	Explicit type arguments can be replaced by Diamond Operator
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:20:	Explicit type arguments can be replaced by Diamond Operator
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:20:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:20:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:22:	Explicit type arguments can be replaced by Diamond Operator
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:22:	Explicit type arguments can be replaced by Diamond Operator
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:22:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ClaseDTO.java:22:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ProfesorDTO.java:9:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/dto/ProfesorDTO.java:9:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/dto/ProfesorDTO.java:9:	Header comments are required
+src/main/java/paramo/de/la/programacion/dto/ProfesorDTO.java:9:	Header comments are required
+src/main/java/paramo/de/la/programacion/dto/ProfesorDTO.java:11:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/dto/ProfesorDTO.java:11:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/dto/ProfesorDTO.java:11:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ProfesorDTO.java:11:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ProfesorDTO.java:13:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ProfesorDTO.java:13:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ProfesorDTO.java:15:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ProfesorDTO.java:15:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ProfesorDTO.java:17:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ProfesorDTO.java:17:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ProfesorDTO.java:19:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ProfesorDTO.java:19:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ProfesorDTO.java:21:	Field comments are required
+src/main/java/paramo/de/la/programacion/dto/ProfesorDTO.java:21:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Alumno.java:20:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/entities/Alumno.java:20:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/entities/Alumno.java:20:	Header comments are required
+src/main/java/paramo/de/la/programacion/entities/Alumno.java:20:	Header comments are required
+src/main/java/paramo/de/la/programacion/entities/Alumno.java:24:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/entities/Alumno.java:24:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/entities/Alumno.java:24:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Alumno.java:24:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Alumno.java:26:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Alumno.java:26:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Alumno.java:28:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Alumno.java:28:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Alumno.java:30:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Alumno.java:30:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Alumno.java:32:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Alumno.java:32:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Alumno.java:37:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Alumno.java:37:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Asignatura.java:21:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/entities/Asignatura.java:21:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/entities/Asignatura.java:21:	Header comments are required
+src/main/java/paramo/de/la/programacion/entities/Asignatura.java:21:	Header comments are required
+src/main/java/paramo/de/la/programacion/entities/Asignatura.java:25:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Asignatura.java:25:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Asignatura.java:27:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Asignatura.java:27:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Asignatura.java:29:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Asignatura.java:29:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Asignatura.java:34:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Asignatura.java:34:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Clase.java:22:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/entities/Clase.java:22:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/entities/Clase.java:22:	Header comments are required
+src/main/java/paramo/de/la/programacion/entities/Clase.java:22:	Header comments are required
+src/main/java/paramo/de/la/programacion/entities/Clase.java:26:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/entities/Clase.java:26:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/entities/Clase.java:26:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Clase.java:26:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Clase.java:28:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Clase.java:28:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Clase.java:31:	Explicit type arguments can be replaced by Diamond Operator
+src/main/java/paramo/de/la/programacion/entities/Clase.java:31:	Explicit type arguments can be replaced by Diamond Operator
+src/main/java/paramo/de/la/programacion/entities/Clase.java:31:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Clase.java:31:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Clase.java:33:	Explicit type arguments can be replaced by Diamond Operator
+src/main/java/paramo/de/la/programacion/entities/Clase.java:33:	Explicit type arguments can be replaced by Diamond Operator
+src/main/java/paramo/de/la/programacion/entities/Clase.java:33:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Clase.java:33:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Clase.java:35:	Explicit type arguments can be replaced by Diamond Operator
+src/main/java/paramo/de/la/programacion/entities/Clase.java:35:	Explicit type arguments can be replaced by Diamond Operator
+src/main/java/paramo/de/la/programacion/entities/Clase.java:35:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Clase.java:35:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Profesor.java:21:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/entities/Profesor.java:21:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/entities/Profesor.java:21:	Header comments are required
+src/main/java/paramo/de/la/programacion/entities/Profesor.java:21:	Header comments are required
+src/main/java/paramo/de/la/programacion/entities/Profesor.java:25:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/entities/Profesor.java:25:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/entities/Profesor.java:25:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Profesor.java:25:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Profesor.java:27:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Profesor.java:27:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Profesor.java:29:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Profesor.java:29:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Profesor.java:31:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Profesor.java:31:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Profesor.java:33:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Profesor.java:33:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Profesor.java:37:	Field comments are required
+src/main/java/paramo/de/la/programacion/entities/Profesor.java:37:	Field comments are required
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:15:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:15:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:15:	Header comments are required
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:15:	Header comments are required
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:18:	Field comments are required
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:18:	Field comments are required
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:18:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:18:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:24:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:24:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:25:	Local variable 'listaEntities' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:25:	Local variable 'listaEntities' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:29:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:29:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:29:	Parameter 'id' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:29:	Parameter 'id' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:29:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:29:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:30:	Local variable 'dto' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:30:	Local variable 'dto' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:31:	Local variable 'entity' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:31:	Local variable 'entity' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:48:	Parameter 'nombre' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:48:	Parameter 'nombre' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:48:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:48:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:49:	Local variable 'listaEntities' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:49:	Local variable 'listaEntities' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:53:	Parameter 'apellidos' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:53:	Parameter 'apellidos' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:53:	Parameter 'nombre' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:53:	Parameter 'nombre' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:53:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:53:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:54:	Local variable 'listaEntities' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:54:	Local variable 'listaEntities' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:58:	Parameter 'alumno' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:58:	Parameter 'alumno' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:58:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:58:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:59:	Local variable 'listaEntities' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:59:	Local variable 'listaEntities' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:64:	Parameter 'nombre' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:64:	Parameter 'nombre' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:64:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:64:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:65:	Local variable 'listaEntities' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:65:	Local variable 'listaEntities' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:69:	Parameter 'dto' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:69:	Parameter 'dto' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:69:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:69:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:70:	Found 'DD'-anomaly for variable 'entity' (lines '70'-'71').
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:70:	Found 'DD'-anomaly for variable 'entity' (lines '70'-'71').
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:75:	Parameter 'alumno' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:75:	Parameter 'alumno' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:76:	Local variable 'dto' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:76:	Local variable 'dto' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:86:	Parameter 'alumno' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:86:	Parameter 'alumno' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:87:	Local variable 'dto' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:87:	Local variable 'dto' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:97:	Found 'UR'-anomaly for variable 'entity' (lines '97'-'100').
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:97:	Found 'UR'-anomaly for variable 'entity' (lines '97'-'100').
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:97:	Parameter 'listaEntities' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:97:	Parameter 'listaEntities' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:98:	Local variable 'dtoList' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:98:	Local variable 'dtoList' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:99:	Local variable 'entity' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AlumnoManager.java:99:	Local variable 'entity' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:17:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:17:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:17:	Header comments are required
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:17:	Header comments are required
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:19:	Field comments are required
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:19:	Field comments are required
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:19:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:19:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:25:	Found 'UR'-anomaly for variable 'entity' (lines '25'-'29').
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:25:	Found 'UR'-anomaly for variable 'entity' (lines '25'-'29').
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:25:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:25:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:26:	Local variable 'listaEntities' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:26:	Local variable 'listaEntities' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:27:	Local variable 'dtoList' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:27:	Local variable 'dtoList' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:28:	Local variable 'entity' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:28:	Local variable 'entity' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:34:	Parameter 'idAsignatura' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:34:	Parameter 'idAsignatura' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:34:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:34:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:35:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:35:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:38:	Parameter 'dto' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:38:	Parameter 'dto' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:38:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:38:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:39:	Found 'DD'-anomaly for variable 'entity' (lines '39'-'40').
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:39:	Found 'DD'-anomaly for variable 'entity' (lines '39'-'40').
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:44:	Parameter 'asignatura' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:44:	Parameter 'asignatura' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:45:	Local variable 'dto' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:45:	Local variable 'dto' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:46:	Local variable 'utils' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:46:	Local variable 'utils' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:53:	Parameter 'asignatura' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:53:	Parameter 'asignatura' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:54:	Local variable 'dto' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:54:	Local variable 'dto' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:55:	Local variable 'utils' could be declared final
+src/main/java/paramo/de/la/programacion/managers/AsignaturaManager.java:55:	Local variable 'utils' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:14:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:14:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:14:	Header comments are required
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:14:	Header comments are required
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:16:	Field comments are required
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:16:	Field comments are required
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:16:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:16:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:22:	Found 'UR'-anomaly for variable 'entity' (lines '22'-'26').
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:22:	Found 'UR'-anomaly for variable 'entity' (lines '22'-'26').
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:22:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:22:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:23:	Local variable 'listaEntities' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:23:	Local variable 'listaEntities' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:24:	Local variable 'dtoList' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:24:	Local variable 'dtoList' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:25:	Local variable 'entity' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:25:	Local variable 'entity' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:31:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:31:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:31:	Parameter 'id' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:31:	Parameter 'id' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:31:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:31:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:32:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:32:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:35:	Parameter 'dto' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:35:	Parameter 'dto' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:35:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:35:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:36:	Found 'DD'-anomaly for variable 'entity' (lines '36'-'37').
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:36:	Found 'DD'-anomaly for variable 'entity' (lines '36'-'37').
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:41:	Parameter 'clase' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:41:	Parameter 'clase' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:42:	Local variable 'dto' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:42:	Local variable 'dto' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:48:	Parameter 'clase' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:48:	Parameter 'clase' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:49:	Local variable 'dto' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ClaseManager.java:49:	Local variable 'dto' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:17:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:17:	Each class should declare at least one constructor
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:17:	Header comments are required
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:17:	Header comments are required
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:19:	Field comments are required
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:19:	Field comments are required
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:19:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:19:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:25:	Found 'UR'-anomaly for variable 'entity' (lines '25'-'29').
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:25:	Found 'UR'-anomaly for variable 'entity' (lines '25'-'29').
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:25:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:25:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:26:	Local variable 'listaEntities' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:26:	Local variable 'listaEntities' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:27:	Local variable 'dtoList' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:27:	Local variable 'dtoList' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:28:	Local variable 'entity' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:28:	Local variable 'entity' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:34:	Found 'UR'-anomaly for variable 'entity' (lines '34'-'40').
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:34:	Found 'UR'-anomaly for variable 'entity' (lines '34'-'40').
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:34:	Parameter 'email' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:34:	Parameter 'email' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:34:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:34:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:35:	Parameter 'ciudad' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:35:	Parameter 'ciudad' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:36:	Local variable 'listaEntities' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:36:	Local variable 'listaEntities' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:38:	Local variable 'dtoList' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:38:	Local variable 'dtoList' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:39:	Local variable 'entity' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:39:	Local variable 'entity' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:46:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:46:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:46:	Parameter 'id' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:46:	Parameter 'id' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:46:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:46:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:47:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:47:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:50:	Parameter 'dto' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:50:	Parameter 'dto' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:50:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:50:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:51:	Found 'DD'-anomaly for variable 'entity' (lines '51'-'52').
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:51:	Found 'DD'-anomaly for variable 'entity' (lines '51'-'52').
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:56:	Parameter 'profesor' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:56:	Parameter 'profesor' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:57:	Local variable 'dto' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:57:	Local variable 'dto' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:58:	Local variable 'utils' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:58:	Local variable 'utils' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:68:	Parameter 'profesor' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:68:	Parameter 'profesor' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:69:	Local variable 'utils' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:69:	Local variable 'utils' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:70:	Local variable 'dto' could be declared final
+src/main/java/paramo/de/la/programacion/managers/ProfesorManager.java:70:	Local variable 'dto' could be declared final
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:12:	Header comments are required
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:12:	Header comments are required
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:13:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:13:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:15:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:15:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:17:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:17:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:17:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:17:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:19:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:19:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:22:	Comment is too large: Line too long
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:22:	Comment is too large: Line too long
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:23:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:23:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:23:	Unnecessary modifier 'public' on method 'findAllByNombreOrderByApellidos': the method is declared in an interface type
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:23:	Unnecessary modifier 'public' on method 'findAllByNombreOrderByApellidos': the method is declared in an interface type
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:25:	Comment is too large: Line too long
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:25:	Comment is too large: Line too long
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:26:	Comment is too large: Line too long
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:26:	Comment is too large: Line too long
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:27:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:27:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:27:	Unnecessary modifier 'public' on method 'findAllByNombreAndApellidosOrderByApellidos': the method is declared in an interface type
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:27:	Unnecessary modifier 'public' on method 'findAllByNombreAndApellidosOrderByApellidos': the method is declared in an interface type
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:29:	Comment is too large: Line too long
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:29:	Comment is too large: Line too long
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:30:	Comment is too large: Line too long
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:30:	Comment is too large: Line too long
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:31:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:31:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:31:	Unnecessary modifier 'public' on method 'findAllByNombreOrApellidosOrCiudadOrderByEmail': the method is declared in an interface type
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:31:	Unnecessary modifier 'public' on method 'findAllByNombreOrApellidosOrCiudadOrderByEmail': the method is declared in an interface type
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:33:	Avoid the use of value in annotations when its the only element
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:33:	Avoid the use of value in annotations when its the only element
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:34:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:34:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:34:	Unnecessary modifier 'public' on method 'findAllByNombreOrderByApellidosDesc': the method is declared in an interface type
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:34:	Unnecessary modifier 'public' on method 'findAllByNombreOrderByApellidosDesc': the method is declared in an interface type
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:44:	Comment is too large: Line too long
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:44:	Comment is too large: Line too long
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:45:	Comment is too large: Line too long
+src/main/java/paramo/de/la/programacion/repositories/AlumnoRepository.java:45:	Comment is too large: Line too long
+src/main/java/paramo/de/la/programacion/repositories/AsignaturaRepository.java:11:	Header comments are required
+src/main/java/paramo/de/la/programacion/repositories/AsignaturaRepository.java:11:	Header comments are required
+src/main/java/paramo/de/la/programacion/repositories/AsignaturaRepository.java:12:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AsignaturaRepository.java:12:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AsignaturaRepository.java:12:	The method 'delete(Asignatura)' is missing an @Override annotation.
+src/main/java/paramo/de/la/programacion/repositories/AsignaturaRepository.java:12:	The method 'delete(Asignatura)' is missing an @Override annotation.
+src/main/java/paramo/de/la/programacion/repositories/AsignaturaRepository.java:14:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AsignaturaRepository.java:14:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AsignaturaRepository.java:14:	The method 'findAll()' is missing an @Override annotation.
+src/main/java/paramo/de/la/programacion/repositories/AsignaturaRepository.java:14:	The method 'findAll()' is missing an @Override annotation.
+src/main/java/paramo/de/la/programacion/repositories/AsignaturaRepository.java:16:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AsignaturaRepository.java:16:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AsignaturaRepository.java:19:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AsignaturaRepository.java:19:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AsignaturaRepository.java:19:	The method 'save(Asignatura)' is missing an @Override annotation.
+src/main/java/paramo/de/la/programacion/repositories/AsignaturaRepository.java:19:	The method 'save(Asignatura)' is missing an @Override annotation.
+src/main/java/paramo/de/la/programacion/repositories/AsignaturaRepository.java:24:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/AsignaturaRepository.java:24:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/ClaseRepository.java:10:	Header comments are required
+src/main/java/paramo/de/la/programacion/repositories/ClaseRepository.java:10:	Header comments are required
+src/main/java/paramo/de/la/programacion/repositories/ClaseRepository.java:11:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/ClaseRepository.java:11:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/ClaseRepository.java:13:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/ClaseRepository.java:13:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/ClaseRepository.java:15:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/repositories/ClaseRepository.java:15:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/repositories/ClaseRepository.java:15:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/ClaseRepository.java:15:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/ClaseRepository.java:17:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/ClaseRepository.java:17:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:12:	Header comments are required
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:12:	Header comments are required
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:13:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:13:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:13:	The method 'delete(Profesor)' is missing an @Override annotation.
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:13:	The method 'delete(Profesor)' is missing an @Override annotation.
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:15:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:15:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:15:	The method 'findAll()' is missing an @Override annotation.
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:15:	The method 'findAll()' is missing an @Override annotation.
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:17:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:17:	Avoid variables with short names like id
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:17:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:17:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:20:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:20:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:20:	The method 'save(Profesor)' is missing an @Override annotation.
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:20:	The method 'save(Profesor)' is missing an @Override annotation.
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:23:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:23:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:23:	Unnecessary modifier 'public' on method 'obtenerProfesoresFiltrandoPorEmailOrdenadoPorCiudadDescNombreAsc': the method is declared in an interface type
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:23:	Unnecessary modifier 'public' on method 'obtenerProfesoresFiltrandoPorEmailOrdenadoPorCiudadDescNombreAsc': the method is declared in an interface type
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:28:	Comment is too large: Too many lines
+src/main/java/paramo/de/la/programacion/repositories/ProfesorRepository.java:28:	Comment is too large: Too many lines
+src/main/java/paramo/de/la/programacion/utils/ConversorUtils.java:6:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/main/java/paramo/de/la/programacion/utils/ConversorUtils.java:6:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/main/java/paramo/de/la/programacion/utils/ConversorUtils.java:6:	Header comments are required
+src/main/java/paramo/de/la/programacion/utils/ConversorUtils.java:6:	Header comments are required
+src/main/java/paramo/de/la/programacion/utils/ConversorUtils.java:7:	Parameter 'clase' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/utils/ConversorUtils.java:7:	Parameter 'clase' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/utils/ConversorUtils.java:7:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/utils/ConversorUtils.java:7:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/utils/ConversorUtils.java:8:	Local variable 'dto' could be declared final
+src/main/java/paramo/de/la/programacion/utils/ConversorUtils.java:8:	Local variable 'dto' could be declared final
+src/main/java/paramo/de/la/programacion/utils/ConversorUtils.java:13:	Parameter 'clase' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/utils/ConversorUtils.java:13:	Parameter 'clase' is not assigned and could be declared final
+src/main/java/paramo/de/la/programacion/utils/ConversorUtils.java:13:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/utils/ConversorUtils.java:13:	Public method and constructor comments are required
+src/main/java/paramo/de/la/programacion/utils/ConversorUtils.java:14:	Local variable 'dto' could be declared final
+src/main/java/paramo/de/la/programacion/utils/ConversorUtils.java:14:	Local variable 'dto' could be declared final
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:16:	Each class should declare at least one constructor
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:16:	Each class should declare at least one constructor
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:16:	Header comments are required
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:16:	Header comments are required
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:18:	Field comments are required
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:18:	Field comments are required
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:18:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:18:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:21:	JUnit tests should include assert() or fail()
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:21:	JUnit tests should include assert() or fail()
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:21:	Public method and constructor comments are required
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:21:	Public method and constructor comments are required
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:23:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:23:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:23:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:23:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:23:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:23:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:23:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:23:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:25:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:25:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:27:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/paramo/de/la/programacion/HomePepinoTest.java:27:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/paramo/de/la/programacion/SpringisthebestApplicationTests.java:10:	Each class should declare at least one constructor
+src/test/java/paramo/de/la/programacion/SpringisthebestApplicationTests.java:10:	Each class should declare at least one constructor
+src/test/java/paramo/de/la/programacion/SpringisthebestApplicationTests.java:10:	Header comments are required
+src/test/java/paramo/de/la/programacion/SpringisthebestApplicationTests.java:10:	Header comments are required
+src/test/java/paramo/de/la/programacion/SpringisthebestApplicationTests.java:13:	Document empty method body
+src/test/java/paramo/de/la/programacion/SpringisthebestApplicationTests.java:13:	Document empty method body
+src/test/java/paramo/de/la/programacion/SpringisthebestApplicationTests.java:13:	JUnit tests should include assert() or fail()
+src/test/java/paramo/de/la/programacion/SpringisthebestApplicationTests.java:13:	JUnit tests should include assert() or fail()
+src/test/java/paramo/de/la/programacion/SpringisthebestApplicationTests.java:13:	Public method and constructor comments are required
+src/test/java/paramo/de/la/programacion/SpringisthebestApplicationTests.java:13:	Public method and constructor comments are required

@@ -1,0 +1,126 @@
+package paramo.de.la.programacion.managers;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+import paramo.de.la.programacion.dto.AlumnoDTO;
+import paramo.de.la.programacion.entities.Alumno;
+import paramo.de.la.programacion.entities.Clase;
+import paramo.de.la.programacion.repositories.AlumnoRepository;
+import paramo.de.la.programacion.utils.ConversorUtils;
+
+@Service
+public class AlumnoManager {
+
+	@Autowired
+	private AlumnoRepository repository;
+
+	public AlumnoRepository getRepository() {
+		return repository;
+	}
+
+	public List<AlumnoDTO> dameAlumnos() {
+		List<Alumno> listaEntities = repository.findAll();
+		return conversorLista(listaEntities);
+	}
+
+	public AlumnoDTO giveMeOneAlumno(Long id) {
+		AlumnoDTO dto = new AlumnoDTO();
+		Alumno entity = repository.findById(id).orElse(new Alumno());
+		dto.setId(entity.getId());
+		dto.setNombre(entity.getNombre());
+		dto.setApellidos(entity.getApellidos());
+		dto.setCiudad(entity.getCiudad());
+		dto.setEmail(entity.getEmail());
+		dto.setIdClase(ConversorUtils.conversorClaseToClaseDTO(entity.getIdClase()));
+		dto.setNombreCurso(entity.getIdClase().getNombre());
+		dto.setIdCurso(entity.getIdClase().getId());
+		return dto;
+	}
+
+	public List<AlumnoDTO> findAllByOrderByName(Pageable pageable) {
+		Page<Alumno> listaEntities = repository.findAllByOrderByNombre(pageable);
+		List<AlumnoDTO> dtoList = new ArrayList<>();
+		for (Alumno entity : listaEntities) {
+			if (entity != null) {
+			dtoList.add(transform(entity));
+			}
+		}
+		return dtoList;
+	}
+
+	public List<AlumnoDTO> findAllByNombreAndOrderByApellidos(String nombre) {
+		List<Alumno> listaEntities = repository.findAllByNombreOrderByApellidos(nombre);
+		return conversorLista(listaEntities);
+	}
+
+	public List<AlumnoDTO> findAllByNombreAndApellidosOrderByApellidos(String nombre, String apellidos) {
+		List<Alumno> listaEntities = repository.findAllByNombreAndApellidosOrderByApellidos(nombre, apellidos);
+		return conversorLista(listaEntities);
+	}
+
+	public List<AlumnoDTO> findAllByNombreOrApellidosOrCiudadOrderByEmail(AlumnoDTO alumno) {
+		List<Alumno> listaEntities = repository.findAllByNombreOrApellidosOrCiudadOrderByEmail(alumno.getNombre(),
+				alumno.getApellidos(), alumno.getCiudad());
+		return conversorLista(listaEntities);
+	}
+
+	public List<AlumnoDTO> findAllByNombreOrderByApellidosDesc(String nombre) {
+		List<Alumno> listaEntities = repository.findAllByNombreOrderByApellidosDesc(nombre);
+		return conversorLista(listaEntities);
+	}
+
+	public void borramelo(AlumnoDTO dto) {
+		Alumno entity = transformDTO(dto);
+		repository.delete(entity);
+	}
+
+	public AlumnoDTO guardamelo(AlumnoDTO dto) {
+		Alumno entity = transformDTO(dto);
+		entity = repository.save(entity);
+		return transform(entity);
+	}
+
+	private AlumnoDTO transform(Alumno alumno) {
+		AlumnoDTO dto = new AlumnoDTO();
+		
+			dto.setId(alumno.getId());
+			dto.setNombre(alumno.getNombre());
+			dto.setApellidos(alumno.getApellidos());
+			dto.setCiudad(alumno.getCiudad());
+			dto.setEmail(alumno.getEmail());
+			if (alumno.getIdClase() != null) {
+			dto.setIdClase(ConversorUtils.conversorClaseToClaseDTO(alumno.getIdClase()));
+			dto.setNombreCurso(alumno.getIdClase().getNombre());
+			dto.setIdCurso(alumno.getIdClase().getId());
+		}
+		return dto;
+	}
+
+	private Alumno transformDTO(AlumnoDTO alumno) {
+		Alumno entity = new Alumno();
+		Clase idClase = ConversorUtils.conversorClaseDTOToClase(alumno.getIdClase());
+		entity.setId(alumno.getId());
+		entity.setNombre(alumno.getNombre());
+		entity.setApellidos(alumno.getApellidos());
+		entity.setCiudad(alumno.getCiudad());
+		entity.setEmail(alumno.getEmail());
+		entity.setIdClase(idClase);
+
+		return entity;
+	}
+
+	private List<AlumnoDTO> conversorLista(List<Alumno> listaEntities) {
+		List<AlumnoDTO> dtoList = new ArrayList<>();
+		for (Alumno entity : listaEntities) {
+			dtoList.add(transform(entity));
+		}
+		return dtoList;
+	}
+
+}

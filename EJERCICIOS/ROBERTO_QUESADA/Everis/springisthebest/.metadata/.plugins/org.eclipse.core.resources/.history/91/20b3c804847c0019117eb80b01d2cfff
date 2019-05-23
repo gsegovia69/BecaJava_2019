@@ -1,0 +1,16 @@
+package paramo.de.la.programacion.managers;
+
+import org.springframework.stereotype.Service;
+
+import paramo.de.la.programacion.repositories.AlumnoRepository;
+import paramo.de.la.programacion.repositories.UsuarioRepository;
+
+@Service
+public class UsuarioManager {
+ 
+	private UsuarioRepository repository;
+	
+	public UsuarioRepository getRepository() {
+		return repository;
+	}
+}

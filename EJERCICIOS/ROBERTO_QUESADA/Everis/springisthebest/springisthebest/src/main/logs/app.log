@@ -1,0 +1,303 @@
+2019-05-10 13:01:18,504 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 1584 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:01:18,504 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 1584 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:01:18,504 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:01:18,504 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:01:21,754 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 3.531 seconds (JVM running for 4.261)
+2019-05-10 13:01:21,754 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 3.531 seconds (JVM running for 4.261)
+2019-05-10 13:03:59,612 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 8940 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:03:59,612 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 8940 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:03:59,612 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:03:59,612 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:03:59,612 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:03:59,612 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:04:02,529 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:04:02,529 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:04:02,530 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:04:02,530 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:04:02,531 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:04:02,531 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:04:05,534 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 3.367 seconds (JVM running for 4.222)
+2019-05-10 13:04:05,534 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 3.367 seconds (JVM running for 4.222)
+2019-05-10 13:04:05,551 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Hola Mundo
+2019-05-10 13:04:05,551 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Hola Mundo
+2019-05-10 13:09:06,921 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:09:06,921 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:09:06,921 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:09:06,921 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:09:06,921 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:09:06,921 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:09:07,733 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 0.855 seconds (JVM running for 306.404)
+2019-05-10 13:09:07,733 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 0.855 seconds (JVM running for 306.404)
+2019-05-10 13:09:07,733 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Hola Mundo
+2019-05-10 13:09:07,733 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Hola Mundo
+2019-05-10 13:09:32,783 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:09:32,783 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:09:32,783 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:09:32,783 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:09:32,783 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:09:32,783 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:09:33,455 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 0.706 seconds (JVM running for 332.133)
+2019-05-10 13:09:33,455 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 0.706 seconds (JVM running for 332.133)
+2019-05-10 13:09:33,455 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Hola Mundo
+2019-05-10 13:09:33,455 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Hola Mundo
+2019-05-10 13:10:06,505 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:10:06,505 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:10:06,505 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:10:06,505 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:10:06,505 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:10:06,505 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:10:07,099 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 0.631 seconds (JVM running for 365.776)
+2019-05-10 13:10:07,099 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 0.631 seconds (JVM running for 365.776)
+2019-05-10 13:10:07,099 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Hola Mundo
+2019-05-10 13:10:07,099 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Hola Mundo
+2019-05-10 13:10:20,904 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:10:20,904 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:10:20,904 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:10:20,904 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:10:20,904 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:10:20,904 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:10:21,529 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 0.661 seconds (JVM running for 380.207)
+2019-05-10 13:10:21,529 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 0.661 seconds (JVM running for 380.207)
+2019-05-10 13:10:21,529 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Hola Mundo
+2019-05-10 13:10:21,529 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Hola Mundo
+2019-05-10 13:13:48,837 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:13:48,837 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:13:48,837 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:13:48,837 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:13:48,837 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:13:48,837 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:13:49,477 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 0.694 seconds (JVM running for 588.14)
+2019-05-10 13:13:49,477 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 0.694 seconds (JVM running for 588.14)
+2019-05-10 13:13:49,477 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Hola Mundo
+2019-05-10 13:13:49,477 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Hola Mundo
+2019-05-10 13:14:25,584 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:14:25,584 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:14:25,584 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:14:25,584 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:14:25,584 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:14:25,584 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:14:26,194 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 0.654 seconds (JVM running for 624.852)
+2019-05-10 13:14:26,194 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 0.654 seconds (JVM running for 624.852)
+2019-05-10 13:14:26,194 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Hola Mundo
+2019-05-10 13:14:26,194 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Hola Mundo
+2019-05-10 13:14:38,425 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:14:38,425 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:14:38,425 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:14:38,425 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:14:38,425 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:14:38,425 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:14:39,081 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 0.712 seconds (JVM running for 637.743)
+2019-05-10 13:14:39,081 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 0.712 seconds (JVM running for 637.743)
+2019-05-10 13:14:39,081 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Hola Mundo
+2019-05-10 13:14:39,081 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Hola Mundo
+2019-05-10 13:14:46,759 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:14:46,759 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:14:46,759 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:14:46,759 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:14:46,759 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:14:46,759 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:14:47,369 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 0.648 seconds (JVM running for 646.026)
+2019-05-10 13:14:47,369 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 0.648 seconds (JVM running for 646.026)
+2019-05-10 13:14:47,369 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Hola Mundo
+2019-05-10 13:14:47,369 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Hola Mundo
+2019-05-10 13:19:40,726 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:19:40,726 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:19:40,726 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:19:40,726 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:19:40,726 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:19:40,726 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:19:41,241 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'pepino.rules' to paramo.de.la.programacion.RulesController:
+
+    Reason: Configuration property name 'tamaño-pepino' is not valid
+
+Action:
+
+Update your application's configuration
+
+2019-05-10 13:19:44,865 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:19:44,865 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:19:44,865 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:19:44,865 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:19:44,865 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:19:44,865 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:19:45,349 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'pepino.rules' to paramo.de.la.programacion.RulesController:
+
+    Reason: Configuration property name 'tamaño-pepino' is not valid
+
+Action:
+
+Update your application's configuration
+
+2019-05-10 13:20:40,700 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:20:40,700 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:20:40,700 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:20:40,700 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:20:40,700 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:20:40,700 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:20:41,169 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'homePepinoController' defined in file [C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes\paramo\de\la\programacion\HomePepinoController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [paramo.de.la.programacion.HomePepinoController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Log cannot be resolved to a type
+	Log cannot be resolved
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1303)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at paramo.de.la.programacion.SpringisthebestApplication.main(SpringisthebestApplication.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [paramo.de.la.programacion.HomePepinoController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Log cannot be resolved to a type
+	Log cannot be resolved
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:184)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1295)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Log cannot be resolved to a type
+	Log cannot be resolved
+
+	at paramo.de.la.programacion.HomePepinoController.<init>(HomePepinoController.java:6)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:172)
+	... 24 common frames omitted
+2019-05-10 13:32:02,702 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:32:02,702 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:32:02,702 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:32:02,702 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:32:02,702 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:32:02,702 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:32:03,171 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'pepino.rules' to paramo.de.la.programacion.RulesController:
+
+    Reason: Configuration property name 'tamaño-pepino' is not valid
+
+Action:
+
+Update your application's configuration
+
+2019-05-10 13:32:05,137 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10056 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:32:05,137 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10056 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:32:05,137 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:32:05,137 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:32:05,137 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:32:05,137 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:32:08,509 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'pepino.rules' to paramo.de.la.programacion.RulesController:
+
+    Reason: Configuration property name 'tamaño-pepino' is not valid
+
+Action:
+
+Update your application's configuration
+
+2019-05-10 13:33:35,036 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:33:35,036 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:33:35,036 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:33:35,036 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:33:35,036 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:33:35,036 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:33:35,610 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'pepino.rules' to paramo.de.la.programacion.RulesController:
+
+    Reason: Configuration property name 'tamaño-pepino' is not valid
+
+Action:
+
+Update your application's configuration
+
+2019-05-10 13:33:40,164 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:33:40,164 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:33:40,164 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:33:40,164 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:33:40,164 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:33:40,164 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:33:40,787 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'pepino.rules' to paramo.de.la.programacion.RulesController:
+
+    Reason: Configuration property name 'tamaño-pepino' is not valid
+
+Action:
+
+Update your application's configuration
+
+2019-05-10 13:33:48,353 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:33:48,353 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 10192 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:33:48,353 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:33:48,353 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:33:48,353 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:33:48,353 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:33:49,027 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 0.73 seconds (JVM running for 1787.674)
+2019-05-10 13:33:49,027 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 0.73 seconds (JVM running for 1787.674)
+2019-05-10 13:34:00,334 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 13280 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:34:00,334 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Starting SpringisthebestApplication on ALC-JG66952 with PID 13280 (C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest\target\classes started by Administrador in C:\Users\Administrador\Documents\Everis\springisthebest\springisthebest)
+2019-05-10 13:34:00,334 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:34:00,334 DEBUG paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-10 13:34:00,334 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:34:00,334 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-10 13:34:03,929 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 4.034 seconds (JVM running for 4.919)
+2019-05-10 13:34:03,929 INFO paramo.de.la.programacion.SpringisthebestApplication [restartedMain] Started SpringisthebestApplication in 4.034 seconds (JVM running for 4.919)
